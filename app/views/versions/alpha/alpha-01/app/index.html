@@ -1,0 +1,14 @@
+{% set page = {
+  title: 'Title here',
+  dev: true,
+  html_classes: [],
+  layout: prototype.current.layoutPath + 'layout.html'
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<p>page content here</p>
+
+{% endblock %}
