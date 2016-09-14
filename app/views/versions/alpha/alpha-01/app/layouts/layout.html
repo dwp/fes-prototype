@@ -2,6 +2,23 @@
 
 {% extends "layouts/dwp_admin_layout.html" %}
 
+{#% block after_header %}
+
+  {% block admin_header %}
+  
+    <div class="admin-header-wrapper">
+      <div class="admin-header-content">
+        <ul>
+          <li><a href="#">Action link 1</a></li>
+          <li><a href="#">Action link 2</a></li>
+        </ul>
+      </div>
+    </div>
+    
+  {% endblock %}
+  
+{% endblock %#}
+
 {% block body_end %}
   {{ super() }}
   <script src="/public/javascripts/jquerycolor.js" charset="utf-8"></script>

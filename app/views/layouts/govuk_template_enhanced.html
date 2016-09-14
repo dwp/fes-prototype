@@ -45,10 +45,10 @@
         {% block cookie_message %}{% endblock %}
       
     </div>
-
+    
+    {% block before_header %}{% endblock %}
+    
     {% block header %}
-      
-      {% block before_header %}{% endblock %}
       
       <header role="banner" id="global-header" class="{% block header_class %}{% endblock %}">
         <div class="header-wrapper">
@@ -64,9 +64,9 @@
         </div>
       </header>
       
-      {% block after_header %}{% endblock %}
-      
     {% endblock %}
+    
+    {% block after_header %}{% endblock %}
 
     {% block content %}{% endblock %}
 
