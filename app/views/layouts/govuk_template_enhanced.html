@@ -6,25 +6,14 @@
     <meta charset="utf-8" />
     <title>{% block page_title %}GOV.UK - The best place to find government services and information{% endblock %}</title>
 
-    <!--[if gt IE 8]><!--><link href="{{ asset_path }}stylesheets/govuk-template.css?0.17.3" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
-    <!--[if IE 6]><link href="{{ asset_path }}stylesheets/govuk-template-ie6.css?0.17.3" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
-    <!--[if IE 7]><link href="{{ asset_path }}stylesheets/govuk-template-ie7.css?0.17.3" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
-    <!--[if IE 8]><link href="{{ asset_path }}stylesheets/govuk-template-ie8.css?0.17.3" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
-    <link href="{{ asset_path }}stylesheets/govuk-template-print.css?0.17.3" media="print" rel="stylesheet" type="text/css" />
-
-    <!--[if IE 8]>
-    <script>
-      (function(){if(window.opera){return;}
-       setTimeout(function(){var a=document,g,b={families:(g=
-       ["nta"]),urls:["{{ asset_path }}stylesheets/fonts-ie8.css?0.17.3"]},
-       c="{{ asset_path }}javascripts/vendor/goog/webfont-debug.js?0.17.3",d="script",
-       e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
-       ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
-       .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
-      })()
-    </script>
-    <![endif]-->
-    <!--[if gte IE 9]><!--><link href="{{ asset_path }}stylesheets/fonts.css?0.17.3" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+    <!--[if gt IE 8]><!--><link href="{{ asset_path }}stylesheets/govuk-template.css?0.17.3" media="screen" rel="stylesheet" /><!--<![endif]-->
+    <!--[if IE 6]><link href="{{ asset_path }}stylesheets/govuk-template-ie6.css?0.17.3" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 7]><link href="{{ asset_path }}stylesheets/govuk-template-ie7.css?0.17.3" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 8]><link href="{{ asset_path }}stylesheets/govuk-template-ie8.css?0.17.3" media="screen" rel="stylesheet" /><![endif]-->
+    <link href="{{ asset_path }}stylesheets/govuk-template-print.css?0.17.3" media="print" rel="stylesheet" />
+    
+    <!--[if IE 8]><link href="{{ asset_path }}stylesheets/fonts-ie8.css?0.17.3" media="all" rel="stylesheet" /><![endif]-->
+    <!--[if gte IE 9]><!--><link href="{{ asset_path }}stylesheets/fonts.css?0.17.3" media="all" rel="stylesheet" /><!--<![endif]-->
     <!--[if lt IE 9]><script src="{{ asset_path }}javascripts/ie.js?0.17.3"></script><![endif]-->
 
     <link rel="shortcut icon" href="{{ asset_path }}images/favicon.ico?0.17.3" type="image/x-icon" />
@@ -57,25 +46,27 @@
       
     </div>
 
-    
-    <header role="banner" id="global-header" class="{% block header_class %}{% endblock %}">
-      <div class="header-wrapper">
-        <div class="header-global">
-          <div class="header-logo">
-            <a href="{{ homepage_url|default('https://www.gov.uk') }}" title="{{ logo_link_title|default('Go to the GOV.UK homepage') }}" id="logo" class="content">
-              <img src="{{ asset_path }}images/gov.uk_logotype_crown_invert_trans.png?0.17.3" width="35" height="31" alt=""> {{ global_header_text|default('GOV.UK') }}
-            </a>
+    {% block header %}
+      
+      {% block before_header %}{% endblock %}
+      
+      <header role="banner" id="global-header" class="{% block header_class %}{% endblock %}">
+        <div class="header-wrapper">
+          <div class="header-global">
+            <div class="header-logo">
+              <a href="{{ homepage_url|default('https://www.gov.uk') }}" title="{{ logo_link_title|default('Go to the GOV.UK homepage') }}" id="logo" class="content">
+                <img src="{{ asset_path }}images/gov.uk_logotype_crown_invert_trans.png?0.17.3" width="35" height="31" alt=""> {{ global_header_text|default('GOV.UK') }}
+              </a>
+            </div>
+            {% block inside_header %}{% endblock %}
           </div>
-          {% block inside_header %}{% endblock %}
+          {% block proposition_header %}{% endblock %}
         </div>
-        {% block proposition_header %}{% endblock %}
-      </div>
-    </header>
-    
-
-    {% block after_header %}{% endblock %}
-
-    <div id="global-header-bar"></div>
+      </header>
+      
+      {% block after_header %}{% endblock %}
+      
+    {% endblock %}
 
     {% block content %}{% endblock %}
 

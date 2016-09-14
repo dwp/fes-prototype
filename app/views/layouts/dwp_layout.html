@@ -10,7 +10,6 @@
 
 {% block content %}
   <main id="content"{{ (' class="' + page.contentClasses + '"') | safe if page.contentClasses }}>  
-     {% include "includes/phase_banner_alpha.html" %}  
     {% block main %}
       {% block prepend_main %}{% endblock %}
       <div class="grid-row">
