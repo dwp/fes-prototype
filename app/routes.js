@@ -55,6 +55,7 @@ glob.sync(prototypePaths.routesGlob).forEach(function(p){
   // load in the routes file specific to this version
   require(p)(router, { 
     path: p,
+    rootPath: p.replace(appConfig.versionRoutesFile,''),
     prototypePaths: prototypePaths,
     routes: {
       root: appRoute,
@@ -88,6 +89,7 @@ router.use(function(req, res, next){
  * enhanced context data (useful to nunjucks templates).
  */
 router.all([prototypePaths.version], function(req, res, next){
+  console.log(prototypePaths.version);
   var appPath = '/versions/' + req.params.phase + '/' + req.params.version + '/app/';
   _.merge(res.locals.prototype, {
     current: {

@@ -389,6 +389,9 @@ module.exports = function(env) {
   filters.attr = function attr(v, a, p) {
     return (!_.isEmpty(v) ? (p || '') + a + '="' + v + '"' : '');
   };
+  
+  filters.get = _.get;
+  filters.find = _.find;
 
   /* ------------------------------------------------------------------
     keep the following line to return your filters to the app

@@ -2,22 +2,81 @@
 
 {% extends "layouts/dwp_admin_layout.html" %}
 
-{#% block after_header %}
+{% block after_header %}
 
   {% block admin_header %}
   
-    <div class="admin-header-wrapper">
-      <div class="admin-header-content">
-        <ul>
-          <li><a href="#">Action link 1</a></li>
-          <li><a href="#">Action link 2</a></li>
-        </ul>
+    <div class="header-navigation">
+      
+      <div class="width-constraint">
+      
+        <div class="header-navigation__primary">
+          
+          {% set primaryNav = prototype.current.sitemap.levels[0] %}
+          
+          <nav class="primary-navigation primary-navigation--h">
+            <ul class="primary-navigation__links">
+              
+              {% for link in primaryNav.items %}
+                
+                {% set currentPage = (link.text | toHyphenated) == (page.nav.section | toHyphenated) %}
+              
+                <li class="primary-navigation__links__item">
+                  <a href="{{ link.url }}" class="primary-navigation__link{{ ' primary-navigation__link--active' if currentPage }}">{{ link.text }}</a>
+                </li>  
+              {% endfor %}
+            
+            </ul>
+          </nav>
+          
+        </div>
+        
+        <div class="header-navigation__secondary">
+          
+          <ul class="tertiary-links">
+            <li class="tertiary-links__item"><a href="#">Link 01</a></li>
+            <li class="tertiary-links__item"><a href="#">Link 02</a></li>
+          </ul>
+          
+        </div>      
+        
       </div>
+            
     </div>
     
   {% endblock %}
   
-{% endblock %#}
+{% endblock %}
+
+{% block before_primary %}
+
+  <h1 class="heading-large">{{ page.title }}</h1>
+  
+  {% for primaryLink in primaryNav.items %}
+    
+    {% set currentSection = (primaryLink.text | toHyphenated) == (page.nav.section | toHyphenated) %}
+    
+    {% if currentSection %}
+      
+    <nav class="sub-navigation">
+      <ul class="sub-navigation__items">
+      
+        {% for secondaryLink in primaryLink.items %}
+          
+          {% set currentSubSection = (secondaryLink.text | toHyphenated) == (page.nav.subsection | toHyphenated) %}
+          
+          <li class="sub-navigation__item{{ ' sub-navigation__item--active' if currentSubSection }}"><a href="{{ secondaryLink.url | d('#') }}">{{ secondaryLink.text }}</a></li>
+      
+        {% endfor %}
+      
+      </ul>
+    </nav>
+
+    {% endif %}
+    
+  {% endfor %}
+  
+{% endblock %}
 
 {% block body_end %}
   {{ super() }}

@@ -15,9 +15,17 @@
       <div class="grid-row">
         
         {% block __primary__ %}
+          
+          <div class="column-{{ page.primary.col | d('one-whole') }}">
+          {% block before_primary %}{% endblock %}
+          </div>
+        
           <div class="column-{{ page.primary.col | d('two-thirds') }}">
             {% block primary %}{% endblock %}
           </div>
+          
+          {% block after_primary %}{% endblock %}
+          
         {% endblock %}
         
         {% block __secondary__ %}
