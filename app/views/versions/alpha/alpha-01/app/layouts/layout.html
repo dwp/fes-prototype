@@ -6,6 +6,10 @@
 
   {% block admin_header %}
   
+  {% if not page.supressnav %}
+  
+  {{ 'its true!' | log }}
+  
     <div class="header-navigation">
       
       <div class="width-constraint">
@@ -44,11 +48,15 @@
             
     </div>
     
+    {% endif %}
+    
   {% endblock %}
   
 {% endblock %}
 
 {% block before_primary %}
+  
+  {% if not page.supressnav %}
   
   <div class="page-head">
     
@@ -79,6 +87,9 @@
   {% endfor %}
   
 </div>
+
+{% endif %}
+
 {% endblock %}
 
 {% block body_end %}
