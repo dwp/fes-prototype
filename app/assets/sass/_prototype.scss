@@ -93,6 +93,33 @@
         }
       }
       
+    }
+    
+    .sub-navigation {
+      
+      margin-bottom: 35px;
+      
+      &__items {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid $grey-1;
+      }
+      
+      &__item {
+        display: inline-block;
+        margin: 0;
+        
+        &__link {
+          padding: 15px 10px;
+          display: inline-block;
+        }
+        
+        &--active {
+          border-bottom: 3px solid $turquoise;
+        }
+        
+      }
       
     }
     

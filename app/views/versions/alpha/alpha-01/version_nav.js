@@ -46,7 +46,7 @@ var version_navigation = {
           ]
         },
         {
-          // primary link text
+          // primary link file name
           text: 'link primary 3',
           // primary link file name
           url: '#linkprimary3',
