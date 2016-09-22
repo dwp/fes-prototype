@@ -1,0 +1,49 @@
+{% set page = {
+  title: 'Cases',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Cases',
+    subsection: 'Day in view'
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+<!--<span class="heading-secondary">Tuesday 20 September</span>-->
+<h1 class="heading-large top15 nobottom">Your daily appointments</h1>
+
+
+<div class="container">
+
+  <div id="calendar" class="fc fc-unthemed fc-ltr"><div class="fc-toolbar">
+
+  <div class="fc-left">
+  <p>Monday 26 September</p>
+  </div>
+  <div class="fc-clear"></div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

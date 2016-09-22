@@ -1,10 +1,10 @@
 {% set page = {
-  title: 'FES',
+  title: 'Cases',
   dev: true,
   html_classes: [],
   nav: {
-    section: 'About',
-    subsection: 'link primary 1.2'
+    section: 'Cases',
+    subsection: 'Current'
   },
   layout: prototype.current.layoutPath + 'layout.html',
   primary: {
@@ -17,197 +17,6 @@
 
 {% block primary %}
 
-<div class="container">
-<!--<span class="heading-secondary">Tuesday 20 September</span>-->
-<h1 class="heading-large notop nobottom">Your appointments</h1>
-<!--
-<div class="form-group">
-
-                    <div class="">
-                      <button data-target="week" class="button grey-button">Add another</button>
-                    </div>
-                    <div class="" id="week">
-                      Week
-                    </div>
-
-
-                    <div class="" data-target="day">
-                     <button  class="button grey-button">Add another</button>
-                    </div>
-
-                    <div class="js-hidden" id="day" aria-hidden="false">
-                      Day
-                      
-                    </div>
-
-                  </div>
--->
-
-<div class="container">
-
-  <div id="calendar" class="fc fc-unthemed fc-ltr"><div class="fc-toolbar">
-
-  <div class="fc-left">
-  <p>26 September – 2 October 2016</p>
-  </div>
-  <div class="fc-clear"></div>
-  </div>
-
-
-  <div class="fc-view-container" style=""><div class="fc-view fc-basicWeek-view fc-basic-view"><table><thead class="fc-head"><tr><td class="fc-head-container fc-widget-header"><div class="fc-row fc-widget-header"><table><thead><tr>
-
-  <th class="fc-day-header fc-widget-header fc-mon" data-date="2016-09-11">Mon 26/9</th>
-
-  <th class="fc-day-header fc-widget-header fc-tue" data-date="2016-09-12">Tue 27/9</th>
-
-  <th class="fc-day-header fc-widget-header fc-wed" data-date="2016-09-13">Wed 28/9</th>
-
-  <th class="fc-day-header fc-widget-header fc-thu" data-date="2016-09-15">Thu 29/9</th>
-
-  <th class="fc-day-header fc-widget-header fc-fri" data-date="2016-09-16">Fri 30/9</th>
-
-  <th class="fc-day-header fc-widget-header fc-sat" data-date="2016-09-17">Sat 1/10</th>
-
-  <th class="fc-day-header fc-widget-header fc-sun" data-date="2016-09-17">Sun 2/10</th>
-
-
-  </tr>
-  </thead>
-  </table>
-  </div>
-  </td>
-  </tr>
-  </thead>
-
-
-
-  <tbody class="fc-body">
-    <tr>
-      <td class="fc-widget-content">
-        <div class="fc-scroller fc-day-grid-container" style="overflow: hidden; height:420px;">
-          <div class="fc-day-grid fc-unselectable"><div class="fc-row fc-week fc-widget-content fc-rigid" style="height: 420px;">
-            <div class="fc-bg">
-              <table> 
-                <tbody>
-                  <tr>
-                    <td class="fc-day fc-widget-content fc-sun fc-past" data-date="2016-09-11"></td>
-                    <td class="fc-day fc-widget-content fc-mon fc-past" data-date="2016-09-12"></td>
-                    <td class="fc-day fc-widget-content fc-tue fc-past" data-date="2016-09-13"></td>
-                    <td class="fc-day fc-widget-content fc-wed fc-past" data-date="2016-09-14"></td>
-                    <td class="fc-day fc-widget-content fc-thu fc-past" data-date="2016-09-15"></td>
-                    <td class="fc-day fc-widget-content fc-fri fc-past" data-date="2016-09-16"></td>
-                    <td class="fc-day fc-widget-content fc-sat fc-past" data-date="2016-09-17"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          <div class="fc-content-skeleton">
-        <table>
-      <tbody>
-      <tr>
-        <td class="fc-event-container">
-          <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable">
-            <div class="fc-content"> 
-            <span class="fc-time">9:30</span> 
-              <span class="fc-title">Phone - Elidia Helsel</span>
-            </div>
-          </a>
-          <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable">
-            <div class="fc-content"> 
-            <span class="fc-time">10:30</span> 
-              <span class="fc-title">Phone - Hortense Maglione</span>
-            </div>
-          </a>
-          <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable">
-            <div class="fc-content"> 
-            <span class="fc-time">1:00</span> 
-              <span class="fc-title">Phone - Mikaela Hy</span>
-            </div>
-          </a>
-          <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable">
-            <div class="fc-content"> 
-            <span class="fc-time">2:00</span> 
-              <span class="fc-title">Interview - Corrie Willert </span>
-            </div>
-          </a>
-          <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable">
-            <div class="fc-content"> 
-            <span class="fc-time">4:00</span> 
-              <span class="fc-title">Interview - Samuel Mattern</span>
-            </div>
-          </a>
-        </td>
-
-
-            <td class="fc-event-container" rowspan="6">
-              <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable">
-                <div class="fc-content">
-                  <span class="fc-time">9:00</span> 
-                  <span class="fc-title">Interview - Rigoberto Breitenstein</span>
-                </div>
-              </a>
-              <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable">
-                <div class="fc-content">
-                  <span class="fc-time">11:00</span> 
-                  <span class="fc-title">Interview - Jennie Tollett</span>
-                </div>
-              </a>
-              <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable">
-                <div class="fc-content">
-                  <span class="fc-time">12:00</span> 
-                  <span class="fc-title">Phone - Ona Buttler</span>
-                </div>
-              </a>
-              <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable">
-                <div class="fc-content">
-                  <span class="fc-time">2 :00</span> 
-                  <span class="fc-title">Interview - Maire Delorey</span>
-                </div>
-              </a>
-
-            </td>
-
-
-            <td rowspan="6">
-              <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable">
-                <div class="fc-content">
-                  <span class="fc-time">1:00</span> 
-                  <span class="fc-title">Phone - Dong Hertzler</span>
-                </div>
-              </a>
-                <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable">
-                <div class="fc-content">
-                  <span class="fc-time">3:00</span> 
-                  <span class="fc-title">Phone - Mattie Manion</span>
-                </div>
-              </a>
-
-            </td>
-
-
-            <td rowspan="6"></td>
-            <td class="fc-event-container" rowspan="6">
-              <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable">
-                <div class="fc-content">
-                  <span class="fc-time">4:00</span> 
-                  <span class="fc-title">Interview - Tommye Castellano</span>
-                </div>
-              </a>
-            </td>
-            <td rowspan="6"></td>
-          </tr>
-
-          <tr>
-            <td rowspan="6"></td>
-            <td class="fc-event-container">
-              &nbsp
-            </td>
-          </tr>
-
-
-          </tbody></table></div></div></div></div></td></tr></tbody></table></div></div></div>
-
-</div>
 
 
 
@@ -216,13 +25,7 @@
 
 
 
-
-
-
-
-
-
-  <h1 class="heading-large nobottom">Your cases</h1>
+  <h1 class="heading-large top15 nobottom">Your cases</h1>
   <p>Select a case to work on</p>
 
 <table class="your-cases">
@@ -349,96 +152,6 @@
 
 
   
-
-
-  <tr>
-      <td>1 October 2016</td>
-      <td>Darren Silcox</td>
-      <td>3687955</td>
-      <td>Capital</td>
-      <td>New case</td>
-      <td><a href="/" title="Open case">Open case</a></td>
-    </tr>
-    <tr class="odd">
-      <td>1 October 2016</td>
-      <td>Carmine Browne</td>
-      <td>3687958</td>
-      <td>Capital</td>
-      <td>Letter 3</td>
-      <td><a href="/" title="Open case">Open case</a></td>
-    </tr>
-        <tr>
-      <td>1 October 2016</td>
-      <td>Norman Eggleston</td>
-      <td>3688211</td>
-      <td>Capital</td>
-      <td>Contact Phone</td>
-      <td><a href="/" title="Open case">Open case</a></td>
-    </tr>
-        <tr class="odd">
-      <td>2 October 2016</td>
-      <td>Tomi Hochmuth</td>
-      <td>3687633</td>
-      <td>Capital</td>
-      <td>Suspended</td>
-      <td><a href="/" title="Open case">Open case</a></td>
-    </tr>
-        <tr>
-      <td>2 October 2016</td>
-      <td>Donita Carnegie</td>
-      <td>3687888</td>
-      <td>Capital</td>
-      <td>Contact person</td>
-      <td><a href="/" title="Open case">Open case</a></td>
-    </tr>
-        <tr class="odd">
-      <td>3 October 2016</td>
-      <td>Margorie Griffieth</td>
-      <td>3687299</td>
-      <td>Capital</td>
-      <td>Letter 1</td>
-      <td><a href="/" title="Open case">Open case</a></td>
-    </tr>
-        <tr>
-      <td>5 October 2016</td>
-      <td>Ivonne Fells</td>
-      <td>3687988</td>
-      <td>Capital</td>
-      <td>Decision received</td>
-      <td><a href="/" title="Open case">Open case</a></td>
-    </tr>
-        <tr class="odd">
-      <td>5 October 2016</td>
-      <td>Margaretta Breiner</td>
-      <td>3688000</td>
-      <td>Capital</td>
-      <td>Awaiting info 1</td>
-      <td><a href="/" title="Open case">Open case</a></td>
-    </tr>
-        <tr>
-      <td>5 October 2016</td>
-      <td>Spencer Leeder</td>
-      <td>3687910</td>
-      <td>Capital</td>
-      <td>Decision required</td>
-      <td><a href="/" title="Open case">Open case</a></td>
-    </tr>
-        <tr class="odd">
-      <td>6 October 2016</td>
-      <td>Misti Number</td>
-      <td>3687999</td>
-      <td>Capital</td>
-      <td>Letter 2</td>
-      <td><a href="/" title="Open case">Open case</a></td>
-    </tr>
-        <tr>
-      <td>6 October 2016</td>
-      <td>Shanda Heft</td>
-      <td>3687111</td>
-      <td>Capital</td>
-      <td>Closed</td>
-      <td><a href="/" title="Open case">Open case</a></td>
-    </tr>
   </tbody>
 </table>
 
