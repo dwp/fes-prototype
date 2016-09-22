@@ -5,86 +5,170 @@ var version_navigation = {
       items: [
         {
           // primary link text
-          text: 'About',
+          text: 'Cases', // Top level menu name
           // primary file name
-          url: '#linkprimary1',
+          url: 'your-cases', // Link to tthe top level menu name
           // subnav
           items: [
             { 
-              text: 'link primary 1.1',
-              url: '#1.1'
+              text: 'Current', // Sub menu item
+              url: 'your-cases' // link for sub menu
             },
             { 
-              text: 'link primary 1.2',
-              url: '#1.2'
+              text: 'Incoming',
+              url: 'cases-incoming'
             },
             { 
-              text: 'link primary 1.3',
-              url: '#1.3'
+              text: 'Day in view',
+              url: 'diary-day'
+            },
+            { 
+              text: 'Week in view',
+              url: 'diary-week'
             }
           ]
         },
+
+
+
+
         {
           // primary link text
-          text: 'link primary 2',
+          text: 'Information',
           // primary link file name
-          url: '#linkprimary2',
+          url: '#',
           // subnav
           items: [
             { 
-              text: 'link primary 2.1',
-              url: '#1.1'
+              text: 'Link',
+              url: ''
             },
             { 
-              text: 'link primary 2.2',
-              url: '#1.2'
+              text: 'Link',
+              url: ''
             },
             { 
-              text: 'link primary 2.3',
-              url: '#1.3'
+              text: 'Link',
+              url: ''
             }
           ]
         },
-        {
+
+
+
+         {
+          // primary link text
+          text: 'Contact',
           // primary link file name
-          text: 'link primary 3',
-          // primary link file name
-          url: '#linkprimary3',
+          url: '#',
           // subnav
           items: [
             { 
-              text: 'link primary 3.1',
-              url: '#1.1'
+              text: 'Link',
+              url: ''
             },
             { 
-              text: 'link primary 3.2',
-              url: '#1.2'
+              text: 'Link',
+              url: ''
             },
             { 
-              text: 'link primary 3.3',
-              url: '#1.3'
+              text: 'Link',
+              url: ''
             }
           ]
         },
+
+
         {
-          text: 'link primary 4',
-          url: '#linkprimary4',
+          text: 'Escalate',
+          url: '#',
           // subnav
           items: [
             { 
-              text: 'link primary 4.1',
-              url: '#4.1'
+              text: 'Link',
+              url: ''
             },
             { 
-              text: 'link primary 4.2',
-              url: '#4.2'
+              text: 'Link',
+              url: ''
             },
             { 
-              text: 'link primary 4.3',
-              url: '#4.3'
+              text: 'Link',
+              url: ''
+            }
+          ]
+        },
+
+
+
+
+        {
+          text: 'Refer',
+          url: '#',
+          // subnav
+          items: [
+            { 
+              text: 'Link',
+              url: ''
+            },
+            { 
+              text: 'Link',
+              url: ''
+            },
+            { 
+              text: 'Link',
+              url: ''
+            }
+          ]
+        },
+
+
+
+        {
+          text: 'Reject',
+          url: '#',
+          // subnav
+          items: [
+            { 
+              text: 'Link',
+              url: ''
+            },
+            { 
+              text: 'Link',
+              url: ''
+            },
+            { 
+              text: 'Link',
+              url: ''
+            }
+          ]
+        },
+
+
+        {
+          text: 'Close',
+          url: '#',
+          // subnav
+          items: [
+            { 
+              text: 'Link',
+              url: ''
+            },
+            { 
+              text: 'Link',
+              url: ''
+            },
+            { 
+              text: 'Link',
+              url: ''
             }
           ]
         }
+
+
+
+
+
       ]
     }
   ]
