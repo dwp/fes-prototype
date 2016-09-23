@@ -19,12 +19,20 @@ var version_navigation = {
               url: 'cases-incoming'
             },
             { 
+              text: 'All your cases',
+              url: 'cases-all'
+            },
+            { 
               text: 'Day in view',
               url: 'diary-day'
             },
             { 
               text: 'Week in view',
               url: 'diary-week'
+            },
+            { 
+              text: 'Day in detail',
+              url: 'diary-detail'
             }
           ]
         },
