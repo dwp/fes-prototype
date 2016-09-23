@@ -1,0 +1,276 @@
+{% set page = {
+  title: 'Cases',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Cases',
+    subsection: 'Week in view'
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+<h1 class="heading-large top15">Your weekly appointments</h1>
+
+
+
+<div class="grid-row">
+  <div class="column-full">
+
+        <table class="weekview">
+             
+             <thead>
+                <tr>
+                  <th>Mon 26/9</th>
+                  <th>Tue 27/9</th>
+                  <th>Wed 28/9</th>
+                  <th>Thu 29/9</th>
+                  <th>Fri 30/9</th>
+                  <th>Sat 1/10</th>
+                  <th>Sun 2/10</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <!-- Monday -->
+                  <td>
+                      <div class="app">
+                        <span class="time">9:30</span>
+                        <span class="interview">Phone - Elidia Helsel</span>
+                        <span class="link"><a href="" title="Open case">Open case</a></span>
+                      </div>
+                      <div class="app">
+                        <span class="time">10:30 </span>
+                        <span class="interview">Phone - Hortense Maglione</span>
+                        <span class="link"><a href="" title="Open case">Open case</a></span>
+                      </div>
+                      <div class="app">
+                        <span class="time">1:00</span>
+                        <span class="interview">Phone - Mikaela Hy</span>
+                        <span class="link"><a href="" title="Open case">Open case</a></span>
+                      </div>
+                      <div class="app">
+                        <span class="time">2:00</span>
+                        <span class="interview">Interview - Corrie Willert</span>
+                        <span class="link"><a href="" title="Open case">Open case</a></span>
+                      </div>
+                      <div class="app">
+                        <span class="time">4:00</span>
+                        <span class="interview">Interview - Samuel Mattern</span>
+                        <span class="link"><a href="" title="Open case">Open case</a></span>
+                      </div>
+                  </td>
+                  
+                  <!-- Tuesday -->
+                  <td></td>
+
+                  <!-- Wednesday -->
+                  <td></td>
+
+                  <!-- Thursday -->
+                  <td></td>
+
+                  <!-- Friday -->
+                  <td></td>
+
+                  <!-- Saturday -->
+                  <td></td>
+
+                  <!-- Sunday -->
+                  <td></td>
+                </tr>
+              </tbody>
+
+        </table>
+
+  </div>
+</div>
+
+
+<div class="container">
+
+  <div id="calendar" class="fc fc-unthemed fc-ltr"><div class="fc-toolbar">
+
+  <div class="fc-left">
+  <p>26 September – 2 October 2016</p>
+  </div>
+  <div class="fc-clear"></div>
+  </div>
+
+
+  <div class="fc-view-container" style=""><div class="fc-view fc-basicWeek-view fc-basic-view"><table><thead class="fc-head"><tr><td class="fc-head-container fc-widget-header"><div class="fc-row fc-widget-header"><table><thead><tr>
+
+  <th class="fc-day-header fc-widget-header fc-mon" data-date="2016-09-11">Mon 26/9</th>
+
+  <th class="fc-day-header fc-widget-header fc-tue" data-date="2016-09-12">Tue 27/9</th>
+
+  <th class="fc-day-header fc-widget-header fc-wed" data-date="2016-09-13">Wed 28/9</th>
+
+  <th class="fc-day-header fc-widget-header fc-thu" data-date="2016-09-15">Thu 29/9</th>
+
+  <th class="fc-day-header fc-widget-header fc-fri" data-date="2016-09-16">Fri 30/9</th>
+
+  <th class="fc-day-header fc-widget-header fc-sat" data-date="2016-09-17">Sat 1/10</th>
+
+  <th class="fc-day-header fc-widget-header fc-sun" data-date="2016-09-17">Sun 2/10</th>
+
+
+  </tr>
+  </thead>
+  </table>
+  </div>
+  </td>
+  </tr>
+  </thead>
+
+
+
+  <tbody class="fc-body">
+    <tr>
+      <td class="fc-widget-content">
+        <div class="fc-scroller fc-day-grid-container" style="overflow: hidden; height:420px;">
+          <div class="fc-day-grid fc-unselectable"><div class="fc-row fc-week fc-widget-content fc-rigid" style="height: 420px;">
+            <div class="fc-bg">
+              <table> 
+                <tbody>
+                  <tr>
+                    <td class="fc-day fc-widget-content fc-sun fc-past" data-date="2016-09-11"></td>
+                    <td class="fc-day fc-widget-content fc-mon fc-past" data-date="2016-09-12"></td>
+                    <td class="fc-day fc-widget-content fc-tue fc-past" data-date="2016-09-13"></td>
+                    <td class="fc-day fc-widget-content fc-wed fc-past" data-date="2016-09-14"></td>
+                    <td class="fc-day fc-widget-content fc-thu fc-past" data-date="2016-09-15"></td>
+                    <td class="fc-day fc-widget-content fc-fri fc-past" data-date="2016-09-16"></td>
+                    <td class="fc-day fc-widget-content fc-sat fc-past" data-date="2016-09-17"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          <div class="fc-content-skeleton">
+        <table>
+      <tbody>
+      <tr>
+        <td class="fc-event-container">
+          <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable">
+            <div class="fc-content"> 
+            <span class="fc-time">9:30</span> 
+              <span class="fc-title">Phone - Elidia Helsel</span>
+            </div>
+          </a>
+          <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable">
+            <div class="fc-content"> 
+            <span class="fc-time">10:30</span> 
+              <span class="fc-title">Phone - Hortense Maglione</span>
+            </div>
+          </a>
+          <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable">
+            <div class="fc-content"> 
+            <span class="fc-time">1:00</span> 
+              <span class="fc-title">Phone - Mikaela Hy</span>
+            </div>
+          </a>
+          <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable">
+            <div class="fc-content"> 
+            <span class="fc-time">2:00</span> 
+              <span class="fc-title">Interview - Corrie Willert </span>
+            </div>
+          </a>
+          <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable">
+            <div class="fc-content"> 
+            <span class="fc-time">4:00</span> 
+              <span class="fc-title">Interview - Samuel Mattern</span>
+            </div>
+          </a>
+        </td>
+
+
+            <td class="fc-event-container" rowspan="6">
+              <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable">
+                <div class="fc-content">
+                  <span class="fc-time">9:00</span> 
+                  <span class="fc-title">Interview - Rigoberto Breitenstein</span>
+                </div>
+              </a>
+              <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable">
+                <div class="fc-content">
+                  <span class="fc-time">11:00</span> 
+                  <span class="fc-title">Interview - Jennie Tollett</span>
+                </div>
+              </a>
+              <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable">
+                <div class="fc-content">
+                  <span class="fc-time">12:00</span> 
+                  <span class="fc-title">Phone - Ona Buttler</span>
+                </div>
+              </a>
+              <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable">
+                <div class="fc-content">
+                  <span class="fc-time">2 :00</span> 
+                  <span class="fc-title">Interview - Maire Delorey</span>
+                </div>
+              </a>
+
+            </td>
+
+
+            <td rowspan="6">
+              <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable">
+                <div class="fc-content">
+                  <span class="fc-time">1:00</span> 
+                  <span class="fc-title">Phone - Dong Hertzler</span>
+                </div>
+              </a>
+                <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable">
+                <div class="fc-content">
+                  <span class="fc-time">3:00</span> 
+                  <span class="fc-title">Phone - Mattie Manion</span>
+                </div>
+              </a>
+
+            </td>
+
+
+            <td rowspan="6"></td>
+            <td class="fc-event-container" rowspan="6">
+              <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable">
+                <div class="fc-content">
+                  <span class="fc-time">4:00</span> 
+                  <span class="fc-title">Interview - Tommye Castellano</span>
+                </div>
+              </a>
+            </td>
+            <td rowspan="6"></td>
+          </tr>
+
+          <tr>
+            <td rowspan="6"></td>
+            <td class="fc-event-container">
+              &nbsp
+            </td>
+          </tr>
+
+
+          </tbody></table></div></div></div></div></td></tr></tbody></table></div></div></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
