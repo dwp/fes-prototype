@@ -2,18 +2,18 @@
 
 {% extends "layouts/dwp_admin_layout.html" %}
 
+{% set primaryNav = prototype.current.sitemap.levels[0] %}
+
 {% block after_header %}
 
   {% block admin_header %}
   
-  {% if not page.supressnav %}
+  {% if not page.hideNav %}
   
     <div class="header-navigation">
         
         {% if not page.nav.hidePrimary %}          
           <div class="header-navigation__primary">
-            
-            {% set primaryNav = prototype.current.sitemap.levels[0] %}
             
             <nav class="primary-navigation primary-navigation--h">
               <ul class="primary-navigation__links">
@@ -62,7 +62,7 @@
 
 {% block before_primary %}
   
-  {% if not page.supressnav %}
+  {% if not page.hideNav %}
   
   <div class="page-head">
     
@@ -73,20 +73,22 @@
     {% set currentSection = (primaryLink.text | toHyphenated) == (page.nav.section | toHyphenated) %}
     
     {% if currentSection %}
-      
-    <nav class="sub-navigation">
-      <ul class="sub-navigation__items">
-      
-        {% for secondaryLink in primaryLink.items %}
+    
+      {% if not page.nav.hideSecondary %}        
+        <nav class="sub-navigation">
+          <ul class="sub-navigation__items">
           
-          {% set currentSubSection = (secondaryLink.text | toHyphenated) == (page.nav.subsection | toHyphenated) %}
+            {% for secondaryLink in primaryLink.items %}
+              
+              {% set currentSubSection = (secondaryLink.text | toHyphenated) == (page.nav.subsection | toHyphenated) %}
+              
+              <li class="sub-navigation__item{{ ' sub-navigation__item--active' if currentSubSection }}"><a href="{{ secondaryLink.url | d('#') }}" class="sub-navigation__item__link">{{ secondaryLink.text }}</a></li>
           
-          <li class="sub-navigation__item{{ ' sub-navigation__item--active' if currentSubSection }}"><a href="{{ secondaryLink.url | d('#') }}" class="sub-navigation__item__link">{{ secondaryLink.text }}</a></li>
-      
-        {% endfor %}
-      
-      </ul>
-    </nav>
+            {% endfor %}
+          
+          </ul>
+        </nav>
+      {% endif %}
 
     {% endif %}
     

@@ -38,6 +38,8 @@
           <a href="/" class="global-header-proposition__link">{{ serviceName }}</a>
         </div>
       </div>
+      
+      {% if not page.hideSearch %}
       <div class="grid__item one-whole medium--one-third ta--right--medium">
         <div class="global-header-admin__search">
           <form action="{{ prototype.current.path + 'search' }}" method="post" class="c-search c-search--inline">
@@ -46,7 +48,10 @@
           </form>
         </div>
       </div>
+      {% endif %}
+
     </div>
+    
   </div>
 </header>
 
