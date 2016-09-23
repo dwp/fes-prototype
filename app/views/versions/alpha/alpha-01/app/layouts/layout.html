@@ -8,11 +8,9 @@
   
   {% if not page.supressnav %}
   
-  {{ 'its true!' | log }}
-  
     <div class="header-navigation">
       
-      <div class="width-constraint">
+      <div class="width-constraintjskjsk">
       
         <div class="header-navigation__primary">
           
@@ -35,14 +33,18 @@
           
         </div>
         
-        <div class="header-navigation__secondary">
+        {% if not page.loggedout %}
           
-          <ul class="tertiary-links">
-            <li class="tertiary-links__item"><a href="#">Link 01</a></li>
-            <li class="tertiary-links__item"><a href="#">Link 02</a></li>
-          </ul>
+          <div class="header-navigation__secondary">
+            
+            <ul class="tertiary-links">
+              <li class="tertiary-links__item"><a href="#">Link 01</a></li>
+              <li class="tertiary-links__item">{{ session.email | getUserNameFromEmail | title + ' ' if session.email }}<a href="#">Logout</a></li>
+            </ul>
+            
+          </div>
           
-        </div>      
+        {% endif %}
         
       </div>
             

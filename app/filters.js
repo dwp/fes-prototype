@@ -392,6 +392,22 @@ module.exports = function(env) {
   
   filters.get = _.get;
   filters.find = _.find;
+  
+  filters.getUserNameFromEmail = function getUserNameFromEmail(email) {
+    return (email ? email.split('@')[0].replace('.',' ') : false);
+  };
+  
+	/**
+	 * translate characters in a string
+	 * @param  {String} s  the string to translate
+	 * @param  {String} ss the substring to replace
+	 * @param  {String} r  the replacee string
+	 * @param  {String} f  regex flags, 'g' by default
+	 * @return {String}    a translated string
+	 */
+	filters.trC = function trC(s, ss, r, f) {
+		return ((s||'').replace(ss,r));
+	};
 
   /* ------------------------------------------------------------------
     keep the following line to return your filters to the app
