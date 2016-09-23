@@ -9,44 +9,48 @@
   {% if not page.supressnav %}
   
     <div class="header-navigation">
-      
-      <div class="width-constraintjskjsk">
-      
-        <div class="header-navigation__primary">
-          
-          {% set primaryNav = prototype.current.sitemap.levels[0] %}
-          
-          <nav class="primary-navigation primary-navigation--h">
-            <ul class="primary-navigation__links">
-              
-              {% for link in primaryNav.items %}
-                
-                {% set currentPage = (link.text | toHyphenated) == (page.nav.section | toHyphenated) %}
-              
-                <li class="primary-navigation__links__item">
-                  <a href="{{ link.url }}" class="primary-navigation__link{{ ' primary-navigation__link--active' if currentPage }}">{{ link.text }}</a>
-                </li>  
-              {% endfor %}
-            
-            </ul>
-          </nav>
-          
-        </div>
         
-        {% if not page.loggedout %}
+        {% if not page.nav.hidePrimary %}          
+          <div class="header-navigation__primary">
+            
+            {% set primaryNav = prototype.current.sitemap.levels[0] %}
+            
+            <nav class="primary-navigation primary-navigation--h">
+              <ul class="primary-navigation__links">
+                
+                {% for link in primaryNav.items %}
+                  
+                  {% set currentPage = (link.text | toHyphenated) == (page.nav.section | toHyphenated) %}
+                
+                  <li class="primary-navigation__links__item">
+                    <a href="{{ link.url }}" class="primary-navigation__link{{ ' primary-navigation__link--active' if currentPage }}">{{ link.text }}</a>
+                  </li>  
+                {% endfor %}
+              
+              </ul>
+            </nav>
+            
+          </div>
+        {% endif %}
+        
+        {% if not page.loggedout and not page.nav.hideTertiary %}
+        
+          {% set tertiaryNav = prototype.current.sitemap.levels[1] %}
           
           <div class="header-navigation__secondary">
             
             <ul class="tertiary-links">
-              <li class="tertiary-links__item"><a href="#">Link 01</a></li>
+              {% if tertiaryNav.items.length > 0 %}
+                {% for item in tertiaryNav.items %}
+                  <li class="tertiary-links__item"><a href="{{ item.url }}">{{ item.text }}</a></li>
+                {% endfor %}
+              {% endif %}
               <li class="tertiary-links__item">{{ session.email | getUserNameFromEmail | title + ' ' if session.email }}<a href="#">Logout</a></li>
             </ul>
             
           </div>
           
         {% endif %}
-        
-      </div>
             
     </div>
     

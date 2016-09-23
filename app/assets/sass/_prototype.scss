@@ -1,127 +1,14 @@
 // import resources
 @import 'prototype/imports';
-// remove GDS crown
-#logo.dwplogo {
-  background: none!important;
+@import 'layout';
+
+*:not(.token) {
+  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
 }
 
 .alpha {
   
   &-01 {
-    
-    $header-navigation-alignment-padding: 15px;
-    
-    .width-constraint {
-      max-width: 960px;
-      margin: 0 auto;
-    }
-    
-    .header-navigation {
-      
-      background: $grey-3;
-      @extend %contain-floats;
-      
-      &__primary,
-      &__secondary {
-        display: inline-block;
-        vertical-align: middle;
-      }
-      
-      &__primary {
-        float: left;
-      }
-      
-      &__secondary {
-        float: right;
-      }
-      
-    }
-    
-    .primary-navigation {
-      
-      $this: #{&};
-      
-      &--h {
-        
-        .primary-navigation__links {
-          &__item {
-            display: inline-block;
-            float: left;
-          }
-        }        
-          
-      }
-      
-      &__link {
-        padding: $header-navigation-alignment-padding;
-        display: inline-block;
-        color: $black;
-        text-decoration: none;
-        &:hover {
-          background: $white;
-        }
-        &--active {
-          $this-bg-colour: $turquoise;
-          background: $this-bg-colour;
-          color: $white;
-          font-weight: bold;
-          &:hover {
-            background: lighten($this-bg-colour,4);
-          }
-        }
-      }
-      
-    }
-    
-    .tertiary-links {
-      
-      padding: $header-navigation-alignment-padding;
-      letter-spacing: -0.32em;
-      
-      &__item {
-        letter-spacing: normal;
-        display: inline-block;
-        border-right: 1px solid rgba(black,0.3);
-        line-height: 1;
-        padding: 0 10px;
-        &:last-of-type {
-          border: 0;
-          padding-right: 0;
-        }
-        &:first-of-type {
-          padding-left: 0;
-        }
-      }
-      
-    }
-    
-    .sub-navigation {
-      
-      margin-bottom: 35px;
-      
-      &__items {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        border-bottom: 1px solid $grey-1;
-      }
-      
-      &__item {
-        display: inline-block;
-        margin: 0;
-        
-        &__link {
-          padding: 15px 10px;
-          display: inline-block;
-        }
-        
-        &--active {
-          border-bottom: 3px solid $turquoise;
-        }
-        
-      }
-      
-    }
     
     .your-cases{
     	  	thead{

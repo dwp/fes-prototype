@@ -170,7 +170,16 @@ var version_navigation = {
 
 
       ]
-    }
+    },
+    {
+      label: 'tertiary',
+      items: [
+        {
+          text: 'User settings',
+          url: 'user-settings'
+        }
+      ]
+    }    
   ]
 }
 
