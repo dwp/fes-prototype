@@ -5,7 +5,7 @@ var version_navigation = {
       items: [
         {
           // primary link text
-          text: 'Cases & Appointments', // Top level menu name
+          text: 'Cases', // Top level menu name
           // primary file name
           url: 'your-cases', // Link to tthe top level menu name
           // subnav
@@ -13,18 +13,6 @@ var version_navigation = {
             { 
               text: 'Current', // Sub menu item
               url: 'your-cases' // link for sub menu
-            },
-            { 
-              text: 'Incoming',
-              url: 'cases-incoming'
-            },
-            { 
-              text: 'Day in view',
-              url: 'diary-day'
-            },
-            { 
-              text: 'Week in view',
-              url: 'diary-week'
             }
           ]
         },
