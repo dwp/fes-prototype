@@ -14,19 +14,132 @@
   secondary: false
 } %}
 
+
+
+
 {% extends page.layout %}
 
 {% block primary %}
 
 <div class="container">
 
-<h1 class="heading-large top15">Your weekly appointments</h1>
+<h1 class="heading-large top15">Your appointments</h1>
   <p>26 September - 1 October</p>
 
 
 <div class="grid-row">
   <div class="column-full">
 
+
+  <div class="container1">
+<!--
+  <ul class="tabs">
+    <li class="tab-link current font-xsmall" data-tab="tab-1">Mon 26/9</li>
+    <li class="tab-link font-xsmall" data-tab="tab-2">Tue 27/9</li>
+    <li class="tab-link font-xsmall" data-tab="tab-3">Wed 28/9</li>
+    <li class="tab-link font-xsmall" data-tab="tab-4">Thu 29/9</li>
+    <li class="tab-link font-xsmall" data-tab="tab-5">Fri 30/9</li>
+    <li class="tab-link font-xsmall" data-tab="tab-6">Sat 1/10</li>
+    <li class="tab-link font-xsmall" data-tab="tab-7">Sun 2/10</li>
+  </ul>
+-->
+
+ <ul class="tabs">
+    <li class="tab-link current" data-tab="tab-1">Monday</li>
+    <li class="tab-link" data-tab="tab-2">Tuesday</li>
+    <li class="tab-link" data-tab="tab-3">Wednesday</li>
+    <li class="tab-link" data-tab="tab-4">Thursday</li>
+    <li class="tab-link" data-tab="tab-5">Friday</li>
+    <li class="tab-link" data-tab="tab-6">Saturday</li>
+    <li class="tab-link" data-tab="tab-7">Sunday</li>
+  </ul>
+  <div id="tab-1" class="tab-content current">
+
+      <table class="dayview">
+             
+             <thead>
+                <tr>
+                  <th scope="col" colspan="3">&nbsp;</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                  <tr>
+                      <td class="appoint">
+                      9:30 - 9:45
+                      </td>
+                      <td>
+                        <span class="interview">Phone - Elidia Helsel</span>
+                        <span class="notes">Notes: Customer is hard of hearing</span>
+                        <span class="address">
+                        DWP - NORTH WEST GOR 03 </br>
+                        Stockport Wellesley House 30 Wellington Road North </br>
+                        STOCKPORT </br>
+                        SK4 1LS
+                        </span>
+                      </td>
+                      <td class="open-case"><a href="" title="Open case">Open case</a></td>
+                  </tr>
+                  <tr>
+                      <td class="appoint">
+                      10:30 - 10:45
+                      </td>
+                      <td>
+                        <span class="interview">Phone - Hortense Maglione</span>
+                      </td>
+                      <td class="open-case"><a href="" title="Open case">Open case</a></td>
+                  </tr>
+                  <tr>
+                      <td class="appoint">
+                      1:00 - 1:30
+                      </td>
+                      <td>
+                        <span class="interview">Phone - Mikaela Hy</span>
+                      </td>
+                      <td class="open-case"><a href="" title="Open case">Open case</a></td>
+                  </tr>
+                  <tr>
+                      <td class="appoint">
+                      2:00 - 2:15
+                      </td>
+                      <td>
+                        <span class="interview">Interview - Corrie Willert </span>
+                        <span class="address">
+                        DWP - NORTH WEST GOR 03 </br>
+                        Stockport Wellesley House 30 Wellington Road North </br>
+                        STOCKPORT </br>
+                        SK4 1LS
+                        </span>
+                      </td>
+                      <td class="open-case"><a href="" title="Open case">Open case</a></td>
+                  </tr>
+                  <tr>
+                      <td class="appoint">
+                      4:00 - 4:30
+                      </td>
+                      <td>
+                        <span class="interview">Interview - Samuel Mattern</span>
+                        <span class="notes">Notes: This person is vulnerable</span>
+                        <span class="address">
+                        DWP - NORTH WEST GOR 03 </br>
+                        Stockport Wellesley House 30 Wellington Road North </br>
+                        STOCKPORT </br>
+                        SK4 1LS
+                        </span>
+                      </td>
+                      <td class="open-case"><a href="" title="Open case">Open case</a></td>
+                  </tr>
+                  
+
+              </tbody>
+
+        </table>
+
+  </div>
+
+ 
+</div>
+<!--
         <table class="weekview">
              
              <thead>
@@ -42,9 +155,9 @@
               </thead>
 
               <tbody>
-                  <!-- /// Row 1 /// -->
-                  <tr>
-                <!-- Monday -->
+                
+                  <tr>-->
+                <!-- Monday 
                   <td>
                       <div class="app odd">
                         <span class="time">9:30</span>
@@ -72,8 +185,8 @@
                         <span class="link"><a href="" title="Open case">Open case</a></span>
                       </div>
                   </td>
-                  
-                  <!-- Tuesday -->
+                  -->
+                  <!-- Tuesday
                   <td>
                     <div class="app">
                         <span class="time">9:00</span>
@@ -96,8 +209,8 @@
                         <span class="link"><a href="" title="Open case">Open case</a></span>
                       </div>
                   </td>
-
-                  <!-- Wednesday -->
+-->
+                  <!-- Wednesday
                   <td>
                       <div class="app odd">
                         <span class="time">1:00</span>
@@ -110,11 +223,11 @@
                         <span class="link"><a href="" title="Open case">Open case</a></span>
                       </div>
                   </td>
-
-                  <!-- Thursday -->
+-->
+                  <!-- Thursday 
                   <td></td>
 
-                  <!-- Friday -->
+                  <!-- Friday 
                   <td>
                     <div class="app odd">
                         <span class="time">4:00</span>
@@ -123,23 +236,20 @@
                       </div>
 
                   </td>
-
-                  <!-- Saturday -->
+-->
+                  <!-- Saturday -
                   <td></td>
-
-                  <!-- Sunday -->
+-->
+                  <!-- Sunday -
                   <td class="rightborder"></td>
       
                   
               </tbody>
 
         </table>
-
+-->
   </div>
 </div>
-
-
-
 
 
 

@@ -11,23 +11,13 @@ var version_navigation = {
           // subnav
           items: [
             { 
-              text: 'Current', // Sub menu item
-              url: 'your-cases' // link for sub menu
-            },
-            { 
-              text: 'Incoming',
-              url: 'cases-incoming'
-            },
-            { 
-              text: 'Day in view',
-              url: 'diary-day'
-            },
-            { 
               text: 'Week in view',
               url: 'diary-week'
             }
+           
           ]
         },
+
 
 
 
