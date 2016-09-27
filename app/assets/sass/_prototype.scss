@@ -8,8 +8,12 @@
 
 .alpha {
 
-  
-  &-01 {
+	&-01,  
+	&-01-DayViewVariation,	
+	&-01-WeekViewVariation, 
+	&-01-CasesVariation,
+	&-01-MenuTest
+   {
     
     .your-cases{
     	  	thead{
@@ -81,6 +85,7 @@
 		th{
 			font-size: 16px;
 			text-align: center;
+			padding-right: 0;
 			border-left:1px solid $border-colour;
 			border-top:1px solid $border-colour;
 		}
