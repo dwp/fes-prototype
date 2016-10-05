@@ -12,8 +12,155 @@
 	&-01-DayViewVariation,	
 	&-01-WeekViewVariation, 
 	&-01-CasesVariation,
-	&-01-MenuTest
+	&-01-MenuTest,
+	&-02
    {
+
+   .button-add-another {
+      background-color: #eee;
+      color: #000;
+      box-shadow: 0 2px 0 #666;
+
+      &:hover {
+        background-color: #ccc;
+        color: #000;
+        box-shadow: 0 2px 0 #666;
+      }
+
+      &:focus {
+        background-color: #ccc;
+        color: #000;
+        box-shadow: 0 2px 0 #666;
+      }
+    }
+
+
+
+   .diary{
+
+   	font-size: 16px;
+
+   		.cal-nav{
+   			padding: 15px 0 15px 0;
+   			/*border-top: 1px solid $border-colour;*/
+   			margin-bottom: 15px 0 20px 0;
+   			li{
+   				float: left;
+   				width: 33%
+   			}
+   			font-size: 19px;
+   			.prev{
+   				display:block;
+   				span{
+   					font-size: 14px;
+   				}
+
+   			}
+   			.next{
+   				display: block;
+   				text-align: right;
+   				span{
+   					font-size: 14px;
+   				}
+
+   			}
+   			.date{
+   				text-align: center;
+   				display: block;
+
+   			}
+   			&:after {
+		     visibility: hidden;
+		     display: block;
+		     font-size: 0;
+		     content: " ";
+		     clear: both;
+		     height: 0;
+		     }
+   		}
+
+   		
+   		.cal-container{
+			ul{
+				float: left;
+				width: 16.6%;
+				min-width: 150px;
+   			}
+   			li{
+   				height: 80px;
+   				position: relative;
+   				border-right: 1px solid $border-colour;
+   				border-bottom: 1px solid $border-colour;
+   				span{
+   					display:block;
+   					height: 80px;
+   				}
+   				.odd{
+   					background: $highlight-colour;
+   				}
+   				.time{
+   					position: absolute;
+    				width: 100%;
+    				text-align: center;
+    				padding-top: 11px;
+    				color: $secondary-text-colour;
+   				}
+   				.blank{
+				    position: relative;
+				    height: 40px;
+   				}	
+
+   			}
+   			.dayrow{
+   				height: 40px;
+   			}
+   			.day{
+   				font-weight: bold;
+   				text-align: center;
+   				border-top: 1px solid $border-colour;
+   				padding-top: 10px;
+   				background: $panel-colour;
+   				height: 29px;
+   			}
+   			.interview, .face{
+   				font-size: 14px;
+   				padding-left:5px;
+   				padding-top: 4px;
+   				display:block;
+   				border-radius: 3px;
+   				background: $light-blue;
+   				color: $page-colour;
+   				line-height: 15px;
+   				height: 35px;
+   				position: relative;
+   				margin-bottom: 1px;
+
+   				a{
+   					color: $page-colour;
+   				}
+   			}
+   			.face{
+   				background: $turquoise;
+   				height:75px;
+   				position: relative;
+   				z-index: 1;
+
+   			}
+
+   		}
+   		.border-fix{
+   			border-left: 1px solid $border-colour;
+   		}
+
+   }
+
+   	.search-box{
+   		padding-left: 10px;
+   		color: $secondary-text-colour;
+   		&::-webkit-input-placeholder{;
+   		color: $secondary-text-colour;
+   		}
+   	}
     
     .your-cases{
     	  	thead{

@@ -45,7 +45,7 @@
                   <li class="tertiary-links__item"><a href="{{ item.url }}">{{ item.text }}</a></li>
                 {% endfor %}
               {% endif %}
-              <li class="tertiary-links__item">{{ session.email | getUserNameFromEmail | title + ' ' if session.email }}<a href="#">Logout</a></li>
+              <li class="tertiary-links__item">{{ session.email | getUserNameFromEmail | title + ' ' if session.email }}<a href="Sign-out">Sign out</a></li>
             </ul>
             
           </div>

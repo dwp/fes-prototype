@@ -5,21 +5,21 @@ var version_navigation = {
       items: [
         {
           // primary link text
-          text: 'Cases & Appointments', // Top level menu name
+          text: 'Activities and appointments', // Top level menu name
           // primary file name
           url: 'your-cases', // Link to tthe top level menu name
           // subnav
           items: [
             { 
-              text: 'Current', // Sub menu item
+              text: 'Current activities', // Sub menu item
               url: 'your-cases' // link for sub menu
             },
             { 
-              text: 'Incoming',
+              text: 'Incoming activities',
               url: 'cases-incoming'
             },
             { 
-              text: 'Day in view',
+              text: 'Daily appointments',
               url: 'diary-day'
             },
             { 
@@ -175,8 +175,8 @@ var version_navigation = {
       label: 'tertiary',
       items: [
         {
-          text: 'User settings',
-          url: 'user-settings'
+          text: 'Change password',
+          url: 'change-password'
         }
       ]
     }    
