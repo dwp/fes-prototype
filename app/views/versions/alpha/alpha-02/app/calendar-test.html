@@ -1,0 +1,478 @@
+{% set page = {
+  title: 'Cases & Appointments',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Cases & Appointments',
+    subsection: 'Week in view',
+    hidePrimary: true
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+<h1 class="heading-large top15">Your weekly appointments</h1>
+
+
+
+<div class="grid-row">
+  <div class="column-full diary">
+
+      <!-- //// Diary Nav ///// -->
+      <div class="cal-nav">
+        <ul>
+          <li>
+            <span class="prev"><a href="" title="Next week">&#10094; Previous week</a></span>
+          </li>
+          <li>
+            <span class="date">26 September - 1 October</span>
+          </li>
+          <li>
+            <span class="next"><a href="" title="Next week">Next week &#10095;</a></span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ///// Monday ///// -->
+      <div class="cal-container">
+        <ul class="border-fix">
+        <li class="dayrow"><span class="day">Mon 26/9</span></li>
+
+        <li>
+          <span class="time">8:00 - 9:00</span>
+          <span class="odd">
+                <span class="blank">
+                  
+                </span>
+                <span class="interview">
+                  8:30 - 9:00 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span>
+        </li>
+
+        <li>
+          <span class="time">9:00 - 10:00</span>
+          <span class="even">
+                <span class="interview">
+                  9:00 - 9:30 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+                <span class="interview">
+                  9:30 - 10:00 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span> 
+        </li>
+
+        <li>
+          <span class="time">10:00 - 11:00</span>
+          <span class="odd"></span>
+        </li>
+
+        <li>
+          <span class="time">11:00 - 12:00</span>
+          <span class="even">
+                <span class="interview">
+                  11:00 - 11:30 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span> 
+        </li>
+
+        <li>
+          <span class="time">12:00 - 1:00</span>
+          <span class="odd">
+                <span class="blank"></span>
+                <span class="interview">
+                  12:30 - 1:00 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span> 
+        </li>
+
+        <li>
+          <span class="time">1:00 - 2:00</span>
+          <span></span>
+        </li>
+
+        <li>
+          <span class="time">2:00 - 3:00</span>
+          <span class="odd"></span>
+        </li>
+
+        <li>
+          <span class="time">3:00 - 4:00</span>
+          <span></span>
+        </li>
+
+        <li>
+          <span class="time">4:00 - 5:00</span>
+           <span class="interview">
+                  4:00 - 4:30 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+                <span class="interview">
+                  4:30 - 5:00 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+        </li>
+        <li>  
+          <span class="time">5:00 - 6:00</span>
+          <span></span>
+        </li>
+
+        </div>
+
+
+
+
+      <!-- ///// Tuesday ///// -->
+      <div class="cal-container">
+        <ul>
+        <li class="dayrow"><span class="day">Tue 27/9</span></li>
+        <li>
+          <span class="even">
+            
+            <span class="face">
+                  8:00 - 9:00 In person<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd">
+                <span class="interview">
+                  9:00 - 9:30 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+                <span class="interview">
+                  9:30 - 10:00 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span> 
+        </li>
+        <li>
+          <span class="even">
+            <span class="interview">
+                10:00 - 10:30 Phone<br>
+                 <a href="" title="Open case">Open case</a>
+              </span>
+
+          </span>
+        </li>
+        <li>
+          <span class="odd">
+            <span class="face">
+                  11:00 - 12:00 In person<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="even">
+            
+            <span class="blank"></span>
+                <span class="interview">
+                  12:30 - 1:00 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd">
+            <span class="interview">
+                  3:00 - 3:30 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+                <span class="interview">
+                  4:00 - 4:30 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+      </div>
+
+      <!-- ///// Wednesday ///// -->
+      <div class="cal-container">
+        <ul>
+        <li class="dayrow"><span class="day">Wed 28/9</span></li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even">
+           
+          </span>
+        </li>
+        <li>
+          <span class="odd">
+           
+          </span>
+        </li>
+        <li>
+          <span class="even">
+            <span class="face">
+                  11:00 - 12:00 In person<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd">
+            <span class="blank"></span>
+                <span class="interview">
+                  12:30 - 1:00 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+
+          </span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd">
+             <span class="interview">
+                  4:00 - 4:30 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+                <span class="interview">
+                  4:30 - 5:00 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+      </div>
+
+      <!-- ///// Thursday ///// -->
+      <div class="cal-container">
+        <ul>
+        <li class="dayrow"><span class="day">Thu 29/9</span></li>
+        <li>
+          <span class="even">
+            
+             <span class="blank">
+
+                </span>
+                <span class="interview">
+                  8:30 - 9:00 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd">
+            
+          </span>
+        </li>
+        <li>
+          <span class="even">
+            
+            <span class="interview">
+                10:00 - 10:30 Phone<br>
+                 <a href="" title="Open case">Open case</a>
+              </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd">
+            <span class="face">
+                  11:00 - 12:00 In person<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+
+          </span>
+        </li>
+        <li>
+          <span class="even">
+            <span class="blank"></span>
+                <span class="interview">
+                  12:30 - 1:00 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even">
+                <span class="blank"></span>
+                        <span class="face">
+                  2:30 - 3:30 In person<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even">
+            
+             <span class="interview">
+                  4:00 - 4:30 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+                <span class="interview">
+                  4:30 - 5:00 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+      </div>
+
+      <!-- ///// Friday ///// -->
+      <div class="cal-container">
+        <ul>
+        <li class="dayrow"><span class="day">Fri 30/9</span></li>
+        <li>
+          <span class="odd">
+            
+              <span class="interview">
+                  8:00 - 8:30 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+                <span class="interview">
+                  8:30 - 9:00 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="even">
+            
+          </span>
+        </li>
+        <li>
+          <span class="odd">
+           
+          </span>
+        </li>
+        <li>
+          <span class="even">
+            <span class="face">
+                  11:00 - 12:00 In person<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd">
+            <span class="blank"></span>
+                <span class="interview">
+                  12:30 - 1:00 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+
+          </span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd">
+             <span class="interview">
+                  4:00 - 4:30 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+                <span class="interview">
+                  4:30 - 5:00 Phone<br>
+                   <a href="" title="Open case">Open case</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+      </div>
+
+      <!-- ///// Saturday ///// -->
+      <div class="cal-container">
+        <ul>
+        <li class="dayrow"><span class="day">Sat 1/10</span></li>
+          <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+      </div>
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}
