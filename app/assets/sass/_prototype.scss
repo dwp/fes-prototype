@@ -16,6 +16,76 @@
 	&-02
    {
 
+.font16{
+	font-size: 16px;
+}
+.appointee{
+	font-size: 16px;
+	padding: 7px 0 5px 0;
+}
+
+.standout{
+	font-weight: bold;
+}
+
+
+   .search{	
+   		margin-top: 15px;
+   		input,
+   		fieldset{
+   			float: left;
+   			width:auto;
+   		}
+   		input{
+   			height: 45px;
+   			margin-top: 10px;
+   			width: 500px;
+   		}
+   		.button{
+   			height: 43px;
+   			margin-left: 15px;
+   			width: 100px;
+   		}
+   }
+
+
+   /* /// Pager /// */
+
+	.pager {
+	    margin-top: 25px;
+	    margin-bottom: 1.25em;
+	}
+		.pager-controls {
+		    float: right;
+		}
+	.pager-items {
+	    display: inline;
+	}
+	.pager-items li:first-child {
+	    margin-left: 0;
+	}
+	.pager-items li {
+	    display: inline;
+	    margin: 0 5px;
+	}
+	.pager-next {
+	    margin-left: 10px;
+	}
+	.pager-prev, 
+	.pager-next {
+	    margin-right: 0;
+	}
+	.pager-prev, .pager-next {
+	    margin-right: 10px;
+	}
+
+
+
+   /* /// End Pager /// */
+
+
+
+
    .button-add-another {
       background-color: #eee;
       color: #000;
@@ -33,6 +103,9 @@
         box-shadow: 0 2px 0 #666;
       }
     }
+
+
+
 
 
 
@@ -157,9 +230,6 @@
    	.search-box{
    		padding-left: 10px;
    		color: $secondary-text-colour;
-   		&::-webkit-input-placeholder{;
-   		color: $secondary-text-colour;
-   		}
    	}
     
     .your-cases{
@@ -281,6 +351,7 @@
 		.open-case{
 			vertical-align: top;
 			border-top: 1px solid $border-colour;
+			text-align: right;
 		}
 		.notes{
 

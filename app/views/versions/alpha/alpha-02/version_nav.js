@@ -5,9 +5,9 @@ var version_navigation = {
       items: [
         {
           // primary link text
-          text: 'Activities and appointments', // Top level menu name
+          text: 'Home', // Top level menu name
           // primary file name
-          url: 'your-cases', // Link to tthe top level menu name
+          url: 'welcome', // Link to tthe top level menu name
           // subnav
           items: [
             { 
@@ -25,6 +25,10 @@ var version_navigation = {
             { 
               text: 'Week in view',
               url: 'diary-week'
+            },
+            { 
+              text: 'Search', // Sub menu item
+              url: 'search-main' // link for sub menu
             }
           ]
         },
@@ -36,21 +40,34 @@ var version_navigation = {
           // primary link text
           text: 'Information',
           // primary link file name
-          url: '#',
+          url: 'case-view',
           // subnav
           items: [
             { 
-              text: 'Link',
-              url: ''
+              text: 'Information',
+              url: 'case-view'
             },
             { 
-              text: 'Link',
-              url: ''
+              text: 'Relationships',
+              url: 'relationships'
             },
             { 
-              text: 'Link',
-              url: ''
+              text: 'Documents',
+              url: 'documents'
+            },
+            { 
+              text: 'Linked cases',
+              url: 'linked-cases'
+            },
+            { 
+              text: 'Third parties',
+              url: 'third-parties',
+            },
+            { 
+              text: 'Bank details',
+              url: 'bank-details'
             }
+
           ]
         },
 
@@ -58,66 +75,43 @@ var version_navigation = {
 
          {
           // primary link text
-          text: 'Contact',
+          text: 'Contact suspect',
           // primary link file name
-          url: '#',
+          url: 'contact',
           // subnav
           items: [
             { 
-              text: 'Link',
-              url: ''
+              text: 'Overview',
+              url: 'contact'
             },
             { 
-              text: 'Link',
-              url: ''
+              text: 'Book interview',
+              url: 'book-interview'
             },
             { 
-              text: 'Link',
-              url: ''
+              text: 'Conduct interview',
+              url: 'conduct-interview'
+            },
+            { 
+              text: 'Letters',
+              url: 'letters'
+            },
+            { 
+              text: 'Cancel interview',
+              url: 'cancel-interview'
             }
           ]
         },
 
 
         {
-          text: 'Escalate',
-          url: '#',
+          text: 'Case history',
+          url: 'History',
           // subnav
           items: [
             { 
-              text: 'Link',
-              url: ''
-            },
-            { 
-              text: 'Link',
-              url: ''
-            },
-            { 
-              text: 'Link',
-              url: ''
-            }
-          ]
-        },
-
-
-
-
-        {
-          text: 'Refer',
-          url: '#',
-          // subnav
-          items: [
-            { 
-              text: 'Link',
-              url: ''
-            },
-            { 
-              text: 'Link',
-              url: ''
-            },
-            { 
-              text: 'Link',
-              url: ''
+              text: 'Case history',
+              url: 'History'
             }
           ]
         },
@@ -125,42 +119,30 @@ var version_navigation = {
 
 
         {
-          text: 'Reject',
-          url: '#',
+          text: 'Re-route',
+          url: 'reroute',
           // subnav
           items: [
             { 
-              text: 'Link',
-              url: ''
-            },
-            { 
-              text: 'Link',
-              url: ''
-            },
-            { 
-              text: 'Link',
-              url: ''
+              text: 'Re-route the case',
+              url: 'reroute'
             }
           ]
         },
+
+
+
+
 
 
         {
           text: 'Close',
-          url: '#',
+          url: 'close',
           // subnav
           items: [
             { 
-              text: 'Link',
-              url: ''
-            },
-            { 
-              text: 'Link',
-              url: ''
-            },
-            { 
-              text: 'Link',
-              url: ''
+              text: 'Close case',
+              url: 'close'
             }
           ]
         }
