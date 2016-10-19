@@ -1,0 +1,128 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Information',
+    subsection: 'Information'
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+<h1 class="heading-large top15">Case 3687111 information</h1>
+
+<table class="your-cases">
+  <thead>
+    <tr>
+      <th scope="col">Personal details</th>
+      <th scope="col">Contact details</th>
+      <th scope="col">Extra information</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <tr>
+    <td>First name:  <span class="standout">Elidia</span> </td>
+    <td>Telephone: <span class="standout"> 07985 999466</span></td>
+    <td>Case No. <span class="standout">3687111</td>
+  </tr>
+
+  <tr>
+    <td>Surname: <span class="standout">Helsel</span></td>
+    <td>Email: <span class="standout"><a href="eldia.helsel@gmail.com">eldia.helsel@gmail.com</a></span></td>
+    <td>N.I. <span class="standout">PG515593</span></td>
+  </tr>
+
+  <tr>
+    <td>Date of birth: <span class="standout">27 March 1974</span></td>
+    <td>
+      Address: <span class="standout">27 Great North Road, AMBRISMORE. PA20 9WF</span>
+    </td>
+    <td>Care note: <span class="standout">vulnerable</td>
+  </tr>
+
+
+</table>
+
+
+
+  <div class="grid-row">
+
+    <div class="column-full">
+      
+        <details class="appointee">
+
+          <summary><span class="summary">Appointee details</span></summary>
+
+          <div class="">
+
+
+            <table class="your-cases">
+              <thead>
+                <tr>
+                  <th scope="col">Personal details</th>
+                  <th scope="col">Contact details</th>
+                  <th scope="col">&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              <tr>
+                <td>First name:  <span class="standout">Niamh</span> </td>
+                <td>Telephone: <span class="standout">07985 354577</span></td>
+                <td>&nbsp;</td>
+              </tr>
+
+              <tr>
+                <td>Surname: <span class="standout">Green</span></td>
+                <td>Email: <span class="standout"><a href="Niamh.Green@gmail.com">niamh.green@gmail.com</a></span></td>
+                <td>&nbsp;</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td>
+                  Address: <span class="standout">27 Great North Road, AMBRISMORE. PA20 9WF</span>
+                </td>
+                <td>Care note: <span class="standout"><a href="">Add note</a></td>
+              </tr>
+
+            </table>
+
+            
+          </div>
+
+        </details>
+
+    </div>
+
+  </div>
+
+
+  <div class="grid-row">
+
+    <div class="column-full">
+      <h2 class="heading-medium">Allegation</h2>
+      <p></p>
+      
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+{% endblock %}
