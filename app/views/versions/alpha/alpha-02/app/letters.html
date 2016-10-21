@@ -4,7 +4,7 @@
   html_classes: [],
   nav: {
     section: 'Contact suspect',
-    subsection: 'Letters'
+    subsection: 'Appoinment letter'
   },
   layout: prototype.current.layoutPath + 'layout.html',
   primary: {
@@ -19,19 +19,36 @@
 
 <div class="container">
 
-<h1 class="heading-large top15">Letters</h1>
+<h1 class="heading-large top15">Appoinment letter</h1>
 
 
 
 <div class="grid-row">
-  <div class="column-full">
+  <div class="column-two-thirds">
 
-   Test
+       <div class="form-group">
+        <label class="form-label" for="select-box">Reason for the letter</label>
+        <select class="form-control" id="select-box">
+          <option>Overpayment of benefit</option>
+        </select>
+      </div>
+
+      <p>
+        Telephone interview on 1 November 2016
+      </p>
+
+
+    <fieldset class="primary-nav form-group">
+      <legend class="visuallyhidden">Form Navigation</legend>
+      <input type="submit" value="Generate letter" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </fieldset>
+
   </div>
 </div>
 
 
 
+  <p><a href="forgot-password" title="Forgot your password?">Edit interview</a></p>
 
 
 

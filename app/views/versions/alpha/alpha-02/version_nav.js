@@ -7,7 +7,7 @@ var version_navigation = {
           // primary link text
           text: 'Home', // Top level menu name
           // primary file name
-          url: 'welcome', // Link to tthe top level menu name
+          url: 'your-cases', // Link to tthe top level menu name
           // subnav
           items: [
             { 
@@ -25,11 +25,11 @@ var version_navigation = {
             { 
               text: 'Week in view',
               url: 'diary-week'
-            },
-            { 
-              text: 'Search', // Sub menu item
-              url: 'search-main' // link for sub menu
-            }
+            }//,
+            //{ 
+            //  text: 'Search', // Sub menu item
+            //  url: 'search-main' // link for sub menu
+            //}
           ]
         },
 
@@ -38,13 +38,13 @@ var version_navigation = {
 
         {
           // primary link text
-          text: 'Information',
+          text: 'Case view',
           // primary link file name
           url: 'case-view',
           // subnav
           items: [
             { 
-              text: 'Information',
+              text: 'Case view',
               url: 'case-view'
             },
             { 
@@ -85,20 +85,20 @@ var version_navigation = {
               url: 'contact'
             },
             { 
-              text: 'Book interview',
-              url: 'book-interview'
+              text: 'Book telephone interview',
+              url: 'book-interview-telephone'
             },
             { 
-              text: 'Conduct interview',
+              text: 'Book face to face interview',
+              url: 'book-interview-person'
+            },
+            { 
+              text: 'Intervention',
               url: 'conduct-interview'
             },
             { 
-              text: 'Letters',
+              text: 'Appoinment letter',
               url: 'letters'
-            },
-            { 
-              text: 'Cancel interview',
-              url: 'cancel-interview'
             }
           ]
         },
@@ -143,6 +143,9 @@ var version_navigation = {
             { 
               text: 'Close case',
               url: 'close'
+            },{ 
+              text: 'Reject',
+              url: 'reject'
             }
           ]
         }
