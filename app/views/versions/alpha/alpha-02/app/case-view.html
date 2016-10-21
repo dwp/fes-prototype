@@ -3,8 +3,8 @@
   dev: true,
   html_classes: [],
   nav: {
-    section: 'Information',
-    subsection: 'Information'
+    section: 'Case view',
+    subsection: 'Case view'
   },
   layout: prototype.current.layoutPath + 'layout.html',
   primary: {
@@ -19,18 +19,87 @@
 
 <div class="container">
 
-<h1 class="heading-large top15">Case 3687111 information</h1>
+<h1 class="heading-large top15">Information</h1>
 
-<table class="your-cases">
-  <thead>
-    <tr>
-      <th scope="col">Personal details</th>
-      <th scope="col">Contact details</th>
-      <th scope="col">Extra information</th>
-    </tr>
-  </thead>
-  <tbody>
 
+
+<div class="grid-row">
+    <div class="column-full">
+        <table class="your-cases">
+            <thead>
+              <tr>
+                <th scope="col">Case number</th>
+                <th scope="col">Case owner</th>
+                <th scope="col">Case stage</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>3687111</span></td>
+              <td><a href="owner-detail">Darren Silcox</a></td>
+              <td><a href="">Decision received</a></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+    </div>
+</div>
+
+
+
+
+
+<div class="grid-row">
+    <div class="column-full">
+
+        <table class="your-cases">
+          
+
+          <thead>
+            <tr>
+              <th scope="col">Suspect details</th>
+              <th scope="col">&nbsp;</th>
+              <th scope="col">&nbsp;</th>
+            </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>Title:  <span class="standout">Miss</span> </td>
+            <td>First name:  <span class="standout">Elidia</span> </td>
+            <td>Last name: <span class="standout">Helsel</span></td>
+          </tr>
+          <tr>
+            <td>Gender: <span class="standout">Female</span></td>
+            <td>Date of birth: <span class="standout">25 Mar 1974</span></td>
+            <td>N.I. <span class="standout">PG515593</span></td>
+          </tr>
+          <tr>
+            <td>Telephone: <span class="standout"> 07985 999466</span>
+            <td>Email: <span class="standout"><a href="eldia.helsel@gmail.com">eldia.helsel@gmail.com</a></span></td>
+            <td>PV Marker: <span class="standout">Violent</span></td>
+          </tr>
+          <tr>
+            <td>
+            Address: <span class="standout">3 Golf Road, Shelf, Halifax. HX6 2QW
+            </span>
+            </td>
+            <td>Address commenced: <span class="standout">21 Nov 2011</span></td>
+            <td>Vulnerable: <span class="standout">Yes</span></td>
+          </tr>
+          
+          </tbody>
+
+          </table>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+<!--
   <tr>
     <td>First name:  <span class="standout">Elidia</span> </td>
     <td>Telephone: <span class="standout"> 07985 999466</span></td>
@@ -48,11 +117,11 @@
     <td>
       Address: <span class="standout">27 Great North Road, AMBRISMORE. PA20 9WF</span>
     </td>
-    <td>Care note: <span class="standout">vulnerable</td>
+    <td>Care note: <span class="standout">vulnerable</span> <a href="">Edit note</a></td>
   </tr>
+-->
 
 
-</table>
 
 
 
@@ -67,40 +136,49 @@
           <div class="">
 
 
-            <table class="your-cases">
-              <thead>
-                <tr>
-                  <th scope="col">Personal details</th>
-                  <th scope="col">Contact details</th>
-                  <th scope="col">&nbsp;</th>
-                </tr>
-              </thead>
-              <tbody>
+                    <table class="your-cases">
+                    
 
-              <tr>
-                <td>First name:  <span class="standout">Niamh</span> </td>
-                <td>Telephone: <span class="standout">07985 354577</span></td>
-                <td>&nbsp;</td>
-              </tr>
+                    <tbody>
+                    <tr>
+                      <td>Title:  <span class="standout">Mr</span> </td>
+                      <td>First name:  <span class="standout">Adam</span> </td>
+                      <td>Surname: <span class="standout">Mathews</span></td>
+                    </tr>
+                 
+                    <tr>
+                      <td>Telephone: <span class="standout"> 07985 999466</span>
+                      <td>Email: <span class="standout"><a href="eldia.helsel@gmail.com">eldia.helsel@gmail.com</a></span></td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                      Address: <span class="standout">14 Essex Rd, Little Roundabout, Essex. EX2 2BT
+                      </span></td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    
+                    </tbody>
 
-              <tr>
-                <td>Surname: <span class="standout">Green</span></td>
-                <td>Email: <span class="standout"><a href="Niamh.Green@gmail.com">niamh.green@gmail.com</a></span></td>
-                <td>&nbsp;</td>
-              </tr>
+                    </table>
 
-              <tr>
-                <td>&nbsp;</td>
-                <td>
-                  Address: <span class="standout">27 Great North Road, AMBRISMORE. PA20 9WF</span>
-                </td>
-                <td>Care note: <span class="standout"><a href="">Add note</a></td>
-              </tr>
 
-            </table>
 
-            
           </div>
+
+              <div class="grid-row">
+
+                    <div class="column-full">
+                      
+                         <form action="" method="post">
+                            <fieldset class="primary-nav form-group">
+                              <legend class="visuallyhidden">Form Navigation</legend>
+                              <input type="submit" value="Edit appointee" class="button button-grey right" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                            </fieldset>
+                          </form>        
+                    </div>
+
+              </div>
 
         </details>
 
@@ -111,12 +189,71 @@
 
   <div class="grid-row">
 
-    <div class="column-full">
+    <div class="column-one-half">
       <h2 class="heading-medium">Allegation</h2>
-      <p></p>
-      
+      <h3 class="heading-small">Working in receipt" (2 weeks or more)</h3>
+      <p>
+Elidia Helsel is claiming jobseekers allowance and working.
+Information states that she works at the Metro Cafe 5 days a week making sandwiches.
+      </p>
+    </div>
+    <div class="column-one-half">
+        <h2 class="heading-medium">Benefit award</h2>
+
+           <table class="your-cases">
+         
+          <thead>
+            <tr>
+              <th scope="col">Benefit history</th>
+            </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>dfdfgd</td>
+
+          </tr>
+           <tr>
+            <td>dgadfgagfg</td>
+           
+          </tr>
+          </tbody>
+
+          </table>
     </div>
 
+  </div>
+
+
+
+  <div class="grid-row">
+    <div class="column-full case-nav">
+    <p>&nbsp;</p>
+      
+    <form action="book-interview" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">Book an interview</legend>
+        <input type="submit" value="Book an interview" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+
+    <form action="close" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">Reject</legend>
+        <input type="submit" value="Reject" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+    <form action="reject" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">Re-route</legend>
+        <input type="submit" value="Re-route" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+
+    </div>
   </div>
 
 

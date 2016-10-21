@@ -16,6 +16,23 @@
 	&-02
    {
 
+.case-nav{
+	form, fieldset, input{
+		float: left;
+	}
+	input{
+		margin-right: 25px;
+	}
+}
+
+.address-fix{
+	margin-bottom: 10px;
+}
+
+.right{
+	float: right;
+}
+
 .font16{
 	font-size: 16px;
 }
@@ -86,9 +103,10 @@
 
 
 
-   .button-add-another {
+   .button-grey{
       background-color: #eee;
       color: #000;
+      font-size: 16px;
       box-shadow: 0 2px 0 #666;
 
       &:hover {
