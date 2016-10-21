@@ -106,12 +106,12 @@ var version_navigation = {
 
         {
           text: 'Case history',
-          url: 'History',
+          url: 'history',
           // subnav
           items: [
             { 
               text: 'Case history',
-              url: 'History'
+              url: 'history'
             }
           ]
         },
