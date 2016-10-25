@@ -5,7 +5,7 @@ var version_navigation = {
       items: [
         {
           // primary link text
-          text: 'Cases & Appointments', // Top level menu name
+          text: 'Cases and appointments', // Top level menu name
           // primary file name
           url: 'your-cases', // Link to tthe top level menu name
           // subnav
@@ -75,14 +75,14 @@ var version_navigation = {
 
          {
           // primary link text
-          text: 'Book interview',
+          text: 'Book appointment',
           // primary link file name
           url: 'book-interview',
           // subnav
           items: [
             
             { 
-              text: 'Book interview',
+              text: 'Book appointment',
               url: 'book-interview'
             },
             { 
