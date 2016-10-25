@@ -1,0 +1,449 @@
+.alpha {
+
+	&-01,  
+	&-01-DayViewVariation,	
+	&-01-WeekViewVariation, 
+	&-01-CasesVariation,
+	&-01-MenuTest,
+	&-01
+   {
+
+.case-nav{
+	form, fieldset, input{
+		float: left;
+	}
+	input{
+		margin-right: 25px;
+	}
+}
+
+.address-fix{
+	margin-bottom: 10px;
+}
+
+.right{
+	float: right;
+}
+
+.font16{
+	font-size: 16px;
+}
+.appointee{
+	font-size: 16px;
+	padding: 7px 0 5px 0;
+}
+
+.standout{
+	font-weight: bold;
+}
+
+
+   .search{	
+   		margin-top: 15px;
+   		input,
+   		fieldset{
+   			float: left;
+   			width:auto;
+   		}
+   		input{
+   			height: 45px;
+   			margin-top: 10px;
+   			width: 500px;
+   		}
+   		.button{
+   			height: 43px;
+   			margin-left: 15px;
+   			width: 100px;
+   		}
+   }
+
+
+   /* /// Pager /// */
+
+	.pager {
+	    margin-top: 25px;
+	    margin-bottom: 1.25em;
+	}
+		.pager-controls {
+		    float: right;
+		}
+	.pager-items {
+	    display: inline;
+	}
+	.pager-items li:first-child {
+	    margin-left: 0;
+	}
+	.pager-items li {
+	    display: inline;
+	    margin: 0 5px;
+	}
+	.pager-next {
+	    margin-left: 10px;
+	}
+	.pager-prev, 
+	.pager-next {
+	    margin-right: 0;
+	}
+	.pager-prev, .pager-next {
+	    margin-right: 10px;
+	}
+
+
+
+   /* /// End Pager /// */
+
+
+
+
+   .button-grey{
+      background-color: #eee;
+      color: #000;
+      font-size: 16px;
+      box-shadow: 0 2px 0 #666;
+
+      &:hover {
+        background-color: #ccc;
+        color: #000;
+        box-shadow: 0 2px 0 #666;
+      }
+
+      &:focus {
+        background-color: #ccc;
+        color: #000;
+        box-shadow: 0 2px 0 #666;
+      }
+    }
+
+
+
+
+
+
+   .diary{
+
+   	font-size: 16px;
+
+   		.cal-nav{
+   			padding: 15px 0 15px 0;
+   			/*border-top: 1px solid $border-colour;*/
+   			margin-bottom: 15px 0 20px 0;
+   			li{
+   				float: left;
+   				width: 33%
+   			}
+   			font-size: 19px;
+   			.prev{
+   				display:block;
+   				span{
+   					font-size: 14px;
+   				}
+
+   			}
+   			.next{
+   				display: block;
+   				text-align: right;
+   				span{
+   					font-size: 14px;
+   				}
+
+   			}
+   			.date{
+   				text-align: center;
+   				display: block;
+
+   			}
+   			&:after {
+		     visibility: hidden;
+		     display: block;
+		     font-size: 0;
+		     content: " ";
+		     clear: both;
+		     height: 0;
+		     }
+   		}
+
+   		
+   		.cal-container{
+			ul{
+				float: left;
+				width: 16.6%;
+				min-width: 150px;
+   			}
+   			li{
+   				height: 80px;
+   				position: relative;
+   				border-right: 1px solid $border-colour;
+   				border-bottom: 1px solid $border-colour;
+   				span{
+   					display:block;
+   					height: 80px;
+   				}
+   				.odd{
+   					background: $highlight-colour;
+   				}
+   				.time{
+   					position: absolute;
+    				width: 100%;
+    				text-align: center;
+    				padding-top: 11px;
+    				color: $secondary-text-colour;
+   				}
+   				.blank{
+				    position: relative;
+				    height: 40px;
+   				}	
+
+   			}
+   			.dayrow{
+   				height: 40px;
+   			}
+   			.day{
+   				font-weight: bold;
+   				text-align: center;
+   				border-top: 1px solid $border-colour;
+   				padding-top: 10px;
+   				background: $panel-colour;
+   				height: 29px;
+   			}
+   			.interview, .face{
+   				font-size: 14px;
+   				padding-left:5px;
+   				padding-top: 4px;
+   				display:block;
+   				border-radius: 3px;
+   				background: $light-blue;
+   				color: $page-colour;
+   				line-height: 15px;
+   				height: 35px;
+   				position: relative;
+   				margin-bottom: 1px;
+
+   				a{
+   					color: $page-colour;
+   				}
+   			}
+   			.face{
+   				background: $turquoise;
+   				height:75px;
+   				position: relative;
+   				z-index: 1;
+
+   			}
+
+   		}
+   		.border-fix{
+   			border-left: 1px solid $border-colour;
+   		}
+
+   }
+
+   	.search-box{
+   		padding-left: 10px;
+   		color: $secondary-text-colour;
+   	}
+    
+    .your-cases{
+    	  	thead{
+    	  		/*background: $highlight-colour;*/
+    	  	}
+    	  	td, th{
+    		font-size: 16px;
+    		/*padding-left: 10px;*/
+    		}
+    		tr{
+    			&:hover{
+    			
+    			background: $highlight-colour;
+    			}
+    		}
+  		}
+
+	.column-full{
+		padding: 0 15px;
+	}
+	
+	.top15{
+		margin-top: 15px;
+	}
+
+	.heading-secondary{
+	    padding-top: 6px;
+    	padding-bottom: 4px;
+        font-size: 18px;
+        font-weight: 400;
+    	line-height: 1.25;
+    	color: $secondary-text-colour;
+	}
+  
+	.notop{
+  	margin-top: 0;
+  	padding-top: 0;
+	}
+  
+	.nobottom{
+  	margin-bottom: 0;
+  	padding-bottom: 0;
+	}
+
+	.container{
+  	margin-bottom: 15px;
+	}
+
+	.grey-button{
+	    background-color: #eee;
+	    color: #000;
+    	box-shadow: 0 2px 0 #666;
+	}
+
+	.diary-detail{
+		.short, .long, .notes{
+		display: block;
+		}
+		td{
+			font-size: 16px;
+		}
+		
+	}
+
+	.weekview{
+		.rightborder{
+			border-right:1px solid $border-colour;
+		}
+		th{
+			font-size: 16px;
+			text-align: center;
+			padding-right: 0;
+			border-left:1px solid $border-colour;
+			border-top:1px solid $border-colour;
+		}
+		td{
+		 /*font-size: 14px;*/
+		 padding: 0;
+		 vertical-align: top;
+		 width: 14.25%;
+		 border-left:1px solid $border-colour;
+		}
+		.app{
+			padding: 10px;
+			background: $panel-colour;
+		   font-size: 16px;
+		    margin-bottom: 5px;
+
+		}
+		.app.odd{
+			background: $page-colour;
+		}
+		.time{
+			display:block;
+
+		}
+		.interview{
+			display:block;
+		}
+		.link{
+			display:block;
+		}
+
+
+	}
+	.dayview{
+		td{	
+		font-size: 16px;
+		    margin-right: -15px;
+		}
+		.interview, .notes, .address{
+			display: block;
+			padding-bottom: 5px;
+		}
+		.interview{
+			font-weight: bold;
+		}
+		.open-case{
+			vertical-align: top;
+			border-top: 1px solid $border-colour;
+			text-align: right;
+		}
+		.notes{
+
+		}
+		.address{
+		 
+		}
+		.appoint{
+			width: 115px;
+			vertical-align: top;
+		}
+
+		&:after {
+		     visibility: hidden;
+		     display: block;
+		     font-size: 0;
+		     content: " ";
+		     clear: both;
+		     height: 0;
+		     }
+		}
+
+
+
+
+		// tabs for table on how it works page
+		.container1 {
+		  margin: 0 auto;
+		  table {
+		    border-top: 1px solid $border-colour;
+		    th {
+		      padding-top: 40px;
+		    }
+		  }
+		}
+
+		ul.tabs {
+		  margin: 0px;
+		  padding: 0px;
+		  list-style: none;
+		  position: relative;
+		  top: 1px;
+		}
+
+		ul.tabs li {
+		  background: $page-colour;
+		  display: inline-block;
+		  padding: 10px 15px;
+		  cursor: pointer;
+		  border: 1px solid $page-colour;
+		  border-bottom-color: $border-colour;
+		  text-decoration: underline;
+		  color: $govuk-blue;
+		  &:hover {
+		    color: $link-hover-colour;
+		  }
+		}
+
+		ul.tabs li.current {
+		  color: $text-colour;
+		  text-decoration: none;
+		  border: 1px solid $border-colour;
+		  border-bottom-color: $page-colour; 
+		}
+
+		.tab-content {
+		  display: none;
+		}
+
+		.tab-content.current {
+		  display: inherit;
+		}
+
+		// Tables
+
+		table {
+		  th, td {
+		    vertical-align: top;
+		  }
+		}
+
+  }
+  }
+
+

@@ -55,6 +55,7 @@ glob.sync(prototypePaths.routesGlob).forEach(function(p){
   // load in the routes file specific to this version
   require(p)(router, { 
     path: p,
+    rootPath: p.replace(appConfig.versionRoutesFile,''),
     prototypePaths: prototypePaths,
     routes: {
       root: appRoute,

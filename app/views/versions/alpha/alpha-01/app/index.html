@@ -1,7 +1,13 @@
 {% set page = {
-  title: 'Title here',
+  title: 'FES',
+  nav: {
+    section: 'About',
+    subsection: 'link primary 1.2',
+    hideTertiary: true
+  },
   dev: true,
-  html_classes: [],
+  hideNav: true,
+  hideSearch: true,
   layout: prototype.current.layoutPath + 'layout.html'
 } %}
 
@@ -9,6 +15,25 @@
 
 {% block primary %}
 
-<p>page content here</p>
+  <h1 class="heading-large">Login</h1>
+  <p>Enter your email address and password to access your allocated cases</p>
+  
+  <form action="your-cases" method="post">
+    
+    <div class="form-group">
+  	  <label class="form-label" for="email">Email address</label>
+  	  <input class="form-control" id="email" name="email" type="text" autocomplete="off">
+  	</div>
+    
+  	<div class="form-group">
+  	  <label class="form-label" for="password">Password</label>
+  	  <input class="form-control" id="password" name="password" type="password" autocomplete="off">
+  	</div>
+
+    <fieldset class="primary-nav form-group">
+      <legend class="visuallyhidden">Form Navigation</legend>
+      <input type="submit" value="Continue" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </fieldset>
+  </form>
 
 {% endblock %}
