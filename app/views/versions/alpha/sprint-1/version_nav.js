@@ -82,7 +82,7 @@ var version_navigation = {
           items: [
             
             { 
-              text: 'Book interview',
+              text: 'Book appointment',
               url: 'book-interview'
             },
             { 
