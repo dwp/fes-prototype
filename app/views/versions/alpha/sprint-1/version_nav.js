@@ -5,31 +5,27 @@ var version_navigation = {
       items: [
         {
           // primary link text
-          text: 'Home', // Top level menu name
+          text: 'Cases & Appointments', // Top level menu name
           // primary file name
           url: 'your-cases', // Link to tthe top level menu name
           // subnav
           items: [
             { 
-              text: 'Current activities', // Sub menu item
+              text: 'Current', // Sub menu item
               url: 'your-cases' // link for sub menu
             },
             { 
-              text: 'Incoming activities',
+              text: 'Incoming',
               url: 'cases-incoming'
             },
             { 
-              text: 'Daily appointments',
+              text: 'Day in view',
               url: 'diary-day'
             },
             { 
               text: 'Week in view',
               url: 'diary-week'
-            }//,
-            //{ 
-            //  text: 'Search', // Sub menu item
-            //  url: 'search-main' // link for sub menu
-            //}
+            }
           ]
         },
 
@@ -47,10 +43,10 @@ var version_navigation = {
               text: 'Case view',
               url: 'case-view'
             },
-            { 
-              text: 'Relationships',
-              url: 'relationships'
-            },
+            //{ 
+             // text: 'Relationships',
+             // url: 'relationships'
+            //},
             { 
               text: 'Documents',
               url: 'documents'
@@ -66,6 +62,10 @@ var version_navigation = {
             { 
               text: 'Bank details',
               url: 'bank-details'
+            },
+            { 
+              text: 'Case history',
+              url: 'history'
             }
 
           ]
@@ -75,46 +75,37 @@ var version_navigation = {
 
          {
           // primary link text
-          text: 'Contact suspect',
+          text: 'Book interview',
           // primary link file name
-          url: 'contact',
+          url: 'book-interview',
           // subnav
           items: [
+            
             { 
-              text: 'Overview',
-              url: 'contact'
+              text: 'Book interview',
+              url: 'book-interview'
             },
             { 
-              text: 'Book telephone interview',
-              url: 'book-interview-telephone'
-            },
-            { 
-              text: 'Book face to face interview',
-              url: 'book-interview-person'
-            },
-            { 
-              text: 'Intervention',
-              url: 'conduct-interview'
-            },
-            { 
-              text: 'Appoinment letter',
+              text: 'Appointment letter',
               url: 'letters'
             }
           ]
         },
 
-
         {
-          text: 'Case history',
-          url: 'history',
+          // primary link text
+          text: 'Intervention',
+          // primary link file name
+          url: 'conduct-interview',
           // subnav
           items: [
             { 
-              text: 'Case history',
-              url: 'history'
+              text: 'Intervention',
+              url: 'conduct-interview'
             }
           ]
         },
+
 
 
 
