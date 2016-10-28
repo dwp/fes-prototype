@@ -24,18 +24,82 @@
 
 
 
-  <h1 class="heading-large top15 nobottom">Your worklist</h1>
-  <p>Select a case to work on</p>
+  <h1 class="heading-large top15 nobottom">Customise your worklist</h1>
+  <p class="standout">Select the things you need.</p>
 
-   <div class="pager border">
+  <div class="grid-row test-options">
+
+     <form>
+        <fieldset>
+          <legend class="visually-hidden">Select the things you need.</legend>
+
+        <div class="column-one-quarter">
+           <label class="block-label" for="option1">
+            <input id="option1" name="option-1" type="checkbox" value="yes">
+            Case created
+          </label>
+          <label class="block-label" for="option5">
+            <input id="option5" name="option-5" type="checkbox" value="yes">
+            Stage
+          </label>
+        </div>
+
+        <div class="column-one-quarter">
+          <label class="block-label" for="option2">
+            <input id="option2" name="option-2" type="checkbox" value="yes">
+            Case number
+          </label>
+          <label class="block-label" for="option6">
+            <input id="option6" name="option-6" type="checkbox" value="yes">
+            Activity
+          </label>
+        </div>
+
+        <div class="column-one-quarter">
+          <label class="block-label" for="option3">
+            <input id="option3" name="option-3" type="checkbox" value="yes">
+              Last/First name
+          </label>
+          <label class="block-label" for="option7">
+            <input id="option7" name="option-7" type="checkbox" value="yes">
+              Due date
+          </label>
+        </div>
+
+        <div class="column-one-quarter">
+          <label class="block-label" for="option4">
+            <input id="option4" name="option-4" type="checkbox" value="yes">
+                Offence type
+          </label>
+        </div>
+
+        </fieldset>
+      </form>
+
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full">
+<p>&nbsp;</p>
+
+    <fieldset class="primary-nav form-group">
+      <legend class="visuallyhidden">Form Navigation</legend>
+      <input type="submit" value="View your worklist" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </fieldset>
+
+    </div>
+
+  </div>
+
+
+
+
+ <!--  <div class="pager border">
     <div class="pager-controls">
       
       <ul class="pager-items">
         <li>1</li>
         <li><a href="#">2</a></li>
-        <!--<li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>-->
       </ul>
       
       <a class="pager-next" href="#">Next</a>
@@ -44,8 +108,10 @@
     
     <div class="pager-summary">Showing 1 &ndash; 25 of 50 cases</div>   
   </div>
+-->
 
 
+<!--
 <table class="your-cases">
   <thead>
     <tr>
@@ -328,9 +394,6 @@
       <ul class="pager-items">
         <li>1</li>
         <li><a href="#">2</a></li>
-        <!--<li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>-->
       </ul>
       
       <a class="pager-next" href="#">Next</a>
@@ -340,6 +403,5 @@
     <div class="pager-summary">Showing 1 &ndash; 25 of 50 cases</div>   
   </div>
 
-
-
+-->
 {% endblock %}

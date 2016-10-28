@@ -1,0 +1,265 @@
+{% set page = {
+  title: 'Cases and appointments',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Cases and appointments',
+    subsection: 'Day in view',
+    hidePrimary: true
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+<h1 class="heading-large top15">Your daily appointments</h1>
+
+
+<div class="grid-row">
+  <div class="column-full">
+
+
+<table class="dayview">
+             
+             <thead>
+                <tr>
+                  <th scope="col" colspan="2">Monday 26 September</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                  <tr>
+                      <td class="appoint">
+                      9:30 - 9:45
+                      </td>
+                      <td>
+                        <span class="interview">Phone - Elidia Helsel</span>
+                        <span class="notes">Notes: Customer is hard of hearing</span>
+                        <span class="address">
+                        DWP - NORTH WEST GOR 03 </br>
+                        Stockport Wellesley House 30 Wellington Road North </br>
+                        STOCKPORT </br>
+                        SK4 1LS
+                        </span>
+                      </td>
+                      <td class="open-case"><a href="case-view" title="Open case">Open case</a></td>
+                  </tr>
+                  <tr>
+                      <td class="appoint">
+                      10:30 - 10:45
+                      </td>
+                      <td>
+                        <span class="interview">Phone - Hortense Maglione</span>
+                      </td>
+                      <td class="open-case"><a href="case-view" title="Open case">Open case</a></td>
+                  </tr>
+                  <tr>
+                      <td class="appoint">
+                      1:00 - 1:30
+                      </td>
+                      <td>
+                        <span class="interview">Phone - Mikaela Hy</span>
+                      </td>
+                      <td class="open-case"><a href="case-view" title="Open case">Open case</a></td>
+                  </tr>
+                  <tr>
+                      <td class="appoint">
+                      2:00 - 2:15
+                      </td>
+                      <td>
+                        <span class="interview">Interview - Corrie Willert </span>
+                        <span class="address">
+                        DWP - NORTH WEST GOR 03 </br>
+                        Stockport Wellesley House 30 Wellington Road North </br>
+                        STOCKPORT </br>
+                        SK4 1LS
+                        </span>
+                      </td>
+                      <td class="open-case"><a href="case-view" title="Open case">Open case</a></td>
+                  </tr>
+                  <tr>
+                      <td class="appoint">
+                      4:00 - 4:30
+                      </td>
+                      <td>
+                        <span class="interview">Interview - Samuel Mattern</span>
+                        <span class="notes">Notes: This person is vulnerable</span>
+                        <span class="address">
+                        DWP - NORTH WEST GOR 03 </br>
+                        Stockport Wellesley House 30 Wellington Road North </br>
+                        STOCKPORT </br>
+                        SK4 1LS
+                        </span>
+                      </td>
+                      <td class="open-case"><a href="case-view" title="Open case">Open case</a></td>
+                  </tr>
+                  
+
+              </tbody>
+
+        </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+        <div class="change-day">
+          
+            <div class="form-group">
+              <label class="form-label" for="select-box">Change day</label>
+              <select class="form-control" id="select-box">
+                <option>Monday 26 September</option>
+                <option>Tuesday 27 September</option>
+                <option>Wednesday 28 September</option>
+                <option>Thursday 29 September</option>
+                <option>Friday 30 September</option>
+                <option>Saturday 1 October</option>
+                
+
+                <option>Monday 3 October</option>
+                <option>Monday 4 October</option>
+                <option>Tuesday 5 October</option>
+                <option>Wednesday 6 October</option>
+                <option>Thursday 7 October</option>
+                <option>Friday 8 October</option>
+                <option>Saturday 9 October</option>
+    
+              </select>
+            </div>
+        </div>
+-->
+<!--
+        <table class="dayview">
+             
+             <thead>
+                <tr>
+                  <th scope="col" colspan="2">Monday 26 September</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                  <tr>
+                      <td class="appoint">
+                      9:30 - 9:45
+                      </td>
+                      <td>
+                        <span class="interview">Phone - Elidia Helsel</span>
+                        <span class="notes">Telephone: 07700 900980</span>
+                        <span class="notes">Notes: Customer is hard of hearing</span>
+                        <span class="address">
+                        DWP - NORTH WEST GOR 03 </br>
+                        Stockport Wellesley House 30 Wellington Road North </br>
+                        STOCKPORT </br>
+                        SK4 1LS
+                        </span>
+                      </td>
+                      <td class="open-case"><a href="case-view" title="Open case">Open case</a></td>
+                  </tr>
+                  <tr>
+                      <td class="appoint">
+                      10:30 - 10:45
+                      </td>
+                      <td>
+                        <span class="interview">Phone - Hortense Maglione</span>
+                        <span class="notes">Telephone: 07700 900845</span>
+                      </td>
+                      <td class="open-case"><a href="case-view" title="Open case">Open case</a></td>
+                  </tr>
+                  <tr>
+                      <td class="appoint">
+                      1:00 - 1:30
+                      </td>
+                      <td>
+                        <span class="interview">Phone - Mikaela Hy</span>
+                        <span class="notes">Telephone: 07700 900254</span>
+                      </td>
+                      <td class="open-case"><a href="case-view" title="Open case">Open case</a></td>
+                  </tr>
+                  <tr>
+                      <td class="appoint">
+                      2:00 - 2:15
+                      </td>
+                      <td>
+                        <span class="interview">Interview - Corrie Willert </span>
+                        <span class="address">
+                        DWP - NORTH WEST GOR 03 </br>
+                        Stockport Wellesley House 30 Wellington Road North </br>
+                        STOCKPORT </br>
+                        SK4 1LS
+                        </span>
+                      </td>
+                      <td class="open-case"><a href="case-view" title="Open case">Open case</a></td>
+                  </tr>
+                  <tr>
+                      <td class="appoint">
+                      4:00 - 4:30
+                      </td>
+                      <td>
+                        <span class="interview">Interview - Samuel Mattern</span>
+                        <span class="notes">Notes: This person is vulnerable</span>
+                        <span class="address">
+                        DWP - NORTH WEST GOR 03 </br>
+                        Stockport Wellesley House 30 Wellington Road North </br>
+                        STOCKPORT </br>
+                        SK4 1LS
+                        </span>
+                      </td>
+                      <td class="open-case"><a href="case-view" title="Open case">Open case</a></td>
+                  </tr>
+                  
+
+              </tbody>
+
+        </table>
+
+        -->
+  </div>
+</div>
+
+
+
+
+
+
+  
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

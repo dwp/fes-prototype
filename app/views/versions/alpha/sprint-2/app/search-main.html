@@ -3,8 +3,8 @@
   dev: true,
   html_classes: [],
   nav: {
-    section: 'Home',
-    subsection: 'Search',
+    section: 'Worklist/Diary',
+    subsection: 'Search all cases',
     hidePrimary: true
   },
   layout: prototype.current.layoutPath + 'layout.html',
@@ -21,11 +21,15 @@
 <h1 class="heading-large top15">Search</h1>
 
 
+<form action="search" method="post">
+    
+
+
 <div class="grid-row">
   
   <div class="column-two-thirds search">
       <label class="form-label" for="search">
-      To find the case you’re looking for, you can search by either:<br> date, name, NI, type, status or case.
+      Search by either: NI, case number, last name or date of birth.
       </label>
       <input class="form-control searchbox" id="search"  type="text">
       <fieldset class="primary-nav form-group">
@@ -35,6 +39,7 @@
   </div>
 
 </div>
+</form>
 
 
 {% endblock %}

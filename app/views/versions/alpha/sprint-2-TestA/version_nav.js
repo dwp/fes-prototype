@@ -15,10 +15,6 @@ var version_navigation = {
               url: 'your-cases' // link for sub menu
             },
             { 
-              text: 'Diary',
-              url: 'diary-week'
-            },
-            { 
               text: 'Search all cases',
               url: 'search-main'
             }
