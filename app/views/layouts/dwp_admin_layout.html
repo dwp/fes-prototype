@@ -2,25 +2,6 @@
 
 {% block header %}
 
-{# <header role="banner" id="global-header" class="with-proposition">
-  <div class="header-wrapper">
-    <div class="header-global">
-      <div class="header-logo">
-        <a href="/" id="logo" class="content dwplogo">
-          DWP
-        </a>
-      </div>
-    </div>
-    <div class="header-proposition">
-      <div class="content">
-        <nav id="proposition-menu">
-          <a href="/" id="proposition-name">{{ serviceName }}</a>
-        </nav>
-      </div>
-    </div>
-  </div>
-</header> #}
-
 {# THIS IS NOT PRODUCTION READY CODE! DON'T COPY THIS TO A LIVE APP! #}
 
 <header class="global-header-admin">
@@ -42,8 +23,9 @@
       {% if not page.hideSearch %}
       <div class="grid__item one-whole medium--one-third ta--right--medium">
         <div class="global-header-admin__search">
+          <div class="search-global">Search all cases</div>
           <form action="{{ prototype.current.path + 'search' }}" method="post" class="c-search c-search--inline">
-            <div class="c-search__input"><input type="search" class="search-box" placeholder="Search all cases" name="globalsearch" id="globalsearch"></div><div class="c-search__action">
+            <div class="c-search__input"><input type="search" class="search-box" placeholder="" name="globalsearch" id="globalsearch"></div><div class="c-search__action">
               <input type="submit" class="c-search__action__button"></div>
           </form>
         </div>

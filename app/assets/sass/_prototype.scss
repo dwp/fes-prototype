@@ -1,15 +1,30 @@
 // import resources
 @import 'prototype/imports';
 @import 'layout';
+@import 'alpha';
 
 *:not(.token) {
   font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
 }
 
-@import 'alpha';
-
 .sprint {
-	&-1 {
+	&-1, 
+	&-2, 
+	&-2-TestA{
+
+	.test-options{
+		font-size: 16px;
+	}
+
+	.search-global{
+		font-weight: bold;
+		display: inline-block;
+		padding-right:10px;	
+		vertical-align: bottom;
+	}
+	.c-search {
+		  width: 55%;
+		}
 
 		.case-nav{
 			form, fieldset, input{
@@ -61,10 +76,14 @@
 
 
 		   /* /// Pager /// */
+		   	.pager.border{
+		   		border-bottom: 1px solid $border-colour;
+		   	}
 
 			.pager {
-			    margin-top: 25px;
-			    margin-bottom: 1.25em;
+			    font-size: 16px;
+			    padding: 15px 0 15px 0;
+			    /*border-bottom: 1px solid $border-colour;*/
 			}
 				.pager-controls {
 				    float: right;
@@ -436,4 +455,6 @@
 				}
 
 		  }
+
 }
+
