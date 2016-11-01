@@ -5,13 +5,13 @@ var version_navigation = {
       items: [
         {
           // primary link text
-          text: 'Worklist/Diary', // Top level menu name
+          text: 'Work list/Diary', // Top level menu name
           // primary file name
           url: 'your-cases', // Link to tthe top level menu name
           // subnav
           items: [
             { 
-              text: 'Worklist', // Sub menu item
+              text: 'Work list', // Sub menu item
               url: 'your-cases' // link for sub menu
             },
             { 
