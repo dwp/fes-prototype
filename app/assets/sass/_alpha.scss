@@ -8,6 +8,16 @@
 	&-01
    {
 
+   .search-global{
+		font-weight: bold;
+		display: inline-block;
+		padding-right:10px;	
+		vertical-align: bottom;
+	}
+	.c-search {
+		  width: 55%;
+		}
+
 .case-nav{
 	form, fieldset, input{
 		float: left;

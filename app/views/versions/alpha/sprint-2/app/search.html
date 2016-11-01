@@ -1,0 +1,76 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Worklist/Diary',
+    subsection: 'Search all cases',
+    hidePrimary: true
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<h1 class="heading-large top15">Search</h1>
+
+
+<form action="search" method="post">
+    
+
+<div class="grid-row">
+  
+  <div class="column-two-thirds search">
+      <label class="form-label" for="search">
+      Search by either: NI, case number, last name or date of birth.
+      </label>
+      <input class="form-control searchbox" id="search"  type="text">
+      <fieldset class="primary-nav form-group">
+        <legend class="visuallyhidden">Form Navigation</legend>
+        <input type="submit" value="Search" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+  </div>
+
+</div>
+</form>
+
+
+
+
+
+<table class="your-cases">
+  <thead>
+    <tr>
+      <th scope="col">Case owner</th>
+      <th scope="col">Case No</th>
+      <th scope="col" >Last Name</th>
+      <th scope="col">Offence Type</th>
+      <th scope="col">Stage</th>
+      <th scope="col">Activity</th>
+      <th scope="col">Due date</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <tr>
+      <td><a href="owner-detail" title="View Darren Silcox details">Darren Silcox</a></td>
+      <td><a href="case-view" title="View case">122560023</a></td>
+      <td>Dusttrap</td>
+      <td>Criminal</td>
+      <td>Info gathering</td>
+      <td>Book appoinment</td>
+      <td>10 Nov 2016</td>
+    </tr>
+  
+  
+  </tbody>
+</table>
+
+
+{% endblock %}
