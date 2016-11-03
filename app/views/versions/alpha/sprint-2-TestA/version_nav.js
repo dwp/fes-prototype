@@ -11,7 +11,7 @@ var version_navigation = {
           // subnav
           items: [
             { 
-              text: 'Worklist', // Sub menu item
+              text: 'Work list', // Sub menu item
               url: 'your-cases' // link for sub menu
             },
             { 
