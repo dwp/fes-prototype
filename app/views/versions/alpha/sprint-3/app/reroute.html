@@ -1,0 +1,70 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Re-route',
+    subsection: 'Re-route the case'
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+<h1 class="heading-large top15">Re-route</h1>
+
+
+
+<div class="grid-row">
+  <div class="column-full">
+
+   <table class="your-cases">
+  <thead>
+    <tr>
+      <th scope="col">Case owner</th>
+      <th scope="col">Case No</th>
+      <th scope="col" >Last name</th>
+      <th scope="col" >First name</th>
+      <th scope="col">Offence type</th>
+      <th scope="col">Stage</th>
+      <th scope="col">Activity</th>
+      <th scope="col">Due date</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <tr>
+      <td><a href="owner-detail" title="View Darren Silcox details">Darren Silcox</a></td>
+      <td><a href="case-view" title="View case">122560023</a></td>
+      <td>Dusttrap</td>
+      <td>Nuno</td>
+      <td>Serious and complex</td>
+      <td>Info gathering</td>
+      <td>Book appoinment</td>
+      <td>10 Nov 2016</td>
+    </tr>
+  
+  
+  </tbody>
+</table>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

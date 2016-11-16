@@ -1,0 +1,24 @@
+{% set page = {
+  title: 'FES',
+  nav: {
+    section: 'About',
+    subsection: 'link primary 1.2',
+    hideTertiary: true
+  },
+  dev: true,
+  hideNav: true,
+  hideSearch: true,
+  layout: prototype.current.layoutPath + 'layout.html'
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+  <h1 class="heading-large">Signed out</h1>
+  <p>You have signed out of the Fraud Error Service (FES)
+This may of been intentional, if it was accidental or you need to use the service again, you can <a href="index" title="Sign in"> sign in again</a>.
+</p>
+ 
+
+{% endblock %}
