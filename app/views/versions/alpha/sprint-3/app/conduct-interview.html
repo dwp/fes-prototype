@@ -3,8 +3,9 @@
   dev: true,
   html_classes: [],
   nav: {
-    section: 'Intervention',
-    subsection: 'Intervention'
+    section: 'Interviewing',
+    subsection: 'Interviewing',
+    hideSecondary: true
   },
   layout: prototype.current.layoutPath + 'layout.html',
   primary: {
@@ -19,7 +20,7 @@
 
 <div class="container">
 
-<h1 class="heading-large top15">Intervention</h1>
+<h1 class="heading-large top15">Interviewing</h1>
 
 
 
@@ -30,14 +31,15 @@
           <li>What is your national insurance number?</li>
           <li>What is your date of birth?</li>
           <li>Which account is your benefit paid into?</li>
-          <li>What is your date of birth?</li>
+
         </ol>
 
-         <h1 class="heading-small">Telephony script</h1>
-        <p></p>
+      <legend class="visuallyhidden">Start interview</legend>
+      <input type="submit" value="Start interview" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+
   </div>
 </div>
-
+<!--
 <div class="grid-row">
     <div class="column-full case-nav">
     <p>&nbsp;</p>
@@ -75,7 +77,7 @@
     </div>
   </div>
 
-
+-->
 
 
 

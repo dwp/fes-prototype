@@ -4,7 +4,8 @@
   html_classes: [],
   nav: {
     section: 'Re-route',
-    subsection: 'Re-route the case'
+    subsection: 'Re-route the case',
+    hideSecondary: true
   },
   layout: prototype.current.layoutPath + 'layout.html',
   primary: {
@@ -20,41 +21,40 @@
 <div class="container">
 
 <h1 class="heading-large top15">Re-route</h1>
-
+<p>Where would you like to re-route your case to?
 
 
 <div class="grid-row">
   <div class="column-full">
 
-   <table class="your-cases">
-  <thead>
-    <tr>
-      <th scope="col">Case owner</th>
-      <th scope="col">Case No</th>
-      <th scope="col" >Last name</th>
-      <th scope="col" >First name</th>
-      <th scope="col">Offence type</th>
-      <th scope="col">Stage</th>
-      <th scope="col">Activity</th>
-      <th scope="col">Due date</th>
-    </tr>
-  </thead>
-  <tbody>
+   <form>
+    <div class="form-group">
+      <fieldset>
 
-  <tr>
-      <td><a href="owner-detail" title="View Darren Silcox details">Darren Silcox</a></td>
-      <td><a href="case-view" title="View case">122560023</a></td>
-      <td>Dusttrap</td>
-      <td>Nuno</td>
-      <td>Serious and complex</td>
-      <td>Info gathering</td>
-      <td>Book appoinment</td>
-      <td>10 Nov 2016</td>
-    </tr>
-  
-  
-  </tbody>
-</table>
+
+        <label class="block-label" for="radio-1">
+          <input id="radio-1" type="radio" name="radio-group" value="Investigation">
+          Compliance
+        </label>
+        <label class="block-label" for="radio-2">
+          <input id="radio-2" type="radio" name="radio-group" value="Investigation">
+          Organised
+        </label>
+        <label class="block-label" for="radio-3">
+          <input id="radio-3" type="radio" name="radio-group" value="Investigation">
+          Investigation
+        </label>
+
+
+
+      </fieldset>
+    </div>
+    <div class="form-group">
+      
+       <legend class="visuallyhidden">Re-route case</legend>
+      <input type="submit" value="Re-route case" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </div>
+  </form>
   </div>
 </div>
 

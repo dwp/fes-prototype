@@ -90,13 +90,13 @@ var version_navigation = {
 
         {
           // primary link text
-          text: 'Intervention',
+          text: 'Interviewing',
           // primary link file name
           url: 'conduct-interview',
           // subnav
           items: [
             { 
-              text: 'Intervention',
+              text: 'Interviewing',
               url: 'conduct-interview'
             }
           ]
