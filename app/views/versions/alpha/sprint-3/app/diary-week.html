@@ -1,0 +1,481 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Work list/Diary',
+    subsection: 'Diary',
+    hidePrimary: true
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+<!--<h1 class="heading-large top15">Your week in view</h1>-->
+
+<h1 class="heading-large top15">Your diary</h1>
+  <p>Here is a list of your appointments.</p>
+
+
+
+
+
+<div class="grid-row">
+  <div class="column-full diary">
+
+      <div class="cal-nav">
+        <ul>
+          <li>
+            <span class="prev"><a href="" title="Next week"><span class="back">&#9664;</span> Previous week</a></span>
+          </li>
+          <li>
+            <span class="date">26 September - 1 October</span>
+          </li>
+          <li>
+            <span class="next"><a href="" title="Next week">Next week <span class="forward">&#9654;</span></a></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cal-container">
+        <ul class="border-fix">
+        <li class="dayrow"><span class="day">Mon 26/9</span></li>
+
+        <li>
+          <span class="time">8:00 - 9:00</span>
+          <span class="odd">
+                <span class="blank">
+                  
+                </span>
+                <span class="interview">
+                  8:30 - 9:00 Phone<br>
+                   <a href="case-view" title="Open case">Jason Farrowash</a>
+                </span>
+          </span>
+        </li>
+
+        <li>
+          <span class="time">9:00 - 10:00</span>
+          <span class="even">
+                <span class="interview">
+                  9:00 - 9:30 Phone<br>
+                   <a href="case-view" title="Open case">David Steelcreek</a>
+                </span>
+                <span class="interview">
+                  9:30 - 10:00 Phone<br>
+                   <a href="case-view" title="Open case">Ross Dusttrap</a>
+                </span>
+          </span> 
+        </li>
+
+        <li>
+          <span class="time">10:00 - 11:00</span>
+          <span class="odd"></span>
+        </li>
+
+        <li>
+          <span class="time">11:00 - 12:00</span>
+          <span class="even">
+                <span class="interview">
+                  11:00 - 11:30 Phone<br>
+                   <a href="case-view" title="Open case">Liza Doomglory</a>
+                </span>
+          </span> 
+        </li>
+
+        <li>
+          <span class="time">12:00 - 1:00</span>
+          <span class="odd">
+                <span class="blank"></span>
+                <span class="interview">
+                  12:30 - 1:00 Phone<br>
+                   <a href="case-view" title="Open case">Matthew  Whitfist</a>
+                </span>
+          </span> 
+        </li>
+
+        <li>
+          <span class="time">1:00 - 2:00</span>
+          <span></span>
+        </li>
+
+        <li>
+          <span class="time">2:00 - 3:00</span>
+          <span class="odd"></span>
+        </li>
+
+        <li>
+          <span class="time">3:00 - 4:00</span>
+          <span></span>
+        </li>
+
+        <li>
+          <span class="time">4:00 - 5:00</span>
+           <span class="interview">
+                  4:00 - 4:30 Phone<br>
+                   <a href="case-view" title="Open case">Laurence Bronzejumper</a>
+                </span>
+                <span class="interview">
+                  4:30 - 5:00 Phone<br>
+                   <a href="case-view" title="Open case">Steven Forestvale</a>
+                </span>
+        </li>
+        <li>  
+          <span class="time">5:00 - 6:00</span>
+          <span></span>
+        </li>
+
+        </div>
+
+
+
+
+
+      <div class="cal-container">
+        <ul>
+        <li class="dayrow"><span class="day">Tue 27/9</span></li>
+        <li>
+          <span class="even">
+            
+            <span class="face">
+                  8:00 - 9:00 Interview<br>
+                   <a href="case-view" title="Open case">Peter Grizzlypike</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd">
+                <span class="interview">
+                  9:00 - 9:30 Phone<br>
+                   <a href="case-view" title="Open case">Brian Dawnheart</a>
+                </span>
+                <span class="interview">
+                  9:30 - 10:00 Phone<br>
+                   <a href="case-view" title="Open case">Andrew Bronzestrike</a>
+                </span>
+          </span> 
+        </li>
+        <li>
+          <span class="even">
+            <span class="interview">
+                10:00 - 10:30 Phone<br>
+                 <a href="case-view" title="Open case">Madeline Blueglow</a>
+              </span>
+
+          </span>
+        </li>
+        <li>
+          <span class="odd">
+            <span class="face">
+                  11:00 - 12:00 Interview<br>
+                   <a href="case-view" title="Open case">David Fistroar </a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="even">
+            
+            <span class="blank"></span>
+                <span class="interview">
+                  12:30 - 1:00 Phone<br>
+                   <a href="case-view" title="Open case">Maureen Clearhorn</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd">
+            <span class="interview">
+                  3:00 - 3:30 Phone<br>
+                   <a href="case-view" title="Open case">Nancy Cliffbelly</a>
+                </span>
+                <span class="interview">
+                  4:00 - 4:30 Phone<br>
+                   <a href="case-view" title="Open case">Sean Fullrock</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+      </div>
+
+      <div class="cal-container">
+        <ul>
+        <li class="dayrow"><span class="day">Wed 28/9</span></li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even">
+           
+          </span>
+        </li>
+        <li>
+          <span class="odd">
+           
+          </span>
+        </li>
+        <li>
+          <span class="even">
+            <span class="face">
+                  11:00 - 12:00 Interview<br>
+                   <a href="case-view" title="Open case">Gary Truthash</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd">
+            <span class="blank"></span>
+                <span class="interview">
+                  12:30 - 1:00 Phone<br>
+                   <a href="case-view" title="Open case">Edward Frozenwatcher</a>
+                </span>
+
+          </span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd">
+             <span class="interview">
+                  4:00 - 4:30 Phone<br>
+                   <a href="case-view" title="Open case">Pamela Softfang</a>
+                </span>
+                <span class="interview">
+                  4:30 - 5:00 Phone<br>
+                   <a href="case-view" title="Open case">Jon Whitesnarl</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+      </div>
+
+
+      <div class="cal-container">
+        <ul>
+        <li class="dayrow"><span class="day">Thu 29/9</span></li>
+        <li>
+          <span class="even">
+            
+             <span class="blank">
+
+                </span>
+                <span class="interview">
+                  8:30 - 9:00 Phone<br>
+                   <a href="case-view" title="Open case">David Terrawound</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd">
+            
+          </span>
+        </li>
+        <li>
+          <span class="even">
+            
+            <span class="interview">
+                10:00 - 10:30 Phone<br>
+                 <a href="case-view" title="Open case">Sharman Bearbash</a>
+              </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd">
+            <span class="face">
+                  11:00 - 12:00 Interview<br>
+                   <a href="case-view" title="Open case">Lei Lie</a>
+                </span>
+
+          </span>
+        </li>
+        <li>
+          <span class="even">
+            <span class="blank"></span>
+                <span class="interview">
+                  12:30 - 1:00 Phone<br>
+                   <a href="case-view" title="Open case">Mark Silentcrag</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even">
+                <span class="blank"></span>
+                        <span class="face">
+                  2:30 - 3:30 Interview<br>
+                   <a href="case-view" title="Open case">Fred Downrun</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even">
+            
+             <span class="interview">
+                  4:00 - 4:30 Phone<br>
+                   <a href="case-view" title="Open case">Carol Crowash </a>
+                </span>
+                <span class="interview">
+                  4:30 - 5:00 Phone<br>
+                   <a href="case-view" title="Open case">Andrew Bronzestrike</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+      </div>
+
+
+      <div class="cal-container">
+        <ul>
+        <li class="dayrow"><span class="day">Fri 30/9</span></li>
+        <li>
+          <span class="odd">
+            
+              <span class="interview">
+                  8:00 - 8:30 Phone<br>
+                   <a href="case-view" title="Open case">Nancy Cliffbelly </a>
+                </span>
+                <span class="interview">
+                  8:30 - 9:00 Phone<br>
+                   <a href="case-view" title="Open case">Sean Fullrock</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="even">
+            
+          </span>
+        </li>
+        <li>
+          <span class="odd">
+           
+          </span>
+        </li>
+        <li>
+          <span class="even">
+            <span class="face">
+                  11:00 - 12:00 Interview<br>
+                   <a href="case-view" title="Open case">Gary Truthash</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="odd">
+            <span class="blank"></span>
+                <span class="interview">
+                  12:30 - 1:00 Phone<br>
+                   <a href="case-view" title="Open case">Laurence Bronzejumper</a>
+                </span>
+
+          </span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd">
+             <span class="interview">
+                  4:00 - 4:30 Phone<br>
+                   <a href="case-view" title="Open case">Jason Farrowash</a>
+                </span>
+                <span class="interview">
+                  4:30 - 5:00 Phone<br>
+                   <a href="case-view" title="Open case">David Steelcreek</a>
+                </span>
+          </span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+      </div>
+
+
+      <div class="cal-container">
+        <ul>
+        <li class="dayrow"><span class="day">Sat 1/10</span></li>
+          <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+        <li>
+          <span class="even"></span>
+        </li>
+        <li>
+          <span class="odd"></span>
+        </li>
+      </div>
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}

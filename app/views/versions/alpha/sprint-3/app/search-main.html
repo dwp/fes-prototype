@@ -1,0 +1,45 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Work list/Diary',
+    subsection: 'Search all cases',
+    hidePrimary: true
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<h1 class="heading-large top15">Search all cases</h1>
+
+
+<form action="search" method="post">
+    
+
+
+<div class="grid-row">
+  
+  <div class="column-two-thirds search">
+      <label class="form-label" for="search">
+      Search by either: NI, case number, last name or date of birth.
+      </label>
+      <input class="form-control searchbox" id="search"  type="text">
+      <fieldset class="primary-nav form-group">
+        <legend class="visuallyhidden">Form Navigation</legend>
+        <input type="submit" value="Search" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+  </div>
+
+</div>
+</form>
+
+
+{% endblock %}
