@@ -1,0 +1,66 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Case view',
+    subsection: 'Third parties'
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+<h1 class="heading-large top15">Third parties</h1>
+
+
+
+
+<div class="grid-row">
+  <div class="column-full">
+      <table class="your-cases">
+          <thead>
+            <tr>
+              <th scope="col">Current employer</th>
+               <th scope="col">Employment dates</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>
+                Argos<br>
+                Crown Street<br>
+                Halifax<br>
+                West Yorkshire<br>
+                HX4 5TA<br>
+
+              </td>
+              <td>Start: 1 Nov 2015<br> 
+              To: Current</td>
+            </tr>
+
+
+        </tbody>
+      </table>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

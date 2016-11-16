@@ -1,0 +1,61 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Case view',
+    subsection: 'Linked cases'
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+<h1 class="heading-large top15">Linked cases</h1>
+
+
+
+<div class="grid-row">
+  <div class="column-full">
+
+   <table class="your-cases">
+  <thead>
+    <tr>
+      <th scope="col">Case owner</th>
+      <th scope="col">Case No</th>
+      <th scope="col" >Last name</th>
+      <th scope="col" >First name</th>
+      <th scope="col">Offence type</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <tr>
+      <td><a href="owner-detail" title="View Darren Silcox details">Darren Silcox</a></td>
+      <td><a href="case-view" title="View case">122560023</a></td>
+      <td>Dusttrap</td>
+      <td>Nuno</td>
+      <td>Living together</td>
+    </tr>
+  
+  
+  </tbody>
+</table>
+  </div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}
