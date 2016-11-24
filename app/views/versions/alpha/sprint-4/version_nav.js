@@ -44,20 +44,20 @@ var version_navigation = {
              // url: 'relationships'
             //},
             { 
-              text: 'Documents',
+              text: 'Documents (3)',
               url: 'documents'
             },
             { 
-              text: 'Linked cases',
+              text: 'Linked cases (1)',
               url: 'linked-cases'
             },
             { 
-              text: 'Third parties',
+              text: 'Third parties (3)',
               url: 'third-parties',
             },
             { 
-              text: 'Bank details',
-              url: 'bank-details'
+              text: 'Notes (1 new)',
+              url: 'case-notes'
             },
             { 
               text: 'Case history',

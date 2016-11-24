@@ -11,7 +11,35 @@
 	&-1, 
 	&-2, 
 	&-2-TestA,
-	&-3{
+	&-3,
+	&-4{
+
+	.marker{
+		background: blue;
+		font-size: 12px;
+	    color: #fff;
+	    padding: 2px 4px;	  
+	    border-radius: 2px;
+	    font-weight: bold;
+	}
+	.note{
+		vertical-align: top;
+	    margin-top: 2px;
+	    display: inline-block;
+	   	background-color: $light-blue;
+	   	border: 1px solid $light-blue;
+	}
+	.table50{
+		th,td{
+		 width: 50%;
+		}
+	}
+	.font16{
+		font-size: 16px;
+	}
+	.span-width{
+		width: 100%
+;	}
 
 	.headtab{
 		border-top: 10px solid $turquoise;
@@ -521,10 +549,12 @@
 }
 
 
-.sprint-3{
+.sprint-3,
+.sprint-4{
 
 	.sub-navigation__item{
 		background-color: $panel-colour;
+		font-size: 17px;
 	}
 	.sub-navigation__item--active{
 		background-color: $white;
@@ -534,6 +564,7 @@
     	margin-bottom: -1px;
     	a{
     		color: $text-colour; 
+    		    
     	}
 	}
 	.sub-navigation__item__link

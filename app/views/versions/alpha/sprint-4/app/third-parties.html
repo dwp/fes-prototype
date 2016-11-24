@@ -4,7 +4,7 @@
   html_classes: [],
   nav: {
     section: 'Case view',
-    subsection: 'Third parties'
+    subsection: 'Third parties (3)'
   },
   layout: prototype.current.layoutPath + 'layout.html',
   primary: {
@@ -19,14 +19,19 @@
 
 <div class="container">
 
-<h1 class="heading-large top15">Third parties</h1>
-
-
 
 
 <div class="grid-row">
-  <div class="column-full">
-      <table class="your-cases">
+
+
+
+
+
+  <div class="column-two-thirds">
+      <h1 class="heading-large top15 ">Third parties</h1>
+      <!-- Employment details -->
+      <h3 class="heading-medium ">Employment details</h3>
+      <table class="your-cases table50">
           <thead>
             <tr>
               <th scope="col">Current employer</th>
@@ -47,11 +52,115 @@
               <td>Start: 1 Nov 2015<br> 
               To: Current</td>
             </tr>
-
-
         </tbody>
       </table>
+
+
+      <!-- Bank details -->
+      <h3 class="heading-medium">Bank details</h3>
+       <table class="your-cases table50">
+          <thead>
+            <tr>
+              <th scope="col">Information</th>
+               <th scope="col">Current details</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>Bank name</td>
+              <td>Santander</td>
+            </tr>
+            <tr>
+              <td>Sort code</td>
+              <td>11-45-66</td>
+            </tr>
+            <tr>
+              <td>Account number</td>
+              <td>56765763</td>
+            </tr>
+        </tbody>
+      </table>
+
+
+
+
+      <!-- Pension details -->
+      <h3 class="heading-medium">Pension</h3>
+       <table class="your-cases table50">
+          <thead>
+            <tr>
+              <th scope="col">Information</th>
+               <th scope="col">Current details</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>Company</td>
+              <td>Standard life</td>
+            </tr>
+            <tr>
+              <td>Account number</td>
+              <td>456889789</td>
+            </tr>
+            <tr>
+              <td>In payment</td>
+              <td>£55.22 per week</td>
+            </tr>
+        </tbody>
+      </table>
+</div>
+
+
+
+  <div class="column-one-third headtab">
+    <span class="bold-title">
+    Case number
+    </span>
+    3687111
+    <span class="bold-title">
+    Case owner
+    </span>
+    <a href="owner-detail">Darren Silcox</a>
+    <span class="bold-title">
+    Case stage
+    </span>
+      Information gathering
+    <span class="bold-title">
+    Activity
+    </span>
+      Book appoinment
+    <span class="bold-title">
+    Due date
+    </span>
+      17 Nov 2016
+      <p>&nbsp;</p>
+ 
+      <div class="form-group">
+        <form action="book-interview" method="post">
+        <fieldset class="">
+          <legend class="visuallyhidden">Book appointment</legend>
+          <input type="submit" value="Book appointment" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        </fieldset>
+      </form>
+      </div>
+
+      <div class="form-group">
+      <a href="reject" class="side-menu-link" title="Reject">Reject case</a>
+      <a href="reroute" class="side-menu-link"  title="Re-route">Re-route case</a>
+      <a href="close" class="side-menu-link"  title="Re-route">Close case</a>
+      </div>
+
+      
+      
   </div>
+
+
+
+
+
+
 </div>
 
 

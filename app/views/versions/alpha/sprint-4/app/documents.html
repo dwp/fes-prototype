@@ -4,7 +4,7 @@
   html_classes: [],
   nav: {
     section: 'Case view',
-    subsection: 'Documents'
+    subsection: 'Documents (3)'
   },
   layout: prototype.current.layoutPath + 'layout.html',
   primary: {
@@ -19,81 +19,107 @@
 
 <div class="container">
 
-<h1 class="heading-large top15 nobottom">Documents</h1>
-
-
 
 <div class="grid-row">
 
-  <div class="column-one-half">
-  <h3 class="heading-medium">New documents</h3>
-    <p>
-      <button id="add-button" class="button button-add-another">Choose files</button> <span class="inline-button-text">Or drag and drop</span>
-    </p>
+  <div class="column-two-thirds">
 
-    <div class="dropzone m-b-l">
+      <h3 class="heading-large top15">Current documents</h3>
+         
+         <table class="your-cases">
+            <tbody>
 
-      <p>Drag and drop files here</p>
+              <tr>
+                <td>Bank statement</td>
+                <td><a href="#" title="Remove">Remove</a></td>
+                <td><a href="#" title="Rename">Rename</a></td>
+                <td><a href="#" title="View">View</a></td>
+              </tr>
+            
+             <tr>
+                <td>Claim forms</td>
+                <td><a href="#" title="Remove">Remove</a></td>
+                <td><a href="#" title="Rename">Rename</a></td>
+                <td><a href="#" title="View">View</a></td>
+              </tr>
 
-    </div>
+               <tr>
+                <td>Letters from pension provider</td>
+                <td><a href="#" title="Remove">Remove</a></td>
+                <td><a href="#" title="Rename">Rename</a></td>
+                <td><a href="#" title="View">View</a></td>
+              </tr>
+            </tbody>
+          </table>
 
-    <div class="form-group">
-          <input type="submit" class="button" value="Upload and continue">
+      <h3 class="heading-medium">Upload a new document</h3>
+
+         <p>
+          <button id="add-button" class="button button-add-another">Choose files</button> <span class="inline-button-text">Or drag and drop</span>
+        </p>
+
+       <div class="dropzone m-b-l">
+
+          <p>Drag and drop files here</p>
+
         </div>
-    </div>
 
-  <div class="column-one-half">
-   
-  <h3 class="heading-medium ">Uploaded documents</h3>
-   <table class="your-cases">
-    
-    <tbody>
+        <div class="form-group">
+              <input type="submit" class="button" value="Upload and continue">
+        </div>
 
-      <tr>
-        <td>Bank statement</td>
-        <td><a href="#" title="Remove">Remove</a></td>
-        <td class="col-right"><a href="#" title="View">View</a></td>
-      </tr>
-    
-     <tr>
-        <td>Claim forms</td>
-        <td><a href="#" title="Remove">Remove</a></td>
-        <td class="col-right"><a href="#" title="View">View</a></td>
-      </tr>
+</div>
 
-       <tr>
-        <td>Letters from pension provider</td>
-        <td><a href="#" title="Remove">Remove</a></td>
-        <td class="col-right"><a href="#" title="View">View</a></td>
-      </tr>
-    
-    
-    
-    </tbody>
 
-  </table>
+  <div class="column-one-third headtab">
+    <span class="bold-title">
+    Case number
+    </span>
+    3687111
+    <span class="bold-title">
+    Case owner
+    </span>
+    <a href="owner-detail">Darren Silcox</a>
+    <span class="bold-title">
+    Case stage
+    </span>
+      Information gathering
+    <span class="bold-title">
+    Activity
+    </span>
+      Book appoinment
+    <span class="bold-title">
+    Due date
+    </span>
+      17 Nov 2016
+      <p>&nbsp;</p>
+ 
+      <div class="form-group">
+        <form action="book-interview" method="post">
+        <fieldset class="">
+          <legend class="visuallyhidden">Book appointment</legend>
+          <input type="submit" value="Book appointment" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        </fieldset>
+      </form>
+      </div>
+
+      <div class="form-group">
+      <a href="reject" class="side-menu-link" title="Reject">Reject case</a>
+      <a href="reroute" class="side-menu-link"  title="Re-route">Re-route case</a>
+      <a href="close" class="side-menu-link"  title="Re-route">Close case</a>
+      </div>
+
+      
+      
 
   </div>
 
-</div>
-
-<!--
-
-<div class="grid-row">
-  <div class="column-full">
 
 
-  <div class="form-group">
-  <label class="form-label" for="file-input">
-    Upload a file
-  </label>
-  <input type="file" id="file-input">
-</div>
 
-  </div>
-</div>
 
--->
+
+
 
 
 
