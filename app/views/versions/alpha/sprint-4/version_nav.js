@@ -130,9 +130,6 @@ var version_navigation = {
             { 
               text: 'Close case',
               url: 'close'
-            },{ 
-              text: 'Reject',
-              url: 'reject'
             }
           ]
         }

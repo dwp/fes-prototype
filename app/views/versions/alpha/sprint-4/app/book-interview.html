@@ -25,7 +25,7 @@
 
 <div class="grid-row">
 
-  <div class="column-one-third">
+  <div class="column-one-quarter">
     
       <div class="form-group">
         <label class="form-label" for="select-box">Date</label>
@@ -66,7 +66,7 @@
       
   </div>
 
-  <div class="column-one-third">
+  <div class="column-one-quarter">
      <div class="form-group">
       <label class="form-label" for="select-box">Month</label>
       <select class="form-control" id="select-box">
@@ -88,8 +88,9 @@
       
   
 
- <div class="column-one-third">&nbsp;
- </div>
+ <div class="column-one-quarter">&nbsp;</div>
+
+ <div class="column-one-quarter">&nbsp;</div>
   
 
 </div>
@@ -100,7 +101,7 @@
 
 <div class="grid-row">
 
-  <div class="column-one-third">
+  <div class="column-one-quarter">
         <div class="form-group">
           <label class="form-label" for="select-box">Start time</label>
           <select class="form-control" id="select-box">
@@ -132,7 +133,7 @@
         </div>
   </div>
 
-    <div class="column-one-third">
+    <div class="column-one-quarter">
         <div class="form-group">
           <label class="form-label" for="select-box">End time</label>
           <select class="form-control" id="select-box">
@@ -163,14 +164,14 @@
           </select>
         </div>
   </div>
-  <div class="column-one-third"></div>
-
+  <div class="column-one-quarter"></div>
+  <div class="column-one-quarter"></div>
 </div>
 
 <div class="grid-row">
 
   <div class="column-two-thirds">
-
+    <div class="form-group">
       <fieldset>
       <label class="block-label" for="phone">
         <input id="phone" name="book" type="radio" value="Telephone">
@@ -179,15 +180,46 @@
 
       <label class="block-label" for="face-to-face" data-target="address">
         <input id="face-to-face" name="book" type="radio" value="Face">
-        Face to face appointment
+        Office visit
       </label>
 
-      <div class="form-group">
-
-      </div>
       
       <div class="panel panel-border-narrow js-hidden" id="address">
+        <div class="form-group" id="address-container">
+           <label class="form-label">Office address</label>
+          <input type="text" class="form-control address-fix" id="address-line1">
 
+          <label class="form-label"></label>
+          <input type="text" class="form-control" id="address-line2"> 
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="town">Town or city</label>
+          <input class="form-control" id="town" type="text" name="town">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="postcode">Postcode</label>
+          <input class="form-control" id="postcode" type="text" name="postcode">
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <label class="block-label" for="face-to-face1" data-target="address1">
+        <input id="face-to-face1" name="book" type="radio" value="Face">
+        Home visit
+      </label>
+
+
+
+      <div class="panel panel-border-narrow js-hidden" id="address1">
         <div class="form-group" id="address-container">
            <label class="form-label">Interview address</label>
           <input type="text" class="form-control address-fix" id="address-line1">
@@ -205,33 +237,10 @@
           <label class="form-label" for="postcode">Postcode</label>
           <input class="form-control" id="postcode" type="text" name="postcode">
         </div>
-
-
       </div>
+      </fieldset>
+    </div>
 
-
-        <!--
-        <div class="form-group" id="address-container">
-           <label class="form-label">Address</label>
-          <input type="text" class="form-control address-fix" id="address-line1">
-
-          <label class="form-label"></label>
-          <input type="text" class="form-control" id="address-line2"> 
-        </div>
-
-        <div class="form-group">
-          <label class="form-label" for="town">Town or city</label>
-          <input class="form-control" id="town" type="text" name="town">
-        </div>
-
-        <div class="form-group">
-          <label class="form-label" for="postcode">Postcode</label>
-          <input class="form-control" id="postcode" type="text" name="postcode">
-        </div>
-
-        -->
-
-          </fieldset>
   </div>
 
 </div>

@@ -16,13 +16,48 @@ module.exports = function(router, config) {
     switch(requestedPage) {
       
       // change requested page name to the page that was requested
-      case 'request_page_name_here': 
+      case 'conduct-interview-1': 
         
         // do some logic stuff here and then typically return a render or redirect
       
-        return res.redirect('index');
+        if(postData['interview'] == 'office') {
+          res.redirect('conduct-interview-1a');
+        }
+        if(postData['ni'] == 'office') {
+          res.redirect('PG515593');
+        }
+        if(postData['dob-day'] == '25') {
+          res.redirect('conduct-interview-1a');
+        }
+        if(postData['dob-month'] == '3') {
+          res.redirect('conduct-interview-1a');
+        }
+        if(postData['dob-year'] == '1974') {
+          res.redirect('conduct-interview-1a');
+        }
         
       break;
+
+
+      case 'conduct-interview-fail': 
+      
+        if(postData['paid-into'] == 'HSBC') {
+          res.redirect('conduct-interview-pass');
+        }
+        
+      break;
+
+      case 'conduct-interview-pass': 
+      
+        if(postData['radio'] == 'none') {
+          res.redirect('conduct-interview-fail');
+        }
+        
+      break;
+
+
+
+
       
     }
     
