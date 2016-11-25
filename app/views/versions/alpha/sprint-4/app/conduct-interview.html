@@ -1,0 +1,75 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Interviewing',
+    subsection: 'Interviewing',
+    hideSecondary: true
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+<h1 class="heading-large top15 ">Interviewing</h1>
+
+
+
+<div class="grid-row">
+  <div class="column-full">
+<p>What kind of interview are you doing?</p>
+
+        
+
+      <form action="conduct-interview-1" method="post">
+        <div class="form-group">
+          <fieldset class="inline">
+
+            <legend class="visually-hidden">What kind of interview are you doing?</legend>
+
+            <label class="block-label" for="radio-inline-1">
+              <input id="radio-inline-1" type="radio" name="interview" value="telephone">
+              Telephone interview
+            </label>
+            <label class="block-label" for="radio-inline-2">
+              <input id="radio-inline-2" type="radio" name="interview" value="office">
+              Office inteview
+            </label>
+
+          </fieldset>
+        </div>
+
+
+
+      <legend class="visuallyhidden">Validate</legend>
+      <input type="submit" value="Continue" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+
+
+      </form>
+
+  </div>
+</div>
+
+
+
+<!--
+        <ol class="list list-number">
+          <li>What is your national insurance number?</li>
+          <li>What is your date of birth?</li>
+          <li>Which account is your benefit paid into?</li>
+
+        </ol>
+-->
+
+
+
+{% endblock %}

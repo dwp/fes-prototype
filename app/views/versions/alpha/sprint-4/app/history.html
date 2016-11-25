@@ -1,0 +1,115 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Case view',
+    subsection: 'Case history'
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+
+
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+  <h1 class="heading-large top15">Case history</h1>
+      <table class="your-cases">
+          <thead>
+            <tr>
+              <th scope="col">Recent actions</th>
+               <th scope="col">Relevant dates</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>Referred to DM: </td>
+              <td>1 November 2016</td>
+            </tr>
+            <tr>
+              <td>BF until: </td>
+              <td>28 October 2016</td>
+            </tr>
+            <tr>
+              <td>Telephone appointment completed: </td>
+              <td>15 October 2016</td>
+            </tr>
+            <tr>
+              <td>Telephone appointment letter issued: </td>
+              <td>10 October 2016</td>
+            </tr>
+            <tr>
+              <td>Telephone appointment booking completed: </td>
+              <td>2 October 2016</td>
+            </tr>
+
+
+
+
+        </tbody>
+      </table>
+  </div>
+
+
+
+    <div class="column-one-third headtab">
+    <span class="bold-title">
+    Case number
+    </span>
+    3687111
+    <span class="bold-title">
+    Case owner
+    </span>
+    <a href="owner-detail">Darren Silcox</a>
+    <span class="bold-title">
+    Case stage
+    </span>
+      Information gathering
+    <span class="bold-title">
+    Activity
+    </span>
+      Book appoinment
+    <span class="bold-title">
+    Due date
+    </span>
+      17 Nov 2016
+      <p>&nbsp;</p>
+ 
+      <div class="form-group">
+        <form action="book-interview" method="post">
+        <fieldset class="">
+          <legend class="visuallyhidden">Book appointment</legend>
+          <input type="submit" value="Book appointment" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        </fieldset>
+      </form>
+      </div>
+
+      <div class="form-group">
+      <a href="reject" class="side-menu-link" title="Reject">Reject case</a>
+      <a href="reroute" class="side-menu-link"  title="Re-route">Re-route case</a>
+      <a href="close" class="side-menu-link"  title="Re-route">Close case</a>
+      </div>
+
+      
+      
+</div>
+
+
+
+
+
+
+
+{% endblock %}

@@ -11,7 +11,77 @@
 	&-1, 
 	&-2, 
 	&-2-TestA,
-	&-3{
+	&-3,
+	&-4{
+
+
+		  
+	.button-add-another-vertical {
+      background-color: #eee;
+      color: #000;
+      box-shadow: 0 2px 0 #666;
+
+      &:hover {
+        background-color: #ccc;
+        color: #000;
+        box-shadow: 0 2px 0 #666;
+      }
+
+      &:focus {
+        background-color: #ccc;
+        color: #000;
+        box-shadow: 0 2px 0 #666;
+      }
+
+      @media (max-width: 640px) {
+        width: 90%;
+        margin: auto;
+        display: block;
+      }
+
+      }
+	        
+
+	.amount-field{
+		width: 25%;
+		padding-left: 55px;
+	}
+
+	.form-input-denote{
+	    position: absolute;
+	    background-color: #dee0e2;
+	    line-height: 1;
+	    margin: 2px 0px 0px 2px;
+	    padding: 7px 12px;
+	    z-index: 0;
+	}
+
+	.marker{
+		background: blue;
+		font-size: 12px;
+	    color: #fff;
+	    padding: 2px 4px;	  
+	    border-radius: 2px;
+	    font-weight: bold;
+	}
+	.note{
+		vertical-align: top;
+	    margin-top: 2px;
+	    display: inline-block;
+	   	background-color: $light-blue;
+	   	border: 1px solid $light-blue;
+	}
+	.table50{
+		th,td{
+		 width: 50%;
+		}
+	}
+	.font16{
+		font-size: 16px;
+	}
+	.span-width{
+		width: 100%;
+	}
 
 	.headtab{
 		border-top: 10px solid $turquoise;
@@ -521,10 +591,12 @@
 }
 
 
-.sprint-3{
+.sprint-3,
+.sprint-4{
 
 	.sub-navigation__item{
 		background-color: $panel-colour;
+		font-size: 17px;
 	}
 	.sub-navigation__item--active{
 		background-color: $white;
@@ -534,6 +606,7 @@
     	margin-bottom: -1px;
     	a{
     		color: $text-colour; 
+    		    
     	}
 	}
 	.sub-navigation__item__link

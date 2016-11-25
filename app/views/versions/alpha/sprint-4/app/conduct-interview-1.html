@@ -1,0 +1,136 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Interviewing',
+    subsection: 'Interviewing',
+    hideSecondary: true
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+<h1 class="heading-large top15 ">Interviewing via telephone</h1>
+
+
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+  <h2 class="heading-small">Interview questions to validate the suspects identity</h2>
+    <p>&nbsp;</p>    
+
+      <form action="conduct-interview-fail" method="post">
+       <fieldset> 
+
+        
+        <div class="form-group">   
+            <label class="form-label" for="ni-number">
+              What is your national insurance number?
+            </label>
+            <input class="form-control" id="ni-number" name="ni" type="text">
+        </div>
+
+        <div class="form-group">
+            <div class="form-date">
+              <span>What is your date of birth?</span>
+              <p class="form-hint" id="dob-hint">For example, 31 3 1990</p>
+
+              <div class="form-group form-group-day">
+                <label for="dob-day">Day</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31" aria-describedby="dob-hint">
+              </div>
+
+              <div class="form-group form-group-month">
+                <label for="dob-month">Month</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+              </div>
+
+              <div class="form-group form-group-year">
+                <label for="dob-year">Year</label>
+                <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+              </div>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label class="form-label" for="ni-number">
+              Which account is your benefit paid into?
+            </label>
+            <input class="form-control" id="ni-number" name="paid-into" type="text">
+        </div>
+        <div class="form-group">
+        <legend class="visuallyhidden">Validate customer</legend>
+          <input type="submit" value="Validate customer" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+        </fieldset>
+      </form>
+    <a href="case-view">Abort interview</a>
+
+  </div>
+</div>
+
+
+
+<!--
+        <ol class="list list-number">
+          <li>What is your national insurance number?</li>
+          <li>What is your date of birth?</li>
+          <li>Which account is your benefit paid into?</li>
+
+        </ol>
+-->
+<!--
+<div class="grid-row">
+    <div class="column-full case-nav">
+    <p>&nbsp;</p>
+      
+    <form action="book-interview" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">LT54</legend>
+        <input type="submit" value="LT54" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+
+    <form action="close" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">MF47</legend>
+        <input type="submit" value="MF47" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+    <form action="reject" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">Set BF</legend>
+        <input type="submit" value="Set BF" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+
+    <form action="reroute" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">Refer to DM</legend>
+        <input type="submit" value="Refer to DM" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+    </div>
+  </div>
+
+-->
+
+
+
+
+{% endblock %}
