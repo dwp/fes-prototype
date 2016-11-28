@@ -56,6 +56,28 @@ module.exports = function(router, config) {
       break;
 
 
+      case 'case-view': 
+      
+        if(postData['radio'] == 'refer-dm') {
+          res.redirect('decision-form-a');
+        }
+         if(postData['radio'] == 'close') {
+          res.redirect('close');
+        }
+         if(postData['radio'] == 'book') {
+          res.redirect('book-interview');
+        }
+         if(postData['radio'] == 're-route') {
+          res.redirect('reroute');
+        }
+         if(postData['radio'] == 'case-view') {
+          res.redirect('case-view');
+        }
+       
+        
+      break;
+
+
 
 
       
