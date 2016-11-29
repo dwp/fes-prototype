@@ -62,7 +62,7 @@ module.exports = function(router, config) {
           res.redirect('decision-form-a');
         }
          if(postData['radio'] == 'close') {
-          res.redirect('close');
+          res.redirect('reject');
         }
          if(postData['radio'] == 'book') {
           res.redirect('book-interview');
