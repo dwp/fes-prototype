@@ -19,7 +19,7 @@ var version_navigation = {
               url: 'diary-week'
             },
             { 
-              text: 'Search all cases',
+              text: 'Find a case',
               url: 'search-main'
             }
           ]

@@ -14,7 +14,11 @@
 	&-3,
 	&-4{
 
-
+	.print-icon{
+	    width: 25px;
+	    margin-bottom: -8px;
+	    margin-right: 5px;
+		}
 		  
 	.button-add-another-vertical {
       background-color: #eee;
@@ -149,10 +153,14 @@
 	}
 
 	.search-global{
-		font-weight: bold;
-		display: inline-block;
-		padding-right:10px;	
-		vertical-align: bottom;
+	    display: inline-block;
+	    padding-right: 12px;
+	    background: #bfc1c3;
+	    color: #0b0c0c;
+	    margin-right: -4px;
+	    padding-left: 10px;
+	    padding-top: 1px;
+	    padding-bottom: 5px;
 	}
 	.c-search {
 		  width: 55%;
@@ -355,15 +363,13 @@
 		   				display:block;
 		   				border-radius: 3px;
 		   				background: $light-blue;
-		   				color: $page-colour;
+		   				color: $text-colour;
 		   				line-height: 15px;
 		   				height: 35px;
 		   				position: relative;
 		   				margin-bottom: 1px;
 
-		   				a{
-		   					color: $page-colour;
-		   				}
+		   			
 		   			}
 		   			.face{
 		   				background: $turquoise;

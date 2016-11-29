@@ -20,23 +20,54 @@
 
 <div class="container">
 
-<h1 class="heading-large top15 ">Security fail</h1>
+<h1 class="heading-large top15 ">Interviewing</h1>
+<p class="text">If your interview was based was a home visit or based in the office you will need to scan and upload the signed version of the interview notes. Alternatively you can do this when you receive the document back in the post from the suspect.</p>
 
 
-
+<p class="heading-medium">You can now</p>
 <div class="grid-row">
-  <div class="column-two-thirds">
-  <h2 class="heading-small">Suspect has failed security questions. Rebook another appointment </h2>
-    <p>&nbsp;</p>    
+  <div class="column-full">
 
-      <form action="book-interview" method="post">
-       <fieldset> 
+      <form action="case-view" method="post">
+        <div class="form-group">
+          <fieldset>
 
-        <legend class="visuallyhidden">Book another appointment</legend>
-          <input type="submit" value="Book another appointment" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <legend class="visually-hidden"></legend>
 
-        </fieldset>
+            <label class="block-label" for="passport">
+              <input id="passport" type="radio" name="radio" value="refer-dm">
+              Refer to the decision maker
+            </label>
+            <label class="block-label" for="driving">
+              <input id="driving" type="radio" name="radio" value="close">
+              Reject the case
+            </label>
+             <label class="block-label" for="council">
+              <input id="council" type="radio" name="radio" value="book">
+              Book another interview
+            </label>
+            <label class="block-label" for="tenancy">
+              <input id="tenancy" type="radio" name="radio" value="re-route">
+              Re-route the case
+            </label>
+            <label class="block-label" for="none">
+              <input id="none" type="radio" name="radio" value="case-view">
+              Go to case view
+            </label>
+
+
+            </fieldset>
+          
+          </div>
+            <div class="form-group">
+            <legend class="visuallyhidden">Continue</legend>
+              <input type="submit" value="Continue" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+              </div>
+        
+          
+
       </form>
+          <a href="case-view">Abort interview</a>
 
 
   </div>
