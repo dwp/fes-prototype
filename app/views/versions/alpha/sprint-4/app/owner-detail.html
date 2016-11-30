@@ -1,0 +1,62 @@
+{% set page = {
+  title: '',
+  nav: {
+    section: 'Cases',
+    subsection: 'Current',
+    hidePrimary: true,
+    hideSecondary: true
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+ 
+{% block primary %}
+
+
+<a href="javascript:history.back()" class="link-back">Back</a>
+
+
+<h1 class="heading-large top15">Case owner</h1>
+
+<table class="your-cases">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Job title</th>
+      <th scope="col" >Location</th>
+      <th scope="col">Telephone</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+ <tr>
+      <td>Darren Silcox</td>
+      <td>Investigations officer</td>
+      <td>Stockport</td>
+      <td>0161 612 5111</td>
+      <td><a href="mailto:name@email.com">darren.silcox@dwp.gsi.gov.uk</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

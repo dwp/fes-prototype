@@ -1,0 +1,111 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Interviewing',
+    subsection: 'Interviewing',
+    hideSecondary: true
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+
+  <h1 class="heading-large top15 text">Reason for the referral to Decision Maker</h1>
+<p class="text">Give specific reasons why a decision is required. What the allegation is and what evidence is available.</p>
+
+      <form action="case-view" method="post">
+        <div class="form-group">
+          <fieldset>
+              <div class="form-group">
+                <legend class="visually-hidden">Type your case notes here</legend>
+                  <label class="form-label" for="add-comment">Type your reasons here</label>
+                <textarea class="form-control span-width" id="add-comment" rows="25"></textarea>
+
+               </div>
+      
+
+            </fieldset>
+          
+          </div>
+            <div class="form-group">
+            <legend class="visuallyhidden">Send to Decision Maker</legend>
+              <input type="submit" value="Send to Decision Maker" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+              </div>
+        
+          
+
+      </form>
+          <a href="case-view">Complete later</a>
+
+
+  </div>
+</div>
+
+
+
+<!--
+        <ol class="list list-number">
+          <li>What is your national insurance number?</li>
+          <li>What is your date of birth?</li>
+          <li>Which account is your benefit paid into?</li>
+
+        </ol>
+-->
+<!--
+<div class="grid-row">
+    <div class="column-full case-nav">
+    <p>&nbsp;</p>
+      
+    <form action="book-interview" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">LT54</legend>
+        <input type="submit" value="LT54" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+
+    <form action="close" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">MF47</legend>
+        <input type="submit" value="MF47" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+    <form action="reject" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">Set BF</legend>
+        <input type="submit" value="Set BF" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+
+    <form action="reroute" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">Refer to DM</legend>
+        <input type="submit" value="Refer to DM" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+    </div>
+  </div>
+
+-->
+
+
+
+
+{% endblock %}

@@ -1,0 +1,61 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Close',
+    subsection: 'Reject',
+     hideSecondary: true
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+<h1 class="heading-large top15">Reject</h1>
+
+
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+       <!--
+       <div class="form-group">
+          <label class="form-label" for="text-area">Reason for rejection</label>
+          <textarea class="form-control form-control-3-4" rows="7" id="text-area" name="text-area"></textarea>
+       </div>-->
+
+    <fieldset class="primary-nav form-group">
+      <div class="form-group">
+          <label class="form-label" for="select-box">Reason for rejection</label>
+          <select class="form-control" id="select-box">
+            <option>Duplicate referral</option>
+            <option>Already investigated – case updated</option>
+          </select>
+        </div>
+
+      <legend class="visuallyhidden">Form Navigation</legend>
+      <input type="submit" value="Reject case" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+
+    
+    </fieldset>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

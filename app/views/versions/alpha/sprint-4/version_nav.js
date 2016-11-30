@@ -5,26 +5,22 @@ var version_navigation = {
       items: [
         {
           // primary link text
-          text: 'Cases & Appointments', // Top level menu name
+          text: 'Work list/Diary', // Top level menu name
           // primary file name
           url: 'your-cases', // Link to tthe top level menu name
           // subnav
           items: [
             { 
-              text: 'Current', // Sub menu item
+              text: 'Work list', // Sub menu item
               url: 'your-cases' // link for sub menu
             },
             { 
-              text: 'Incoming',
-              url: 'cases-incoming'
-            },
-            { 
-              text: 'Day in view',
-              url: 'diary-day'
-            },
-            { 
-              text: 'Week in view',
+              text: 'Diary',
               url: 'diary-week'
+            },
+            { 
+              text: 'Find a case',
+              url: 'search-main'
             }
           ]
         },
@@ -48,20 +44,20 @@ var version_navigation = {
              // url: 'relationships'
             //},
             { 
-              text: 'Documents',
+              text: 'Documents (3)',
               url: 'documents'
             },
             { 
-              text: 'Linked cases',
+              text: 'Linked cases (1)',
               url: 'linked-cases'
             },
             { 
-              text: 'Third parties',
+              text: 'Third parties (3)',
               url: 'third-parties',
             },
             { 
-              text: 'Bank details',
-              url: 'bank-details'
+              text: 'Notes (1 new)',
+              url: 'case-notes'
             },
             { 
               text: 'Case history',
@@ -75,14 +71,14 @@ var version_navigation = {
 
          {
           // primary link text
-          text: 'Book interview',
+          text: 'Book appointment',
           // primary link file name
           url: 'book-interview',
           // subnav
           items: [
             
             { 
-              text: 'Book interview',
+              text: 'Book appointment',
               url: 'book-interview'
             },
             { 
@@ -94,13 +90,13 @@ var version_navigation = {
 
         {
           // primary link text
-          text: 'Intervention',
+          text: 'Interviewing',
           // primary link file name
           url: 'conduct-interview',
           // subnav
           items: [
             { 
-              text: 'Intervention',
+              text: 'Interviewing',
               url: 'conduct-interview'
             }
           ]
@@ -134,9 +130,6 @@ var version_navigation = {
             { 
               text: 'Close case',
               url: 'close'
-            },{ 
-              text: 'Reject',
-              url: 'reject'
             }
           ]
         }

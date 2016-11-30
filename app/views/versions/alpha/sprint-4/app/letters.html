@@ -1,0 +1,71 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Book appointment',
+    subsection: 'Appointment letter'
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+<h1 class="heading-large top15">Appointment letter</h1>
+
+
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+      <h3 class="heading-small">
+        Customer details
+      </h3>
+      <p>
+      Paul Plod<br>
+      1 Lestsbe Avenue<br>
+      Manchester<br>
+      M15 3PC<br>
+      </p>
+
+        <!--       <div class="form-group">
+<label class="form-label" for="select-box">Reason for the letter</label>
+       
+
+        <select class="form-control" id="select-box">
+          <option>Overpayment of benefit</option>
+          <option>Underpayment of benefit</option>
+          <option>Review due</option>
+
+        </select>
+      </div>
+-->
+
+      <p>
+        Telephone interview on 1 November 2016 for a benefit review.
+      </p>
+
+
+    <fieldset class="primary-nav form-group">
+      <legend class="visuallyhidden">Form Navigation</legend>
+      <input type="submit" value="Generate letter" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </fieldset>
+
+  </div>
+</div>
+
+
+
+  <p><a href="book-interview" title="Edit interview">Edit interview</a></p>
+
+
+
+
+{% endblock %}
