@@ -1,0 +1,191 @@
+{% set page = {
+  title: '',
+  nav: {
+    section: 'Work list/Diary',
+    subsection: 'Activities',
+    hidePrimary: true
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full" 
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+ 
+{% block primary %}
+
+<form>
+
+<div class="container">
+
+  <div class="grid-row">
+
+      <div class="column-two-thirds">
+          <h1 class="heading-large top15">Activities</h1>
+          <p class="text">You have <a href="your-cases">120 cases</a> in total. Here is a list of your current cases in order of due date with the activity required.</p>
+
+          <div class="activity-header">Overdue activities (6)</div>
+          <table class="activity">
+
+          <thead>
+            <tr>
+              <th scope="col">Due</th>
+              <th scope="col">Case No</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">First Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="no-bottom-line">
+              <td class="w20">
+                  <div class="due">1 Dec 2016</div>
+              </td>
+              <td class="w26">
+                  <a href="case-view" title="167926789">167926789</a>
+              </td>
+              <td class="w26">
+                  Farrowash
+              </td>
+              <td class="w26">
+                  Jason
+              </td>
+            </tr>
+            <tr class="no-td-padding-top">
+                <td>
+                  <div class="marker note overdue">OVERDUE</span>
+                </div>
+                <td colspan="3">
+                      <details class="activity-drop">
+
+                      <summary><span class="summary">Activity</span></summary>
+
+                      <div class="act-info">
+                            <span><strong>Current stage: </strong>Information gathering</span>
+                            <span><strong>Activity required:</strong> Book an appoinment</span>
+                      </div>
+
+                      </details>
+
+                </td>
+            </tr>
+
+
+
+            <tr class="no-bottom-line">
+              <td>
+                  <div class="due">1 Dec 2016</div>
+              </td>
+              <td>
+                  <a href="case-view" title="167926789">129350328</a>
+              </td>
+              <td>
+                  Steelcreek
+              </td>
+              <td>
+                  David
+              </td>
+            </tr>
+            <tr class="no-td-padding-top">
+                <td>
+                  <div class="marker note overdue">OVERDUE</span>
+                </div>
+                <td colspan="3">
+                      <details class="activity-drop">
+
+                      <summary><span class="summary">Activity</span></summary>
+
+                      <div class="act-info">
+                            <span><strong>Current stage: </strong> Interview under caution</span>
+                            <span><strong>Activity required:</strong> Suspend benefit</span>
+                      </div>
+
+                      </details>
+
+                </td>
+            </tr>
+
+            <tr class="no-bottom-line">
+                <td colspan="4">
+                      <details class="activity-drop">
+
+                      <summary><span class="summary bold">More overdue cases</span></summary>
+
+                      <div class="act-info">
+                        
+                      </div>
+
+                      </details>
+
+                </td>
+            </tr>
+
+
+
+          </tbody>
+          </table>
+
+           <div class="activity-header">Activities due today (11)</div>
+
+
+
+
+           <div class="activity-header">Tomorrow’s activities (9)</div>
+
+
+
+           <div class="activity-header">Activities for the rest of the week (40)</div>
+        
+      </div>
+
+
+
+
+
+
+      <div class="column-one-third">
+        <h1 class="heading-large top15">Case updates</h1>
+        <p>Here is a list of your cases that have had recent activity from others</p>
+
+        <div class="case-updates top">
+            <div class="marker note">NEW NOTE</div>
+            <div class="case">Case No. <a href="case-view" title="122560023">122560023</a></div>
+            <div class="name">Dusttrap Ross</div> 
+        </div>
+
+        <div class="case-updates">
+            <div class="marker note linkcase">CASE LINK</div>
+            <div class="case">Case No. <a href="case-view" title="445771235">445771235</a></div>
+            <div class="name">Doomglory Liza</div> 
+        </div>
+
+        <div class="case-updates">
+            <div class="marker note documents">DOCUMENTS ADDED</div>
+            <div class="case">Case No. <a href="case-view" title="445771235">445771235</a></div>
+            <div class="name">Doomglory Liza</div> 
+        </div>
+
+        <div class="case-updates">
+            <div class="marker note">NEW NOTE</div>
+            <div class="case">Case No. <a href="case-view" title="122560023">444429155</a></div>
+            <div class="name">Bronzestrike Andrew</div> 
+        </div>
+
+
+
+      </div>
+
+  </div>
+
+  
+
+
+</div>
+
+
+
+
+{% endblock %}
+
+

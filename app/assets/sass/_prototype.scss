@@ -15,6 +15,74 @@
 	&-4{
 
 
+	.case-updates{
+	    font-size: 16px;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	    font-size: 15px;
+		border-bottom: 1px solid $grey-2;
+		.name{
+			font-size: 15px;
+		}
+		.case{
+			padding-top: 5px;
+		}
+	}
+	.case-updates.top{
+		border-top: 10px solid $govuk-blue;
+		  margin-top: 30px;
+	}
+
+	.summary.bold{
+		font-weight: bold;
+	}
+
+	.activity-header{
+		background: $grey-3; 
+		padding: 5px 10px 5px 10px;
+		font-weight: bold;
+		font-size: 17px;
+		margin-top: 10px;
+	}
+	.activity{
+		.due{
+			font-weight: bold;
+		}
+		td, th{
+			font-size: 15px;
+		}
+		th{
+			font-weight: normal;
+			background: $grey-4;
+		}
+		.w20{
+			width: 20%;
+		}
+		.w26{
+			width: 26%;
+		}
+	}
+
+	.no-bottom-line{
+		td{
+			border-bottom: 0;
+		}
+	}
+	.no-td-padding-top{
+		td{
+			padding-top: 0;
+		}
+	}
+	.act-info{
+		span{
+			display: block;
+			strong{
+				font-weight: bold;
+			}
+		}
+	}
+
+
 	/* Tooltip */
 
 	.wrapper {
@@ -192,6 +260,18 @@
 	    display: inline-block;
 	   	background-color: $light-blue;
 	   	border: 1px solid $light-blue;
+	}
+	.overdue{
+		background-color: $mellow-red;
+		border: 1px solid $mellow-red;
+	}
+	.linkcase{
+		background-color: $green;
+		border: 1px solid $green;
+	}
+	.documents{
+		background-color: $fuschia;
+		border: 1px solid $fuschia;
 	}
 	.table50{
 		th,td{
@@ -543,12 +623,7 @@
 		    		font-size: 16px;
 		    		/*padding-left: 10px;*/
 		    		}
-		    		tr{
-		    			&:hover{
-		    			
-		    			background: $highlight-colour;
-		    			}
-		    		}
+		    		
 		  		}
 
 			.column-full{
