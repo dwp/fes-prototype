@@ -65,7 +65,7 @@ module.exports = function(router, config) {
           res.redirect('reject');
         }
          if(postData['radio'] == 'book') {
-          res.redirect('book-interview');
+          res.redirect('re-book-interview');
         }
          if(postData['radio'] == 're-route') {
           res.redirect('reroute');
