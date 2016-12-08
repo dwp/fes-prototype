@@ -36,6 +36,14 @@
           </div>
           {% endif %}
         {% endblock %}
+        
+        {% block __tertiary__ %}
+          {% if page.tertiary %}
+            <div class="column-{{ page.tertiary.col | d('one-whole')}}">
+              {% block tertiary %}{% endblock %}
+            </div>
+          {% endif %}
+        {% endblock %}
       
       </div>
       {% block append_main %}{% endblock %}

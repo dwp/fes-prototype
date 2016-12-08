@@ -1,287 +1,217 @@
-{% set page = {
-  title: '',
-  dev: true,
-  html_classes: [],
-  nav: {
-    section: 'Case view',
-    subsection: 'Case view'
-  },
-  layout: prototype.current.layoutPath + 'layout.html',
-  primary: {
-    col: "full"
-  },
-  secondary: false
-} %}
-
+{% set page = { 
+	title: '', 
+	dev: true,
+	nav: { 
+		section: 'Case view', 
+		subsection: 'Case view' 
+	}, 
+	layout: prototype.current.layoutPath + 'layout.html', 
+	primary: true,
+	secondary: true,
+	tertiary: true
+} %} 
 {% extends page.layout %}
 
 {% block primary %}
 
-<div class="container">
+	<h1 class="heading-large top15">Case view</h1>
 
-<div class="grid-row">
+	<table class="case-view">
 
-  <div class="column-two-thirds">
-    
-    <h1 class="heading-large top15">Case view</h1>
+				<thead>
+					<tr>
+						<th scope="col">Suspect details</th>
+						<th scope="col">&nbsp;</th>
+					</tr>
+				</thead>
 
-        <table class="case-view">
-          
+				<tbody>
+					<tr>
+						<td>Title:</td>
+						<td>Mr</td>
+					</tr>
+					<tr>
+						<td>First name:</td>
+						<td>Jason</td>
+					</tr>
+					<tr>
+						<td>Last name:</td>
+						<td>Farrowash</td>
+					</tr>
+					<tr>
+						<td>Gender:</td>
+						<td>Male</td>
+					</tr>
+					<tr>
+						<td>Date of birth:</td>
+						<td>25 Mar 1974</td>
+					</tr>
+					<tr>
+						<td>N.I. </td>
+						<td>PG515593</td>
+					</tr>
+					<tr>
+						<td>Telephone: </td>
+						<td>07985 999466</td>
+					</tr>
+					<tr>
+						<td>Email:</td>
+						<td><a href="eldia.helsel@gmail.com">jason.farrowash@gmail.com</a></td>
+					</tr>
+					<tr>
+						<td>PV:</td>
+						<td>Yes</td>
+					</tr>
+					<tr>
+						<td>Vulnerable:</td>
+						<td>Yes</td>
+					</tr>
+					<tr>
+						<td>Address:</td>
+						<td>
+							3 Golf Road, Shelf, Halifax. HX6 2QW
+						</td>
+					</tr>
+					<tr>
+						<td>Address commenced:</td>
+						<td>21 Nov 2011</td>
+					</tr>
 
-          <thead>
-            <tr>
-              <th scope="col">Suspect details</th>
-              <th scope="col">&nbsp;</th>
-            </tr>
-          </thead>
+				</tbody>
 
-           <tbody>
-            <tr>
-              <td>Title:</td>
-              <td>Mr</td>
-            </tr>
-            <tr>
-              <td>First name:</td>
-              <td>Jason</td>
-            </tr>
-            <tr>
-              <td>Last name:</td>
-              <td>Farrowash</td>
-            </tr>
-            <tr>
-              <td>Gender:</td>
-              <td>Male</td>
-            </tr>
-            <tr>
-              <td>Date of birth:</td>
-              <td>25 Mar 1974</td>
-            </tr>
-            <tr>
-              <td>N.I. </td>
-              <td>PG515593</td>
-            </tr>
-            <tr>
-              <td>Telephone: </td>
-              <td>07985 999466</td>
-            </tr>
-            <tr>
-              <td>Email:</td>
-              <td><a href="eldia.helsel@gmail.com">jason.farrowash@gmail.com</a></td>
-            </tr>
-            <tr>
-              <td>PV:</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td>Vulnerable:</td>
-              <td>Yes</td>
-            </tr>
-             <tr>
-              <td>Address:</td>
-              <td>
-                3 Golf Road, Shelf, Halifax. HX6 2QW
-              </td>
-            </tr>
-             <tr>
-              <td>Address commenced:</td>
-              <td>21 Nov 2011</td>
-            </tr>
-          
-          </tbody>
+			</table>
 
-        </table>
+	<details class="appointee">
 
-       
-        <details class="appointee">
+				<summary><span class="summary">Appointee details</span></summary>
 
-          <summary><span class="summary">Appointee details</span></summary>
+				<div class="">
+					<table class="case-view">
 
-          <div class="">
-                    <table class="case-view">
+						<tbody>
+							<tr>
+								<td>Title:</td>
+								<td>Mr</td>
+							</tr>
+							<tr>
+								<td>First name: </td>
+								<td>Mathews</td>
+							</tr>
+							<tr>
+								<td>Telephone:</td>
+								<td>07985 999466</td>
+							</tr>
+							<tr>
+								<td>Email:</td>
+								<td><a href="eldia.helsel@gmail.com">eldia.helsel@gmail.com</a></td>
+							</tr>
+							<tr>
+								<td>Address:</td>
+								<td>14 Essex Rd, Little Roundabout, Essex. EX2 2BT</td>
+							</tr>
 
-                    <tbody>
-                    <tr>
-                      <td>Title:</td>
-                      <td>Mr</td>
-                    </tr>
-                    <tr>
-                      <td>First name: </td>
-                      <td>Mathews</td>
-                    </tr>
-                    <tr>
-                      <td>Telephone:</td>
-                      <td>07985 999466</td>
-                    </tr>
-                    <tr>
-                      <td>Email:</td>
-                      <td><a href="eldia.helsel@gmail.com">eldia.helsel@gmail.com</a></td>
-                    </tr>
-                    <tr>
-                      <td>Address:</td>
-                      <td>14 Essex Rd, Little Roundabout, Essex. EX2 2BT</td>
-                    </tr>
+						</tbody>
 
-                    </tbody>
+					</table>
+				</div>
 
-                    </table>
-          </div>
+	</details>
 
-        </details>
+	<details class="appointee">
+
+		<summary><span class="summary">Partner details</span></summary>
+
+		<div class="">
 
 
+			<table class="case-view">
 
 
-          <details class="appointee">
+				<tbody>
+					<tr>
+						<td>Title:</td>
+						<td>Miss</td>
+					</tr>
+					<tr>
+						<td>First name: </td>
+						<td>Liza</td>
+					</tr>
+					<tr>
+						<td>Last name:</td>
+						<td>Doomglory</td>
+					</tr>
+					<tr>
+						<td>Telephone:</td>
+						<td>07995 5646858</td>
+					</tr>
+					<tr>
+						<td>Address:</td>
+						<td>12 Golf Road, Shelf, Halifax. HX6 2QW</td>
+					</tr>
+					<tr>
 
-            <summary><span class="summary">Partner details</span></summary>
 
-            <div class="">
+				</tbody>
 
-
-                      <table class="case-view">
-                      
-
-                      <tbody>
-                        <tr>
-                          <td>Title:</td>
-                          <td>Miss</td>
-                        </tr>
-                        <tr>
-                          <td>First name: </td>
-                          <td>Liza</td>
-                        </tr>
-                        <tr>
-                          <td>Last name:</td>
-                          <td>Doomglory</td>
-                        </tr>
-                        <tr>
-                          <td>Telephone:</td>
-                          <td>07995 5646858</td>
-                        </tr>
-                        <tr>
-                          <td>Address:</td>
-                          <td>12 Golf Road, Shelf, Halifax. HX6 2QW</td>
-                        </tr>
-                      <tr>
-                    
-                      
-                      </tbody>
-
-                      </table>
+			</table>
 
 
 
-            </div>
+		</div>
 
-            </details>
+	</details>
+			
+{% endblock %}
+			
+{% block secondary %}
+	{{ macros.casedata() }}
+{% endblock %}
+			
+{% block tertiary %}
 
-    </div>
-
-
-
-
-
-
-  <div class="column-one-third headtab">
-    <span class="bold-title">
-    Case number
-    </span>
-    3687111
-    <span class="bold-title">
-    Case owner
-    </span>
-    <a href="owner-detail">Darren Silcox</a>
-    <span class="bold-title">
-    Case stage
-    </span>
-      Information gathering
-    <span class="bold-title">
-    Activity
-    </span>
-      Book appoinment
-    <span class="bold-title">
-    Due date
-    </span>
-      17 Nov 2016
-      <p>&nbsp;</p>
- 
-      <div class="form-group action-buttons">
-				<h3 class="heading-medium" style="margin: 0 0 20px 0;">Case actions</h3>
-				<p>
-					<a href="book-interview" class="button-secondary button-secondary--block" title="Book">Book appointment</a>
-				</p>
-        <p>
-          <a href="reject" class="button-secondary button-secondary--block" title="Abandon">Abandon case</a>
-        </p>
-        <p>
-          <a href="reroute" class="button-secondary button-secondary--block"  title="Re-route">Re-route case</a>
-        </p>
-        <p>
-          <a href="close" class="button-secondary button-secondary--block"  title="Re-route">Close case</a>
-        </p>
-      </div>
-
-</div>
-
-    <div class="column-one-half">
-      <h2 class="heading-medium">Allegation</h2>
-      <h3 class="heading-small">Working in receipt (2 weeks or more)</h3>
-      <p>
-Jason Farrowash is claiming jobseekers allowance and working.
-Information states that he works at the Metro Cafe 5 days a week making sandwiches.
-      </p>
-    </div>
-
-
-    <div class="column-one-half">
-        <h2 class="heading-medium">Benefit award</h2>
-
-         <table class="your-cases">
-         
-          <thead>
-            <tr>
-              <th scope="col">Current benefit</th>
-            </tr>
-          </thead>
-
-          <tbody>
-          <tr>
-            <td>JSA | £80.00 |  Commenced: 1 Oct 2016</td>
-
-          </tr>
-  
-          </tbody>
-
-          </table>
-
-
-
-           <table class="your-cases">
-         
-          <thead>
-            <tr>
-              <th scope="col">Benefit history</th>
-            </tr>
-          </thead>
-
-          <tbody>
-          <tr>
-            <td>PIP | £91.55 | 1 Mar 2016 to 30 Sep 2016</td>
-
-          </tr>
-           <tr>
-            <td>UC | £125.66 | 1 Mar 2015 to 28 Feb 2016</td>
-           
-          </tr>
-          </tbody>
-
-          </table>
-    </div>
-
-
-
-
-
-
-
+	<div class="grid-row">
+		
+		<div class="column-one-half">
+			<h2 class="heading-medium">Allegation</h2>
+			<h3 class="heading-small">Working in receipt (2 weeks or more)</h3>
+			<p>Jason Farrowash is claiming jobseekers allowance and working. Information states that he works at the Metro Cafe 5 days a week making sandwiches.</p>
+		</div>
+		<!-- / column-one-half -->
+		
+		<div class="column-one-half">
+			<h2 class="heading-medium">Benefit award</h2>
+			
+			<table class="your-cases">
+				<thead>
+					<tr>
+						<th scope="col">Current benefit</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>JSA | £80.00 | Commenced: 1 Oct 2016</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="your-cases">
+				<thead>
+					<tr>
+						<th scope="col">Benefit history</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>PIP | £91.55 | 1 Mar 2016 to 30 Sep 2016</td>
+					</tr>
+					<tr>
+						<td>UC | £125.66 | 1 Mar 2015 to 28 Feb 2016</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- / column-one-half -->
+		
+	</div>
+	<!-- / grid-row -->
+	
 {% endblock %}

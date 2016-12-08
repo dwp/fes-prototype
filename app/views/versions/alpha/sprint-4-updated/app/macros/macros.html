@@ -1,3 +1,21 @@
 {% macro test(text) %}
   {{ text }}
 {% endmacro %}
+
+{% macro casedata(data) %}
+<div class="headtab">
+	<span class="bold-title">Case number</span> 3687111
+	<span class="bold-title">Case owner</span> <a href="owner-detail">Darren Silcox</a>
+	<span class="bold-title">Case stage</span> Information gathering
+	<span class="bold-title">Activity</span> Book appoinment
+	<span class="bold-title">Due date</span> 17 Nov 2016
+
+	<div class="form-group action-buttons">
+		<h3 class="heading-small" style="margin: 0 0 20px 0;">Actions</h3>
+		<p><a href="book-interview" class="button-secondary button-secondary--block" title="Book">Book appointment</a></p>
+		<p><a href="reject" class="button-secondary button-secondary--block" title="Abandon">Abandon case</a></p>
+		<p><a href="reroute" class="button-secondary button-secondary--block" title="Re-route">Re-route case</a></p>
+		<p><a href="close" class="button-secondary button-secondary--block" title="Re-route">Close case</a></p>
+	</div>
+</div>
+{% endmacro %}
