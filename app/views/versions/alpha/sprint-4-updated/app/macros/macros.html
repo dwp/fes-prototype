@@ -9,7 +9,8 @@
 	<span class="bold-title">Case stage</span> Information gathering
 	<span class="bold-title">Activity</span> Book appoinment
 	<span class="bold-title">Due date</span> 17 Nov 2016
-
+	
+	{% if not data.hideActions %}
 	<div class="form-group action-buttons">
 		<h3 class="heading-small" style="margin: 0 0 20px 0;">Actions</h3>
 		<p><a href="book-interview" class="button-secondary button-secondary--block" title="Book">Book appointment</a></p>
@@ -17,5 +18,7 @@
 		<p><a href="reroute" class="button-secondary button-secondary--block" title="Re-route">Re-route case</a></p>
 		<p><a href="close" class="button-secondary button-secondary--block" title="Re-route">Close case</a></p>
 	</div>
+	{% endif %}
+	
 </div>
 {% endmacro %}
