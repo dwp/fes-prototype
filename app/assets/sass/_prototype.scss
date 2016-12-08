@@ -20,7 +20,8 @@
 	&-2,
 	&-2-TestA,
 	&-3,
-	&-4 {
+	&-4,
+	&-5 {
 		
 		.case-updates {
 			font-size: 16px;
@@ -104,7 +105,8 @@
 	
 	/* Tooltip */
 	&-4,
-	&-4-updated {
+	&-4-updated,
+	&-5 {
 		
 		.wrapper {
 			position: absolute;
@@ -859,7 +861,9 @@
 
 .sprint-3,
 .sprint-4,
-.sprint-4-updated {
+.sprint-4-updated,
+.sprint-5 {
+	
 	.action-buttons {
 		font-size: 1.2em;
 	}

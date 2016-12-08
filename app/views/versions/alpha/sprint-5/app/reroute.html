@@ -1,0 +1,75 @@
+{% set page = { 
+  title: '', 
+  dev: true,
+  html_classes: [],
+  nav: { 
+    section: 'Re-route',
+    subsection: 'Re-route the case', 
+    hideSecondary: true 
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: { col: "full" }, 
+  secondary: false
+} %} 
+
+{% extends page.layout %} 
+
+{% block primary %}
+
+  <h1 class="heading-large top15">Re-route</h1>
+  <p>Where would you like to re-route your case to?</p>
+
+  <form>
+    <div class="form-group">
+
+          <label class="block-label" for="business" data-target="business-opt">
+            <input id="business" name="book" type="radio" value="Face">
+            Another business area
+          </label>
+
+          <div class="panel panel-border-narrow form-group js-hidden" id="business-opt">
+
+              <p>Select a business area</p>
+              <label class="block-label" for="radio-1">
+                <input id="radio-1" type="radio" name="radio-group" value="compliance">
+                Compliance
+              </label>
+              
+              <label class="block-label" for="radio-2">
+                <input id="radio-2" type="radio" name="radio-group" value="organised">
+                Organised
+              </label>
+              
+              <label class="block-label" for="radio-3">
+                <input id="radio-3" type="radio" name="radio-group" value="investigation">
+                Investigation
+              </label>
+
+          </div>
+
+          <label class="block-label" for="user" data-target="user-opt">
+            <input id="user" name="book" type="radio" value="decision-maker">
+            Decision maker
+          </label>
+
+
+          <label class="block-label" for="crt" data-target="">
+            <input id="crt" name="book" type="radio" value="crt">
+            Central recovery team (CRT)
+          </label>
+          
+          <label class="block-label" for="processing-team" data-target="">
+            <input id="processing-team" name="book" type="radio" value="processing-team">
+            Processing team
+          </label>
+      
+      </div>
+
+    <div class="form-group">
+        <legend class="visuallyhidden">Re-route case</legend>
+        <input type="submit" value="Re-route case" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </div>
+        
+  </form>
+    
+{% endblock %}
