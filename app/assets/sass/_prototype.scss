@@ -4,845 +4,891 @@
 @import 'alpha';
 
 *:not(.token) {
-  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+	font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+}
+
+.button-secondary {
+	@include button($green);
+
+	&--block {
+		display: block;
+	}
 }
 
 .sprint {
-	&-1, 
-	&-2, 
+	&-1,
+	&-2,
 	&-2-TestA,
 	&-3,
-	&-4{
-
-
-	.case-updates{
-	    font-size: 16px;
-	    padding-top: 10px;
-	    padding-bottom: 10px;
-	    font-size: 15px;
-		border-bottom: 1px solid $grey-2;
-		.name{
+	&-4 {
+		
+		.case-updates {
+			font-size: 16px;
+			padding-top: 10px;
+			padding-bottom: 10px;
 			font-size: 15px;
-		}
-		.case{
-			padding-top: 5px;
-		}
-	}
-	.case-updates.top{
-		border-top: 10px solid $govuk-blue;
-		  margin-top: 30px;
-	}
+			border-bottom: 1px solid $grey-2;
 
-	.summary.bold{
-		font-weight: bold;
-	}
+			.name {
+				font-size: 15px;
+			}
 
-	.activity-header{
-		background: $grey-3; 
-		padding: 5px 10px 5px 10px;
-		font-weight: bold;
-		font-size: 17px;
-		margin-top: 10px;
-	}
-	.activity{
-		.due{
+			.case {
+				padding-top: 5px;
+			}
+		}
+
+		.case-updates.top {
+			border-top: 10px solid $govuk-blue;
+			margin-top: 30px;
+		}
+
+		.summary.bold {
 			font-weight: bold;
 		}
-		td, th{
-			font-size: 15px;
-		}
-		th{
-			font-weight: normal;
-			background: $grey-4;
-		}
-		.w20{
-			width: 20%;
-		}
-		.w26{
-			width: 26%;
-		}
-	}
 
-	.no-bottom-line{
-		td{
-			border-bottom: 0;
+		.activity-header {
+			background: $grey-3;
+			padding: 5px 10px;
+			font-weight: bold;
+			font-size: 17px;
+			margin-top: 10px;
 		}
-	}
-	.no-td-padding-top{
-		td{
-			padding-top: 0;
-		}
-	}
-	.act-info{
-		span{
-			display: block;
-			strong{
+
+		.activity {
+			.due {
 				font-weight: bold;
 			}
+
+			td,
+			th {
+				font-size: 15px;
+			}
+
+			th {
+				font-weight: normal;
+				background: $grey-4;
+			}
+
+			.w20 {
+				width: 20%;
+			}
+
+			.w26 {
+				width: 26%;
+			}
 		}
-	}
 
-
-	/* Tooltip */
-
-	.wrapper {
-	position: absolute;
-	z-index: 1;
-	opacity: 1;
-	  -webkit-transform: translateZ(0); /* webkit flicker fix */
-	  -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
-	}
-
-	.wrapper .tooltip {
-	  background: lighten($yellow, 15%); 	  
-	  bottom: 100%;
-	  z-index: 100;
-	  color: #fff;
-	  display: block;
-	  left: -20px;
-	  margin-bottom: 15px;
-	  opacity: 0;
-	  padding: 20px;
-	  pointer-events: none;
-	  position: absolute;
-	  width: 127px;
-	  -webkit-transform: translateY(10px);
-	     -moz-transform: translateY(10px);
-	      -ms-transform: translateY(10px);
-	       -o-transform: translateY(10px);
-	          transform: translateY(10px);
-	  -webkit-transition: all .25s ease-out;
-	     -moz-transition: all .25s ease-out;
-	      -ms-transition: all .25s ease-out;
-	       -o-transition: all .25s ease-out;
-	          transition: all .25s ease-out;
-	  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-	     -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-	      -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-	       -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-	          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-
-	   
-	}
-	.wrapper{
-
-		.tooltip{	
-
-			span{
-				color: $text-colour;
-				font-size: 14px;
-				padding-bottom: 10px;
+		.no-bottom-line {
+			td {
+				border-bottom: 0;
 			}
-			.name{
-				font-weight: bold;
-				height: auto;
+		}
+
+		.no-td-padding-top {
+			td {
+				padding-top: 0;
 			}
-			.tel{
-				height: auto;
-			}
-			.interview-address{
-				height: auto;
-			}
-			
-			a{
+		}
+
+		.act-info {
+			span {
 				display: block;
-				color: $text-colour;
-				padding-bottom: 7px;
+
+				strong {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	
+	/* Tooltip */
+	&-4,
+	&-4-updated {
+		
+		.wrapper {
+			position: absolute;
+			z-index: 1;
+			opacity: 1;
+			-webkit-transform: translateZ(0);
+			/* webkit flicker fix */
+			-webkit-font-smoothing: antialiased;
+			/* webkit text rendering fix */
+		}
+
+		.wrapper .tooltip {
+			background: lighten($yellow, 15%);
+			bottom: 100%;
+			z-index: 100;
+			color: #fff;
+			display: block;
+			left: -20px;
+			margin-bottom: 15px;
+			opacity: 0;
+			padding: 20px;
+			pointer-events: none;
+			position: absolute;
+			width: 127px;
+			-webkit-transform: translateY(10px);
+			-moz-transform: translateY(10px);
+			-ms-transform: translateY(10px);
+			-o-transform: translateY(10px);
+			transform: translateY(10px);
+			-webkit-transition: all 0.25s ease-out;
+			-moz-transition: all 0.25s ease-out;
+			-ms-transition: all 0.25s ease-out;
+			-o-transition: all 0.25s ease-out;
+			transition: all 0.25s ease-out;
+			-webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+			-moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+			-ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+			-o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+			box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+		}
+
+		.wrapper {
+			.tooltip {
+				span {
+					color: $text-colour;
+					font-size: 14px;
+					padding-bottom: 10px;
+				}
+
+				.name {
+					font-weight: bold;
+					height: auto;
+				}
+
+				.tel {
+					height: auto;
+				}
+
+				.interview-address {
+					height: auto;
+				}
+
+				a {
+					display: block;
+					color: $text-colour;
+					padding-bottom: 7px;
+				}
+			}
+		}
+		/* This bridges the gap so you can mouse into the tooltip without it disappearing */
+		.wrapper .tooltip:before {
+			bottom: -20px;
+			content: " ";
+			display: block;
+			height: 20px;
+			left: 0;
+			position: absolute;
+			width: 100%;
+		}
+		/* CSS Triangles */
+		.wrapper .tooltip:after {
+			border-left: solid transparent 10px;
+			border-right: solid transparent 10px;
+			border-top: solid #ffda94 10px;
+			bottom: -10px;
+			content: " ";
+			height: 0;
+			left: 50%;
+			margin-left: -13px;
+			position: absolute;
+			width: 0;
+		}
+
+		.wrapper:hover .tooltip {
+			opacity: 1;
+			pointer-events: auto;
+			-webkit-transform: translateY(0px);
+			-moz-transform: translateY(0px);
+			-ms-transform: translateY(0px);
+			-o-transform: translateY(0px);
+			transform: translateY(0px);
+		}
+		/* IE can just show/hide with no transition */
+		.lte8 .wrapper .tooltip {
+			display: none;
+		}
+
+		.lte8 .wrapper:hover .tooltip {
+			display: block;
+		}
+		/* End Tooltip */
+		.print-icon {
+			width: 25px;
+			margin-bottom: -8px;
+			margin-right: 5px;
+		}
+
+		.button-add-another-vertical {
+			background-color: #eee;
+			color: #000;
+			box-shadow: 0 2px 0 #666;
+
+			&:hover {
+				background-color: #ccc;
+				color: #000;
+				box-shadow: 0 2px 0 #666;
+			}
+
+			&:focus {
+				background-color: #ccc;
+				color: #000;
+				box-shadow: 0 2px 0 #666;
+			}
+			@media (max-width: 640px) {
+				width: 90%;
+				margin: auto;
+				display: block;
 			}
 		}
 
-	}
-
-
-	/* This bridges the gap so you can mouse into the tooltip without it disappearing */
-	.wrapper .tooltip:before {
-	  bottom: -20px;
-	  content: " ";
-	  display: block;
-	  height: 20px;
-	  left: 0;
-	  position: absolute;
-	  width: 100%;
-	}  
-
-	/* CSS Triangles */
-	.wrapper .tooltip:after {
-	  border-left: solid transparent 10px;
-	  border-right: solid transparent 10px;
-	  border-top: solid #ffda94 10px;
-	  bottom: -10px;
-	  content: " ";
-	  height: 0;
-	  left: 50%;
-	  margin-left: -13px;
-	  position: absolute;
-	  width: 0;
-	}
-	  
-	.wrapper:hover .tooltip {
-	  opacity: 1;
-	  pointer-events: auto;
-	  -webkit-transform: translateY(0px);
-	     -moz-transform: translateY(0px);
-	      -ms-transform: translateY(0px);
-	       -o-transform: translateY(0px);
-	          transform: translateY(0px);
-	}
-
-	/* IE can just show/hide with no transition */
-	.lte8 .wrapper .tooltip {
-	  display: none;
-	}
-
-	.lte8 .wrapper:hover .tooltip {
-	  display: block;
-	}
-
-	/* End Tooltip */
-
-	.print-icon{
-	    width: 25px;
-	    margin-bottom: -8px;
-	    margin-right: 5px;
+		.amount-field {
+			width: 25%;
+			padding-left: 55px;
 		}
-		  
-	.button-add-another-vertical {
-      background-color: #eee;
-      color: #000;
-      box-shadow: 0 2px 0 #666;
 
-      &:hover {
-        background-color: #ccc;
-        color: #000;
-        box-shadow: 0 2px 0 #666;
-      }
-
-      &:focus {
-        background-color: #ccc;
-        color: #000;
-        box-shadow: 0 2px 0 #666;
-      }
-
-      @media (max-width: 640px) {
-        width: 90%;
-        margin: auto;
-        display: block;
-      }
-
-      }
-	        
-
-	.amount-field{
-		width: 25%;
-		padding-left: 55px;
-	}
-
-	.form-input-denote{
-	    position: absolute;
-	    background-color: #dee0e2;
-	    line-height: 1;
-	    margin: 2px 0px 0px 2px;
-	    padding: 7px 12px;
-	    z-index: 0;
-	}
-
-	.marker{
-		background: blue;
-		font-size: 12px;
-	    color: #fff;
-	    padding: 2px 4px;	  
-	    border-radius: 2px;
-	    font-weight: bold;
-	}
-	.note{
-		vertical-align: top;
-	    margin-top: 2px;
-	    display: inline-block;
-	   	background-color: $light-blue;
-	   	border: 1px solid $light-blue;
-	}
-	.overdue{
-		background-color: $mellow-red;
-		border: 1px solid $mellow-red;
-	}
-	.linkcase{
-		background-color: $green;
-		border: 1px solid $green;
-	}
-	.documents{
-		background-color: $fuschia;
-		border: 1px solid $fuschia;
-	}
-	.table50{
-		th,td{
-		 width: 50%;
+		.form-input-denote {
+			position: absolute;
+			background-color: #dee0e2;
+			line-height: 1;
+			margin: 2px 0 0 2px;
+			padding: 7px 12px;
+			z-index: 0;
 		}
-	}
-	.font16{
-		font-size: 16px;
-	}
-	.span-width{
-		width: 100%;
-	}
 
-	.headtab{
-		border-top: 10px solid $turquoise;
-		margin-top: 30px;
-		font-size: 16px;
-		padding-top: 10px;
-		.bold-title{
-			display: block;
-			margin-top: 10px;
+		.marker {
+			background: blue;
+			font-size: 12px;
+			color: #fff;
+			padding: 2px 4px;
+			border-radius: 2px;
 			font-weight: bold;
 		}
-		.side-menu-link{
-			display: block;
-			font-weight: bold;
+
+		.note {
+			vertical-align: top;
+			margin-top: 2px;
+			display: inline-block;
+			background-color: $light-blue;
+			border: 1px solid $light-blue;
+		}
+
+		.overdue {
+			background-color: $mellow-red;
+			border: 1px solid $mellow-red;
+		}
+
+		.linkcase {
+			background-color: $green;
+			border: 1px solid $green;
+		}
+
+		.documents {
+			background-color: $fuschia;
+			border: 1px solid $fuschia;
+		}
+
+		.table50 {
+			td,
+			th {
+				width: 50%;
+			}
+		}
+
+		.font16 {
 			font-size: 16px;
-			margin-top: 10px;
 		}
-		input{
-			font-size: 18px;
-		}
-	}
 
-	.case-view{
-		font-size: 16px;
-		td{
-			width: 50%;
+		.span-width {
+			width: 100%;
+		}
+
+		.headtab {
+			border-top: 10px solid $turquoise;
+			margin-top: 30px;
+			font-size: 16px;
+			padding-top: 10px;
+
+			.bold-title {
+				display: block;
+				margin-top: 10px;
+				font-weight: bold;
+			}
+
+			.side-menu-link {
+				display: block;
+				font-weight: bold;
+				font-size: 16px;
+				margin-top: 10px;
+			}
+
+			input {
+				font-size: 18px;
+			}
+		}
+
+		.case-view {
+			font-size: 16px;
+
+			td {
+				width: 50%;
+				font-size: 16px;
+			}
+		}
+
+		.page-head h1 {
+			margin-top: 50px;
+		}
+
+		.button-add-another {
+			background-color: #eee;
+			color: #000;
+			box-shadow: 0 2px 0 #666;
+		}
+
+		.inline-button-text {
+			left: 8px;
+			top: 7px;
+			position: relative;
+		}
+
+		.col-right {
+			text-align: right;
+			padding-right: 0;
+		}
+
+		.dropzone {
+			padding: 50px 20px 40px;
+			text-align: center;
+			background-color: #dee0e2;
+			border: 1px solid #bfc1c3;
+			margin-bottom: 30px;
+		}
+
+		.test-options {
 			font-size: 16px;
 		}
-	}
 
-	.page-head h1{
-		margin-top: 50px;
-	}
-
-
-
- 	.button-add-another {
-	    background-color: #eee;
-	    color: #000;
-	    box-shadow: 0 2px 0 #666;
-    }
-    .inline-button-text {
-	    left: 8px;
-	    top: 7px;
-	    position: relative;
-	}
-	.col-right {
-    text-align: right;
-    padding-right: 0;
-	}
-	.dropzone {
-    padding: 50px 20px 40px 20px;
-    text-align: center;
-    background-color: #dee0e2;
-    border: 1px solid #bfc1c3;
-    margin-bottom: 30px;
-	}
-
-
-
-
-
-	.test-options{
-		font-size: 16px;
-	}
-
-	.search-global{
-	    display: inline-block;
-	    padding-right: 12px;
-	    background: #bfc1c3;
-	    color: #0b0c0c;
-	    margin-right: -4px;
-	    padding-left: 10px;
-	    padding-top: 1px;
-	    padding-bottom: 5px;
-	}
-	.c-search {
-		  width: 55%;
+		.search-global {
+			display: inline-block;
+			padding-right: 12px;
+			background: #bfc1c3;
+			color: #0b0c0c;
+			margin-right: -4px;
+			padding-left: 10px;
+			padding-top: 1px;
+			padding-bottom: 5px;
 		}
 
-		.case-nav{
-			form, fieldset, input{
+		.c-search {
+			width: 55%;
+		}
+
+		.case-nav {
+			fieldset,
+			form,
+			input {
 				float: left;
 			}
-			input{
+
+			input {
 				margin-right: 25px;
 			}
 		}
 
-		.address-fix{
+		.address-fix {
 			margin-bottom: 10px;
 		}
 
-		.right{
+		.right {
 			float: right;
 		}
 
-		.font16{
+		.font16 {
 			font-size: 16px;
-		}
-		.appointee{
-			font-size: 16px;
-			padding: 7px 0 5px 0;
 		}
 
-		.standout{
+		.appointee {
+			font-size: 16px;
+			padding: 7px 0 5px;
+		}
+
+		.standout {
 			font-weight: bold;
 		}
 
-	   .search{	
-	   		margin-top: 15px;
-	   		input,
-	   		fieldset{
-	   			float: left;
-	   			width:auto;
-	   		}
-	   		input{
-	   			height: 45px;
-	   			margin-top: 10px;
-	   			width: 500px;
-	   		}
-	   		.button{
-	   			height: 43px;
-	   			margin-left: 15px;
-	   			width: 100px;
-	   		}
-	   }
+		.search {
+			margin-top: 15px;
 
-
-		   /* /// Pager /// */
-		   	.pager.border{
-		   		border-bottom: 1px solid $border-colour;
-		   	}
-
-			.pager {
-			    font-size: 16px;
-			    padding: 15px 0 15px 0;
-			    /*border-bottom: 1px solid $border-colour;*/
+			fieldset,
+			input {
+				float: left;
+				width: auto;
 			}
-				.pager-controls {
-				    float: right;
+
+			input {
+				height: 45px;
+				margin-top: 10px;
+				width: 500px;
+			}
+
+			.button {
+				height: 43px;
+				margin-left: 15px;
+				width: 100px;
+			}
+		}
+		/* /// Pager /// */
+		.pager.border {
+			border-bottom: 1px solid $border-colour;
+		}
+
+		.pager {
+			font-size: 16px;
+			padding: 15px 0;
+			/*border-bottom: 1px solid $border-colour;*/
+		}
+
+		.pager-controls {
+			float: right;
+		}
+
+		.pager-items {
+			display: inline;
+		}
+
+		.pager-items li:first-child {
+			margin-left: 0;
+		}
+
+		.pager-items li {
+			display: inline;
+			margin: 0 5px;
+		}
+
+		.pager-next {
+			margin-left: 10px;
+		}
+
+		.pager-next,
+		.pager-prev {
+			margin-right: 0;
+		}
+
+		.pager-next,
+		.pager-prev {
+			margin-right: 10px;
+		}
+		/* /// End Pager /// */
+		.button-grey {
+			background-color: #eee;
+			color: #000;
+			font-size: 16px;
+			box-shadow: 0 2px 0 #666;
+
+			&:hover {
+				background-color: #ccc;
+				color: #000;
+				box-shadow: 0 2px 0 #666;
+			}
+
+			&:focus {
+				background-color: #ccc;
+				color: #000;
+				box-shadow: 0 2px 0 #666;
+			}
+		}
+
+		.diary {
+			font-size: 16px;
+			position: relative;
+
+			.cal-nav {
+				padding: 15px 0;
+				/*border-top: 1px solid $border-colour;*/
+				margin-bottom: 15px 0 20px 0;
+				position: relative;
+
+				li {
+					float: left;
+					width: 33%;
 				}
-			.pager-items {
-			    display: inline;
-			}
-			.pager-items li:first-child {
-			    margin-left: 0;
-			}
-			.pager-items li {
-			    display: inline;
-			    margin: 0 5px;
-			}
-			.pager-next {
-			    margin-left: 10px;
-			}
-			.pager-prev, 
-			.pager-next {
-			    margin-right: 0;
-			}
-			.pager-prev, .pager-next {
-			    margin-right: 10px;
-			}
+				font-size: 19px;
 
-		   /* /// End Pager /// */
-
-		   .button-grey{
-		      background-color: #eee;
-		      color: #000;
-		      font-size: 16px;
-		      box-shadow: 0 2px 0 #666;
-
-		      &:hover {
-		        background-color: #ccc;
-		        color: #000;
-		        box-shadow: 0 2px 0 #666;
-		      }
-
-		      &:focus {
-		        background-color: #ccc;
-		        color: #000;
-		        box-shadow: 0 2px 0 #666;
-		      }
-		    }
-
-		   .diary{
-
-		   	font-size: 16px;
-		   	position: relative;
-
-		   		.cal-nav{
-		   			padding: 15px 0 15px 0;
-		   			/*border-top: 1px solid $border-colour;*/
-		   			margin-bottom: 15px 0 20px 0;
-		   			position: relative;
-		   			li{
-		   				float: left;
-		   				width: 33%
-		   			}
-		   			font-size: 19px;
-		   			.prev{
-		   				display:block;
-		   				span{
-		   					font-size: 14px;
-		   				}
-
-		   			}
-		   			.next{
-		   				display: block;
-		   				text-align: right;
-		   				span{
-		   					font-size: 14px;
-		   				}
-
-		   			}
-		   			.date{
-		   				text-align: center;
-		   				display: block;
-
-		   			}
-		   			&:after {
-				     visibility: hidden;
-				     display: block;
-				     font-size: 0;
-				     content: " ";
-				     clear: both;
-				     height: 0;
-				     }
-		   		}
-
-		   		
-		   		.cal-container{
-		   			
-		   			float: left;
-
-
-		   			&:after {
-				     visibility: hidden;
-				     display: block;
-				     font-size: 0;
-				     content: " ";
-				     clear: both;
-				     height: 0;
-				     }
-
-					ul{
-						float: left;
-						width: 16.6%;
-						position: relative;
-
-						min-width: 159px;
-		   			}
-		   			li{
-		   				height: 80px;
-		   				position: relative;
-
-		   				border-right: 1px solid $border-colour;
-		   				border-bottom: 1px solid $border-colour;
-		   				span{
-		   					display:block;
-		   					position: relative;
-
-		   					height: 80px;
-		   				}
-		   				.odd{
-		   					background: $highlight-colour;
-		   					position: relative;
-		   		
-		   				}
-		   				.time{
-		   					position: absolute;
-		    				width: 100%;
-		    				text-align: center;
-		    				padding-top: 11px;
-		    				color: $secondary-text-colour;
-		   				}
-		   				.blank{
-						    position: relative;
-						    height: 40px;
-						    position: relative;
-		   				}	
-
-		   			}
-		   			.dayrow{
-		   				height: 40px;
-		   				position: relative;
-		   			}
-		   			.day{
-		   				font-weight: bold;
-		   				text-align: center;
-		   				border-top: 1px solid $border-colour;
-		   				padding-top: 10px;
-		   				background: $panel-colour;
-		   				height: 29px;
-		   				position: relative;
-		   			}
-		   			.interview, .face{
-		   				font-size: 14px;
-		   				padding-left:5px;
-		   				position: relative;
-		   				padding-top: 4px;
-		   				display:block;
-		   				border-radius: 3px;
-		   				background: lighten($govuk-blue, 55%); 
-		   				color: $text-colour;
-		   				line-height: 16px;
-		   				height: 35px;
-		   				position: relative;
-		   				margin-bottom: 1px;
-		   				cursor: default;
-		   			
-		   			}
-		   			.face{
-		   				
-		   				background: lighten($yellow, 25%); 
-		   				height:75px;
-		   				position: relative;
-
-		   			}
-
-		   		}
-		   		.border-fix{
-		   			border-left: 1px solid $border-colour;
-		   		}
-
-		   }
-
-		   	.search-box{
-		   		padding-left: 10px;
-		   		color: $secondary-text-colour;
-		   	}
-		    
-		    .your-cases{
-		    	  	thead{
-		    	  		/*background: $highlight-colour;*/
-		    	  	}
-		    	  	td, th{
-		    		font-size: 16px;
-		    		/*padding-left: 10px;*/
-		    		}
-		    		
-		  		}
-
-			.column-full{
-				padding: 0 15px;
-			}
-			
-			.top15{
-				margin-top: 15px;
-			}
-
-			.heading-secondary{
-			    padding-top: 6px;
-		    	padding-bottom: 4px;
-		        font-size: 18px;
-		        font-weight: 400;
-		    	line-height: 1.25;
-		    	color: $secondary-text-colour;
-			}
-		  
-			.notop{
-		  	margin-top: 0;
-		  	padding-top: 0;
-			}
-		  
-			.nobottom{
-		  	margin-bottom: 0;
-		  	padding-bottom: 0;
-			}
-
-			.container{
-		  	margin-bottom: 15px;
-			}
-
-			.grey-button{
-			    background-color: #eee;
-			    color: #000;
-		    	box-shadow: 0 2px 0 #666;
-			}
-
-			.diary-detail{
-				.short, .long, .notes{
-				display: block;
-				}
-				td{
-					font-size: 16px;
-				}
-				
-			}
-
-			.weekview{
-				.rightborder{
-					border-right:1px solid $border-colour;
-				}
-				th{
-					font-size: 16px;
-					text-align: center;
-					padding-right: 0;
-					border-left:1px solid $border-colour;
-					border-top:1px solid $border-colour;
-				}
-				td{
-				 /*font-size: 14px;*/
-				 padding: 0;
-				 vertical-align: top;
-				 width: 14.25%;
-				 border-left:1px solid $border-colour;
-				}
-				.app{
-					padding: 10px;
-					background: $panel-colour;
-				   font-size: 16px;
-				    margin-bottom: 5px;
-
-				}
-				.app.odd{
-					background: $page-colour;
-				}
-				.time{
-					display:block;
-
-				}
-				.interview{
-					display:block;
-				}
-				.link{
-					display:block;
-				}
-
-
-			}
-			.dayview{
-				td{	
-				font-size: 16px;
-				    margin-right: -15px;
-				}
-				.interview, .notes, .address{
+				.prev {
 					display: block;
-					padding-bottom: 5px;
-				}
-				.interview{
-					font-weight: bold;
-				}
-				.open-case{
-					vertical-align: top;
-					border-top: 1px solid $border-colour;
-					text-align: right;
-				}
-				.notes{
 
+					span {
+						font-size: 14px;
+					}
 				}
-				.address{
-				 
+
+				.next {
+					display: block;
+					text-align: right;
+
+					span {
+						font-size: 14px;
+					}
 				}
-				.appoint{
-					width: 115px;
-					vertical-align: top;
+
+				.date {
+					text-align: center;
+					display: block;
 				}
 
 				&:after {
-				     visibility: hidden;
-				     display: block;
-				     font-size: 0;
-				     content: " ";
-				     clear: both;
-				     height: 0;
-				     }
+					visibility: hidden;
+					display: block;
+					font-size: 0;
+					content: " ";
+					clear: both;
+					height: 0;
+				}
+			}
+
+			.cal-container {
+				float: left;
+
+				&:after {
+					visibility: hidden;
+					display: block;
+					font-size: 0;
+					content: " ";
+					clear: both;
+					height: 0;
 				}
 
-
-
-
-				// tabs for table on how it works page
-				.container1 {
-				  margin: 0 auto;
-				  table {
-				    border-top: 1px solid $border-colour;
-				    th {
-				      padding-top: 40px;
-				    }
-				  }
+				ul {
+					float: left;
+					width: 16.6%;
+					position: relative;
+					min-width: 159px;
 				}
 
-				ul.tabs {
-				  margin: 0px;
-				  padding: 0px;
-				  list-style: none;
-				  position: relative;
-				  top: 1px;
+				li {
+					height: 80px;
+					position: relative;
+					border-right: 1px solid $border-colour;
+					border-bottom: 1px solid $border-colour;
+
+					span {
+						display: block;
+						position: relative;
+						height: 80px;
+					}
+
+					.odd {
+						background: $highlight-colour;
+						position: relative;
+					}
+
+					.time {
+						position: absolute;
+						width: 100%;
+						text-align: center;
+						padding-top: 11px;
+						color: $secondary-text-colour;
+					}
+
+					.blank {
+						position: relative;
+						height: 40px;
+						position: relative;
+					}
 				}
 
-				ul.tabs li {
-				  background: $page-colour;
-				  display: inline-block;
-				  padding: 10px 15px;
-				  cursor: pointer;
-				  border: 1px solid $page-colour;
-				  border-bottom-color: $border-colour;
-				  text-decoration: underline;
-				  color: $govuk-blue;
-				  &:hover {
-				    color: $link-hover-colour;
-				  }
+				.dayrow {
+					height: 40px;
+					position: relative;
 				}
 
-				ul.tabs li.current {
-				  color: $text-colour;
-				  text-decoration: none;
-				  border: 1px solid $border-colour;
-				  border-bottom-color: $page-colour; 
+				.day {
+					font-weight: bold;
+					text-align: center;
+					border-top: 1px solid $border-colour;
+					padding-top: 10px;
+					background: $panel-colour;
+					height: 29px;
+					position: relative;
 				}
 
-				.tab-content {
-				  display: none;
+				.face,
+				.interview {
+					font-size: 14px;
+					padding-left: 5px;
+					position: relative;
+					padding-top: 4px;
+					display: block;
+					border-radius: 3px;
+					background: lighten($govuk-blue, 55%);
+					color: $text-colour;
+					line-height: 16px;
+					height: 35px;
+					position: relative;
+					margin-bottom: 1px;
+					cursor: default;
 				}
 
-				.tab-content.current {
-				  display: inherit;
+				.face {
+					background: lighten($yellow, 25%);
+					height: 75px;
+					position: relative;
 				}
+			}
 
-				// Tables
+			.border-fix {
+				border-left: 1px solid $border-colour;
+			}
+		}
 
-				table {
-				  th, td {
-				    vertical-align: top;
-				  }
+		.search-box {
+			padding-left: 10px;
+			color: $secondary-text-colour;
+		}
+
+		.your-cases {
+			thead {
+				/*background: $highlight-colour;*/
+			}
+
+			td,
+			th {
+				font-size: 16px;
+				/*padding-left: 10px;*/
+			}
+		}
+
+		.column-full {
+			padding: 0 15px;
+		}
+
+		.top15 {
+			margin-top: 15px;
+		}
+
+		.heading-secondary {
+			padding-top: 6px;
+			padding-bottom: 4px;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 1.25;
+			color: $secondary-text-colour;
+		}
+
+		.notop {
+			margin-top: 0;
+			padding-top: 0;
+		}
+
+		.nobottom {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+
+		.container {
+			margin-bottom: 15px;
+		}
+
+		.grey-button {
+			background-color: #eee;
+			color: #000;
+			box-shadow: 0 2px 0 #666;
+		}
+
+		.diary-detail {
+			.long,
+			.notes,
+			.short {
+				display: block;
+			}
+
+			td {
+				font-size: 16px;
+			}
+		}
+
+		.weekview {
+			.rightborder {
+				border-right: 1px solid $border-colour;
+			}
+
+			th {
+				font-size: 16px;
+				text-align: center;
+				padding-right: 0;
+				border-left: 1px solid $border-colour;
+				border-top: 1px solid $border-colour;
+			}
+
+			td {
+				/*font-size: 14px;*/
+				padding: 0;
+				vertical-align: top;
+				width: 14.25%;
+				border-left: 1px solid $border-colour;
+			}
+
+			.app {
+				padding: 10px;
+				background: $panel-colour;
+				font-size: 16px;
+				margin-bottom: 5px;
+			}
+
+			.app.odd {
+				background: $page-colour;
+			}
+
+			.time {
+				display: block;
+			}
+
+			.interview {
+				display: block;
+			}
+
+			.link {
+				display: block;
+			}
+		}
+
+		.dayview {
+			td {
+				font-size: 16px;
+				margin-right: -15px;
+			}
+
+			.address,
+			.interview,
+			.notes {
+				display: block;
+				padding-bottom: 5px;
+			}
+
+			.interview {
+				font-weight: bold;
+			}
+
+			.open-case {
+				vertical-align: top;
+				border-top: 1px solid $border-colour;
+				text-align: right;
+			}
+
+			.notes {}
+
+			.address {}
+
+			.appoint {
+				width: 115px;
+				vertical-align: top;
+			}
+
+			&:after {
+				visibility: hidden;
+				display: block;
+				font-size: 0;
+				content: " ";
+				clear: both;
+				height: 0;
+			}
+		}
+		// tabs for table on how it works page
+		.container1 {
+			margin: 0 auto;
+
+			table {
+				border-top: 1px solid $border-colour;
+
+				th {
+					padding-top: 40px;
 				}
+			}
+		}
 
-		  }
+		ul.tabs {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			position: relative;
+			top: 1px;
+		}
 
+		ul.tabs li {
+			background: $page-colour;
+			display: inline-block;
+			padding: 10px 15px;
+			cursor: pointer;
+			border: 1px solid $page-colour;
+			border-bottom-color: $border-colour;
+			text-decoration: underline;
+			color: $govuk-blue;
+
+			&:hover {
+				color: $link-hover-colour;
+			}
+		}
+
+		ul.tabs li.current {
+			color: $text-colour;
+			text-decoration: none;
+			border: 1px solid $border-colour;
+			border-bottom-color: $page-colour;
+		}
+
+		.tab-content {
+			display: none;
+		}
+
+		.tab-content.current {
+			display: inherit;
+		}
+		// Tables
+		table {
+			td,
+			th {
+				vertical-align: top;
+			}
+		}
+	}
 }
 
-
 .sprint-3,
-.sprint-4{
+.sprint-4,
+.sprint-4-updated {
+	.action-buttons {
+		font-size: 1.2em;
+	}
 
-	.sub-navigation__item{
+	.sub-navigation__item {
 		background-color: $panel-colour;
 		font-size: 17px;
 	}
-	.sub-navigation__item--active{
+
+	.sub-navigation__item--active {
 		background-color: $white;
 		border: 1px solid $border-colour;
 		border-bottom: 1px solid white;
 		padding-bottom: 3px;
-    	margin-bottom: -1px;
-    	a{
-    		color: $text-colour; 
-    		    
-    	}
+		margin-bottom: -1px;
+
+		a {
+			color: $text-colour;
+		}
 	}
-	.sub-navigation__item__link
-	{
+
+	.sub-navigation__item__link {
 		text-decoration: none;
 		font-weight: bold;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	.sub-navigation__items{
+
+	.sub-navigation__items {
 		border-bottom: 1px solid $border-colour;
 	}
 }
-

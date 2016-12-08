@@ -1,0 +1,128 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Interviewing',
+    subsection: 'Interviewing',
+    hideSecondary: true
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+<h1 class="heading-large top15 ">Interviewing in the office</h1>
+<p>Which form of identity is the suspect providing?</p>
+
+
+<div class="grid-row">
+  <div class="column-full">
+
+      <form action="conduct-interview-pass1" method="post">
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visually-hidden">Which form of identity is the suspect providing?</legend>
+
+            <label class="block-label" for="passport">
+              <input id="passport" type="radio" name="radio" value="Passport">
+              Passport
+            </label>
+            <label class="block-label" for="driving">
+              <input id="driving" type="radio" name="radio" value="driving-l">
+              Driving licence
+            </label>
+             <label class="block-label" for="council">
+              <input id="council" type="radio" name="radio" value="Council-tex">
+              Council tax
+            </label>
+            <label class="block-label" for="tenancy">
+              <input id="tenancy" type="radio" name="radio" value="tenancy">
+              Tenancy agreement
+            </label>
+            <label class="block-label" for="none">
+              <input id="none" type="radio" name="radio" value="none">
+              None of the above
+            </label>
+
+
+            </fieldset>
+          
+          </div>
+            <div class="form-group">
+            <legend class="visuallyhidden">Validate customer</legend>
+              <input type="submit" value="Validate customer" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+              </div>
+        
+          
+
+      </form>
+          <a href="case-view">Abort interview</a>
+
+
+  </div>
+</div>
+
+
+
+<!--
+        <ol class="list list-number">
+          <li>What is your national insurance number?</li>
+          <li>What is your date of birth?</li>
+          <li>Which account is your benefit paid into?</li>
+
+        </ol>
+-->
+<!--
+<div class="grid-row">
+    <div class="column-full case-nav">
+    <p>&nbsp;</p>
+      
+    <form action="book-interview" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">LT54</legend>
+        <input type="submit" value="LT54" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+
+    <form action="close" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">MF47</legend>
+        <input type="submit" value="MF47" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+    <form action="reject" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">Set BF</legend>
+        <input type="submit" value="Set BF" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+
+    <form action="reroute" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">Refer to DM</legend>
+        <input type="submit" value="Refer to DM" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+    </div>
+  </div>
+
+-->
+
+
+
+
+{% endblock %}

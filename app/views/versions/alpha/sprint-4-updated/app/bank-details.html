@@ -1,0 +1,69 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Case view',
+    subsection: 'Bank details'
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+<h1 class="heading-large top15">Bank details</h1>
+
+
+
+
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+      
+
+      <table class="your-cases table50">
+          <thead>
+            <tr>
+              <th scope="col">Bank information</th>
+               <th scope="col">Current details</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>Bank name</td>
+              <td>Santander</td>
+            </tr>
+            <tr>
+              <td>Sort code</td>
+              <td>11-45-66</td>
+            </tr>
+            <tr>
+              <td>Account number</td>
+              <td>56765763</td>
+            </tr>
+
+
+
+
+
+        </tbody>
+      </table>
+  </div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

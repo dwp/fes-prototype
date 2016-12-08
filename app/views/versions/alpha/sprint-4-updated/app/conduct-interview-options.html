@@ -1,0 +1,129 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Interviewing',
+    subsection: 'Interviewing',
+    hideSecondary: true
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+<h1 class="heading-large top15 ">Interviewing</h1>
+<p class="text">If your interview was based was a home visit or based in the office you will need to scan and upload the signed version of the interview notes. Alternatively you can do this when you receive the document back in the post from the suspect.</p>
+
+
+<p class="heading-medium">You can now</p>
+<div class="grid-row">
+  <div class="column-full">
+
+      <form action="case-view" method="post">
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visually-hidden"></legend>
+
+            <label class="block-label" for="passport">
+              <input id="passport" type="radio" name="radio" value="refer-dm">
+              Refer to the decision maker
+            </label>
+            <label class="block-label" for="driving">
+              <input id="driving" type="radio" name="radio" value="close">
+              Reject the case
+            </label>
+             <label class="block-label" for="council">
+              <input id="council" type="radio" name="radio" value="book">
+              Book another interview
+            </label>
+            <label class="block-label" for="tenancy">
+              <input id="tenancy" type="radio" name="radio" value="re-route">
+              Re-route the case
+            </label>
+            <label class="block-label" for="none">
+              <input id="none" type="radio" name="radio" value="case-view">
+              Go to case view
+            </label>
+
+
+            </fieldset>
+          
+          </div>
+            <div class="form-group">
+            <legend class="visuallyhidden">Continue</legend>
+              <input type="submit" value="Continue" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+              </div>
+        
+          
+
+      </form>
+          <a href="case-view">Abort interview</a>
+
+
+  </div>
+</div>
+
+
+
+<!--
+        <ol class="list list-number">
+          <li>What is your national insurance number?</li>
+          <li>What is your date of birth?</li>
+          <li>Which account is your benefit paid into?</li>
+
+        </ol>
+-->
+<!--
+<div class="grid-row">
+    <div class="column-full case-nav">
+    <p>&nbsp;</p>
+      
+    <form action="book-interview" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">LT54</legend>
+        <input type="submit" value="LT54" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+
+    <form action="close" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">MF47</legend>
+        <input type="submit" value="MF47" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+    <form action="reject" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">Set BF</legend>
+        <input type="submit" value="Set BF" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+
+    <form action="reroute" method="post">
+      <fieldset class="">
+        <legend class="visuallyhidden">Refer to DM</legend>
+        <input type="submit" value="Refer to DM" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </fieldset>
+    </form>
+
+    </div>
+  </div>
+
+-->
+
+
+
+
+{% endblock %}

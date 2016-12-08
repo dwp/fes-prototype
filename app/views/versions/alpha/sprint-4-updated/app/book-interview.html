@@ -1,0 +1,269 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Book appointment',
+    subsection: 'Book appointment'
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+
+<div class="container">
+
+<h1 class="heading-large top15">Book an appointment</h1>
+
+<form action="letters" method="post">
+
+<div class="grid-row">
+
+  <div class="column-one-quarter">
+    
+      <div class="form-group">
+        <label class="form-label" for="select-box">Date</label>
+        <select class="form-control" id="select-box">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+           <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+        </select>
+      </div>
+      
+  </div>
+
+  <div class="column-one-quarter">
+     <div class="form-group">
+      <label class="form-label" for="select-box">Month</label>
+      <select class="form-control" id="select-box">
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+      </select>
+      </div>
+  </div>
+      
+  
+
+ <div class="column-one-quarter">&nbsp;</div>
+
+ <div class="column-one-quarter">&nbsp;</div>
+  
+
+</div>
+
+
+
+
+
+<div class="grid-row">
+
+  <div class="column-one-quarter">
+        <div class="form-group">
+          <label class="form-label" for="select-box">Start time</label>
+          <select class="form-control" id="select-box">
+            <option>8:00am</option>
+            <option>8:30am</option>
+            <option>9:00am</option>
+            <option>9:30am</option>
+            <option>10:00am</option>
+            <option>10:30am</option>
+            <option>11:00am</option>
+            <option>11:30am</option>
+            <option>12:00am</option>
+            <option>12:30pm</option>
+            <option>1:00pm</option>
+            <option>1:30pm</option>
+            <option>2:00pm</option>
+            <option>2:30pm</option>
+            <option>3:00pm</option>
+            <option>3:30pm</option>
+            <option>4:00pm</option>
+            <option>4:30pm</option>
+            <option>5:00pm</option>
+            <option>5:30pm</option>
+            <option>6:00pm</option>
+            <option>6:30pm</option>
+            <option>7:00pm</option>
+            <option>7:30pm</option>
+          </select>
+        </div>
+  </div>
+
+    <div class="column-one-quarter">
+        <div class="form-group">
+          <label class="form-label" for="select-box">End time</label>
+          <select class="form-control" id="select-box">
+            <option>8:00am</option>
+            <option>8:30am</option>
+            <option>9:00am</option>
+            <option>9:30am</option>
+            <option>10:00am</option>
+            <option>10:30am</option>
+            <option>11:00am</option>
+            <option>11:30am</option>
+            <option>12:00am</option>
+            <option>12:30pm</option>
+            <option>1:00pm</option>
+            <option>1:30pm</option>
+            <option>2:00pm</option>
+            <option>2:30pm</option>
+            <option>3:00pm</option>
+            <option>3:30pm</option>
+            <option>4:00pm</option>
+            <option>4:30pm</option>
+            <option>5:00pm</option>
+            <option>5:30pm</option>
+            <option>6:00pm</option>
+            <option>6:30pm</option>
+            <option>7:00pm</option>
+            <option>7:30pm</option>
+          </select>
+        </div>
+  </div>
+  <div class="column-one-quarter"></div>
+  <div class="column-one-quarter"></div>
+</div>
+
+<div class="grid-row">
+
+  <div class="column-two-thirds">
+    <div class="form-group">
+      <fieldset>
+      <label class="block-label" for="phone">
+        <input id="phone" name="book" type="radio" value="Telephone">
+        Telephone appointment
+      </label>
+
+      <label class="block-label" for="face-to-face" data-target="address">
+        <input id="face-to-face" name="book" type="radio" value="Face">
+        Office visit
+      </label>
+
+      
+      <div class="panel panel-border-narrow js-hidden" id="address">
+        <div class="form-group" id="address-container">
+           <label class="form-label">Office address</label>
+          <input type="text" class="form-control address-fix" id="address-line1">
+
+          <label class="form-label"></label>
+          <input type="text" class="form-control" id="address-line2"> 
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="town">Town or city</label>
+          <input class="form-control" id="town" type="text" name="town">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="postcode">Postcode</label>
+          <input class="form-control" id="postcode" type="text" name="postcode">
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+<!--
+      <label class="block-label" for="face-to-face1" data-target="address1">
+        <input id="face-to-face1" name="book" type="radio" value="Face">
+        Home visit
+      </label>
+
+
+
+      <div class="panel panel-border-narrow js-hidden" id="address1">
+        <div class="form-group" id="address-container">
+           <label class="form-label">Interview address</label>
+          <input type="text" class="form-control address-fix" id="address-line1">
+
+          <label class="form-label"></label>
+          <input type="text" class="form-control" id="address-line2"> 
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="town">Town or city</label>
+          <input class="form-control" id="town" type="text" name="town">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="postcode">Postcode</label>
+          <input class="form-control" id="postcode" type="text" name="postcode">
+        </div>
+      </div>
+      </fieldset>
+
+      -->
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<div class="grid-row">
+
+  <div class="column-full">
+    <fieldset class="primary-nav form-group">
+      <legend class="visuallyhidden">Book appointment</legend>
+      <input type="submit" value="Book appointment" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </fieldset>
+  </div>
+
+</div>
+
+
+
+</form>
+
+
+
+{% endblock %}

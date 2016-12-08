@@ -1,0 +1,170 @@
+{% set page = {
+  title: '',
+  dev: true,
+  html_classes: [],
+  nav: {
+    section: 'Close',
+    subsection: 'Close case',
+     hideSecondary: true
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+
+{% block primary %}
+<form>
+
+<div class="container">
+
+<h1 class="heading-large top15">Close</h1>
+
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+
+
+        <table class="your-cases">
+            <thead>
+              <tr>
+                <th scope="col">Decision</th>
+                <th scope="col">Result</th>
+                <th scope="col">Date</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Claimant error</td>
+              <td>Undeclared capital</td>
+              <td>1 November 2016</td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+      <div class="grid-row">
+        <div class="column-two-thirds">
+          <h3 class="heading-medium notop">Record outcome</h3>
+
+           <div class="form-group">
+              <label class="form-label" for="select-box">Select benefit MVA</label>
+                  <select class="form-control" id="select-box">
+                    <option>State pension </option>
+                    <option>JSA</option>
+                    <option>ESA</option>
+                    <option>Incapacity Benefit  </option>
+                    <option>Maternity Benefits </option>
+                    <option>IIDB</option>
+                    <option>DLA</option>
+                    <option>PIP</option>
+                    <option>Bereavement Benefits </option>
+                    <option>DLA</option>
+                    <option>Severe Disability Allowance </option>
+                  </select>
+            </div>
+
+            <div class="">
+              <fieldset class="inline">
+
+                <legend class="visually-hidden">Overpayment or underpayment</legend>
+
+                <label class="block-label" for="radio-inline-1" data-target="under">
+                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Underpayment">
+                  Underpayment
+                </label>
+                <label class="block-label" for="radio-inline-2" data-target="over">
+                  <input id="radio-inline-2" type="radio" name="radio-inline-group" value="Overpayment">
+                  Overpayment
+                </label>
+
+                <div class="panel panel-border-narrow js-hidden" id="under">
+                    <span class="form-input-denote">-£</span>
+                    <input class="form-control amount-field" id="under-amount" type="number">
+                </div>
+
+                <div class="panel panel-border-narrow js-hidden" id="over">
+                    <span class="form-input-denote">+£</span>
+                    <input class="form-control amount-field" id="over-amount" type="number">
+                </div>
+
+
+              </fieldset>
+
+            </div>
+
+        </div>
+
+        </div>
+
+
+      <hr />
+
+      <div class="grid-row">
+        <div class="column-two-thirds">
+          <div class="form-group">
+            <button id="add-button" class="button button-add-another-vertical">Add another benefit outcome</button>
+          </div>
+        </div>
+      </div>
+
+
+        <fieldset class="primary-nav form-group">
+      <legend class="visuallyhidden">Form Navigation</legend>
+      <input type="submit" value="Save and close" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </fieldset>
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<span class="c-form-input-denote">£</span>
+-->
+     
+<!--
+        <div class="form-group">
+          <label class="form-label" for="select-box">MVA</label>
+          <select class="form-control" id="select-box">
+            <option>Underpayment</option>
+            <option>Overpayment</option>
+          </select>
+        </div>
+
+
+    </div>
+
+
+     <div class="column-half">
+        <div class="form-group">
+          <label class="form-label" for="first-name-2">Amount</label>
+          <input class="form-control" id="first-name-2" name="first-name-2" type="text">
+        </div>
+    </div>
+  
+
+-->
+
+
+
+{% endblock %}
+
+

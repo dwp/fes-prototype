@@ -1,0 +1,59 @@
+{% set page = {
+  title: '',
+  nav: {
+    section: 'Home',
+    subsection: '',
+    hidePrimary: true
+  },
+  layout: prototype.current.layoutPath + 'layout.html',
+  primary: {
+    col: "full"
+  },
+  secondary: false
+} %}
+
+{% extends page.layout %}
+ 
+{% block primary %}
+
+
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+
+  <h1 class="heading-large top15 ">Welcome</h1>
+  
+
+  <p>
+    
+You have <a href="diary-week">32 interviews this week</a>, 5 of those are face to face. Take a look at your <a href="diary-day">appointments for today</a> for a detailed view. 
+
+</p>
+<p>
+<a href="your-cases">25 case activities are currently active</a>, and there are <a href="cases-incoming">30 incoming cases</a> awaiting your attention.
+</p>
+
+<p>
+You are the <a href="search">case owner for 50 cases</a>. You can search all cases using the <a href="search">search</a> the search box provided. 
+</p>
+
+ <form action="your-cases" method="post">
+    <fieldset class="primary-nav form-group">
+      <legend class="visuallyhidden">Form Navigation</legend>
+      <input type="submit" value="Continue" class="button" id="submitButton" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </fieldset>
+
+    </form>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}
