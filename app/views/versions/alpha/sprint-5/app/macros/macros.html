@@ -4,11 +4,19 @@
 
 {% macro casedata(data) %}
 <div class="headtab">
-	<span class="bold-title">Case number</span> 3687111
-	<span class="bold-title">Case owner</span> <a href="owner-detail">Darren Silcox</a>
-	<span class="bold-title">Case stage</span> Information gathering
-	<span class="bold-title">Activity</span> Book appoinment
-	<span class="bold-title">Due date</span> 17 Nov 2016
+  
+  <dl class="meta-data">
+    <dt class="meta-data__key">Case number</dt>
+    <dd class="meta-data__val">3687111</dd>
+  	<dt class="meta-data__key">Case owner</dt>
+    <dd class="meta-data__val"><a href="owner-detail">Darren Silcox</a></dd>
+  	<dt class="meta-data__key">Case stage</dt>
+    <dd class="meta-data__val">Information gathering</dd>
+  	<dt class="meta-data__key">Activity</dt>
+    <dd class="meta-data__val">Book appoinment</dd>
+  	<dt class="meta-data__key">Due date</dt>
+    <dd class="meta-data__val">17 Nov 2016</dd>
+  </dl>
 	
 	{% if not data.hideActions %}
 	<div class="form-group action-buttons">

@@ -896,3 +896,22 @@
 		border-bottom: 1px solid $border-colour;
 	}
 }
+
+
+.meta-data {
+	
+	margin-bottom: 1.5em;
+	
+	&__key {
+		font-weight: bold;
+	}
+	
+	&__val {
+			
+	}
+	
+	&__val + &__key {
+		margin-top: 1em;
+	}
+	
+}
